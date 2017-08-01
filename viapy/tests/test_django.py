@@ -1,14 +1,24 @@
+# NOTE: these tests will only be run when django is installed
 import json
 from unittest.mock import patch
 
-from django.http import JsonResponse
-from django.test import TestCase
-from django.urls import reverse
+import pytest
 
-from viapy.api import ViafAPI
-from viapy.widgets import ViafWidget
+try:
+    import django
+    from django.http import JsonResponse
+    from django.test import TestCase
+    from django.urls import reverse
+
+    from viapy.api import ViafAPI
+    from viapy.widgets import ViafWidget
+
+except ImportError:
+    django = None
+    from unittest import TestCase
 
 
+@pytest.mark.skipif(django is None, reason='Requires Django')
 class TestViafWidget(object):
 
     def test_render(self):
@@ -26,6 +36,7 @@ class TestViafWidget(object):
             % {'uri': uri} in rendered
 
 
+@pytest.mark.skipif(django is None, reason='Requires Django')
 class TestViews(TestCase):
 
     @patch('viapy.views.ViafAPI')
