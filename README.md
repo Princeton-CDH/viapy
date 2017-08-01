@@ -1,2 +1,0 @@
-# viapy
-VIAF via Python
