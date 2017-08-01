@@ -1,7 +1,7 @@
 from django.http import JsonResponse
 from dal import autocomplete
 
-from viapy import ViafAPI
+from viapy.api import ViafAPI
 
 
 class ViafLookup(autocomplete.Select2ListView):
