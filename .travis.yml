@@ -7,6 +7,8 @@ install:
   - pip install -e .
   - pip install -e '.[test]'
   - pip install codecov
+  - cp ci/testsettings.py testsettings.py
+  - python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
 
 script:
   - py.test --cov=viapy

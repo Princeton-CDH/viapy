@@ -10,9 +10,8 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 REQUIREMENTS = ['requests', 'rdflib', 'cached_property']
-TEST_REQUIREMENTS = ['pytest', 'pytest-django', 'pytest-cov']
-if sys.version_info < (3, 0):
-    TEST_REQUIREMENTS.append('mock')
+DJANGO_REQS = ['django>=1.10', 'django-autocomplete-light'],
+TEST_REQUIREMENTS = ['pytest', 'pytest-django', 'pytest-cov'] + DJANGO_REQS
 
 
 setup(
@@ -28,6 +27,7 @@ setup(
     setup_requires=['pytest-runner'],
     tests_require=TEST_REQUIREMENTS,
     extras_require={
+        'django': DJANGO_REQS,
         'test': TEST_REQUIREMENTS,
     },
     author='CDH @ Princeton',
