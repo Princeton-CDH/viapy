@@ -10,8 +10,9 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 REQUIREMENTS = ['requests', 'rdflib', 'cached_property']
+TEST_REQUIREMENTS = ['pytest', 'pytest-cov']
 DJANGO_REQS = ['django>=1.11', 'django-autocomplete-light'],
-TEST_REQUIREMENTS = ['pytest', 'pytest-django', 'pytest-cov']
+DJANGO_TEST_REQS = ['pytest-django']
 
 
 setup(
@@ -29,6 +30,7 @@ setup(
     extras_require={
         'django': DJANGO_REQS,
         'test': TEST_REQUIREMENTS,
+        'test_all': TEST_REQUIREMENTS + DJANGO_REQS + DJANGO_TEST_REQS
     },
     author='CDH @ Princeton',
     author_email='digitalhumanities@princeton.edu',

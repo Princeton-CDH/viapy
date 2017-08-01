@@ -81,7 +81,7 @@ Unit tests are set up to be run with [py.test](http://doc.pytest.org/)
 
 - Or install test requirements and use py.test directly::
 
-    pip install -e '.[test]'
+    pip install -e '.[test_all]'
     py.test
 
 

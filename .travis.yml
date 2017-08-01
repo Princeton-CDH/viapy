@@ -11,7 +11,7 @@ install:
   - pip install -e .
   - pip install -e '.[test]'
   - pip install -q $DJANGO
-  - if [ $DJANGO != '' ]; then pip install django-autocomplete-light; fi
+  - if [ $DJANGO != '' ]; then pip install django-autocomplete-light pytest-django; fi
   - pip install codecov
   - cp ci/testsettings.py testsettings.py
   - python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
