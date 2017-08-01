@@ -11,15 +11,6 @@ FIXTURES_PATH = os.path.join(os.path.dirname(__file__), 'fixtures')
 
 class TestViafAPI(object):
 
-    def setUp(self):
-        """Load the sample XML file and pass to the TestCase object"""
-        fixture_file = os.path.join(FIXTURES_PATH, 'sample_viaf_rdf.xml')
-        with open(fixture_file, 'r') as fixture:
-            self.mock_rdf = fixture.read()
-
-        graph = rdflib.Graph()
-        self.empty_rdf = graph.serialize()
-
     def test_get_uri(self):
         assert ViafAPI.uri_from_id('1234') == \
             'http://viaf.org/viaf/1234'
