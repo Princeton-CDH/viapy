@@ -11,7 +11,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 REQUIREMENTS = ['requests', 'rdflib', 'cached_property']
 TEST_REQUIREMENTS = ['pytest', 'pytest-cov']
-DJANGO_REQS = ['django>=1.11', 'django-autocomplete-light'],
+DJANGO_REQS = ['django>=1.11', 'django-autocomplete-light']
 DJANGO_TEST_REQS = ['pytest-django']
 
 
