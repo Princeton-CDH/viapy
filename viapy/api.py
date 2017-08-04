@@ -36,16 +36,12 @@ class ViafAPI(object):
         empty list if no suggestions are found or if something went wrong'''
 
         #  'viaf/AutoSuggest?query=[searchTerms]&callback[optionalCallbackName]
-        start = time.time()
         autosuggest_url = '%s/AutoSuggest' % self.api_base
         response = requests.get(autosuggest_url,
                                 params={'query': term},
                                 headers={'accept': 'application/json'})
-        logger.debug('autosuggest \'%s\': %s, %0.2f sec',
-                     term, response.status_code, time.time() - start)
-        # TESTING response.elapsed
-        logger.debug('autosuggest \'%s\': %s, %0.2f sec',
-                     term, response.status_code, response.elapsed)
+        logger.debug('autosuggest \'%s\': %s, %0.2f',
+                     term, response.status_code, response.elapsed.total_seconds())
 
         if response.status_code == requests.codes.ok:
             return response.json().get('result', None) or []
@@ -78,8 +74,11 @@ class ViafEntity(object):
     @cached_property
     def rdf(self):
         '''VIAF data for this entity as :class:`rdflib.Graph`'''
+        start = time.time()
         graph = rdflib.Graph()
         graph.parse(self.uri)
+        logger.debug('Loaded VIAF RDF %s: %0.2f sec',
+                     self.uri, time.time() - start)
         return graph
 
     # person-specific properties
