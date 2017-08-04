@@ -15,9 +15,7 @@ class ViafLookup(autocomplete.Select2ListView):
         """Return JSON with suggested VIAF ids and display names."""
         viaf = ViafAPI()
         result = viaf.suggest(self.q)
-        print('kwargs')
-        print(self.kwargs)
-        print(self.args)
+
         # optionally filter by nametype if set
         if 'nametype' in self.kwargs:
             result = [item for item in result
