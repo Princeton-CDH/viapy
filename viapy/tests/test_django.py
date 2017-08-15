@@ -108,6 +108,7 @@ class TestViews(TestCase):
 
         mockviafapi.return_value.search.return_value = [mockresult]
         result = self.client.get(search_url, {'q': 'sylvia beach'})
+        mockviafapi.return_value.search.assert_called_with('sylvia beach')
         data = json.loads(result.content.decode('utf-8'))
         assert data['results']
         assert len(data['results']) == 1
@@ -119,3 +120,7 @@ class TestViews(TestCase):
         assert item['birth'] == mockresult.recordData.birthDate
         assert item['death'] == mockresult.recordData.deathDate
 
+        # test search person
+        person_search_url = reverse('viaf:person-search')
+        result = self.client.get(person_search_url, {'q': 'sylvia beach'})
+        mockviafapi.return_value.find_person.assert_called_with('sylvia beach')
