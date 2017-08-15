@@ -1,0 +1,679 @@
+
+{"searchRetrieveResponse": {
+    "version":"1.1",
+    "numberOfRecords":"13",
+    "resultSetIdleTime":"1",
+        "records":[
+        
+            {"record":{
+            "recordSchema":"http://viaf.org/VIAFCluster",
+            "recordPacking":"json",
+            
+            "recordData":{
+  "@xmlns": "http://viaf.org/viaf/terms#",
+  "@xmlns:foaf": "http://xmlns.com/foaf/0.1/",
+  "@xmlns:owl": "http://www.w3.org/2002/07/owl#",
+  "@xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "@xmlns:void": "http://rdfs.org/ns/void#",
+  "viafID": "888145424579886830405",
+  "Document":   {
+    "@about": "http://viaf.org/viaf/888145424579886830405/",
+    "inDataset": {"@resource": "http://viaf.org/viaf/data"},
+    "primaryTopic": {"@resource": "http://viaf.org/viaf/888145424579886830405"}
+  },
+  "nameType": "UniformTitleExpression",
+  "sources": {"source":   {
+    "@nsid": "VIAFEXP7587557",
+    "#text": "XR|VIAFEXP7587557"
+  }},
+  "length": "11",
+  "mainHeadings":   {
+    "data":     {
+      "text": "Benét, Stephen Vincent, 1898-1943. | John Brown's Body | Russian 1979",
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP7587557"
+      }
+    },
+    "mainHeadingEl":     {
+      "datafield":       {
+        "@ind1": "1",
+        "@ind2": " ",
+        "@tag": "100",
+        "@dtype": "MARC21",
+        "subfield":         [
+                    {
+            "@code": "a",
+            "#text": "Benét, Stephen Vincent,"
+          },
+                    {
+            "@code": "d",
+            "#text": "1898-1943."
+          },
+                    {
+            "@code": "0",
+            "#text": "(viaf)100260717"
+          },
+                    {
+            "@code": "t",
+            "#text": "John Brown's Body"
+          },
+                    {
+            "@code": "l",
+            "#text": "Russian"
+          },
+                    {
+            "@code": "f",
+            "#text": "1979"
+          }
+        ]
+      },
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP7587557"
+      },
+      "id": "XR|VIAFEXP7587557"
+    }
+  },
+  "fixed": {"gender": "u"},
+  "x400s": {"x400":   {
+    "datafield":     {
+      "@ind1": "1",
+      "@ind2": " ",
+      "@tag": "400",
+      "@dtype": "MARC21",
+      "subfield":       [
+                {
+          "@code": "a",
+          "#text": "Benét, Stephen Vincent,"
+        },
+                {
+          "@code": "d",
+          "#text": "1898-1943."
+        },
+                {
+          "@code": "t",
+          "#text": "Telo Dzhona Brauna"
+        },
+                {
+          "@code": "f",
+          "#text": "1979"
+        }
+      ],
+      "normalized": "benet stephen vincent 1898 1943 telo dzhona brauna 1979"
+    },
+    "sources":     {
+      "s": "XR",
+      "sid": "XR|VIAFEXP7587557"
+    }
+  }},
+  "birthDate": "0",
+  "deathDate": "0",
+  "dateType": "lived",
+  "languageOfEntity": {"data":   {
+    "text": "rus",
+    "sources": {"s": "XR"}
+  }},
+  "titles":   {
+    "author":     {
+      "@id": "VIAF|100260717",
+      "text": "Benét, Stephen Vincent"
+    },
+    "work":     {
+      "@id": "VIAF|309266498",
+      "title": "John Brown's Body"
+    }
+  },
+  "history": {"ht":   {
+    "@recid": "XR|VIAFEXP7587557",
+    "@time": "2016-01-31T03:09:58.725288+00:00"
+  }},
+  "creationtime": "2017-08-13T09:13:51.363139+00:00"
+}
+            }}
+            ,
+            {"record":{
+            "recordSchema":"http://viaf.org/VIAFCluster",
+            "recordPacking":"json",
+            
+            "recordData":{
+  "@xmlns": "http://viaf.org/viaf/terms#",
+  "@xmlns:foaf": "http://xmlns.com/foaf/0.1/",
+  "@xmlns:owl": "http://www.w3.org/2002/07/owl#",
+  "@xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "@xmlns:void": "http://rdfs.org/ns/void#",
+  "viafID": "291145424547286830715",
+  "Document":   {
+    "@about": "http://viaf.org/viaf/291145424547286830715/",
+    "inDataset": {"@resource": "http://viaf.org/viaf/data"},
+    "primaryTopic": {"@resource": "http://viaf.org/viaf/291145424547286830715"}
+  },
+  "nameType": "UniformTitleExpression",
+  "sources": {"source":   {
+    "@nsid": "VIAFEXP31637671",
+    "#text": "XR|VIAFEXP31637671"
+  }},
+  "length": "11",
+  "mainHeadings":   {
+    "data":     {
+      "text": "Benét, Stephen Vincent, 1898-1943. | America | Turkish 1953",
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP31637671"
+      }
+    },
+    "mainHeadingEl":     {
+      "datafield":       {
+        "@ind1": "1",
+        "@ind2": " ",
+        "@tag": "100",
+        "@dtype": "MARC21",
+        "subfield":         [
+                    {
+            "@code": "a",
+            "#text": "Benét, Stephen Vincent,"
+          },
+                    {
+            "@code": "d",
+            "#text": "1898-1943."
+          },
+                    {
+            "@code": "0",
+            "#text": "(viaf)100260717"
+          },
+                    {
+            "@code": "t",
+            "#text": "America"
+          },
+                    {
+            "@code": "l",
+            "#text": "Turkish"
+          },
+                    {
+            "@code": "f",
+            "#text": "1953"
+          }
+        ]
+      },
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP31637671"
+      },
+      "id": "XR|VIAFEXP31637671"
+    }
+  },
+  "fixed": {"gender": "u"},
+  "x400s": {"x400":   {
+    "datafield":     {
+      "@ind1": "1",
+      "@ind2": " ",
+      "@tag": "400",
+      "@dtype": "MARC21",
+      "subfield":       [
+                {
+          "@code": "a",
+          "#text": "Benét, Stephen Vincent,"
+        },
+                {
+          "@code": "d",
+          "#text": "1898-1943."
+        },
+                {
+          "@code": "t",
+          "#text": "Amerika"
+        },
+                {
+          "@code": "f",
+          "#text": "1953"
+        }
+      ],
+      "normalized": "benet stephen vincent 1898 1943 amerika 1953"
+    },
+    "sources":     {
+      "s": "XR",
+      "sid": "XR|VIAFEXP31637671"
+    }
+  }},
+  "birthDate": "0",
+  "deathDate": "0",
+  "dateType": "lived",
+  "languageOfEntity": {"data":   {
+    "text": "tur",
+    "sources": {"s": "XR"}
+  }},
+  "titles":   {
+    "author":     {
+      "@id": "VIAF|100260717",
+      "text": "Benét, Stephen Vincent"
+    },
+    "work":     {
+      "@id": "VIAF|307979935",
+      "title": "America"
+    }
+  },
+  "history": {"ht":   {
+    "@recid": "XR|VIAFEXP31637671",
+    "@time": "2016-01-31T03:04:32.352032+00:00"
+  }},
+  "creationtime": "2017-08-13T08:55:38.996915+00:00"
+}
+            }}
+            ,
+            {"record":{
+            "recordSchema":"http://viaf.org/VIAFCluster",
+            "recordPacking":"json",
+            
+            "recordData":{
+  "@xmlns": "http://viaf.org/viaf/terms#",
+  "@xmlns:foaf": "http://xmlns.com/foaf/0.1/",
+  "@xmlns:owl": "http://www.w3.org/2002/07/owl#",
+  "@xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "@xmlns:void": "http://rdfs.org/ns/void#",
+  "viafID": "316264350",
+  "Document":   {
+    "@about": "http://viaf.org/viaf/316264350/",
+    "inDataset": {"@resource": "http://viaf.org/viaf/data"},
+    "primaryTopic": {"@resource": "http://viaf.org/viaf/316264350"}
+  },
+  "nameType": "UniformTitleExpression",
+  "sources": {"source":   {
+    "@nsid": "VIAFEXP759860203",
+    "#text": "XR|VIAFEXP759860203"
+  }},
+  "length": "11",
+  "mainHeadings":   {
+    "data":     {
+      "text": "Benét, Stephen Vincent, 1898-1943. | America | Bulgarian 9999",
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP759860203"
+      }
+    },
+    "mainHeadingEl":     {
+      "datafield":       {
+        "@ind1": "1",
+        "@ind2": " ",
+        "@tag": "100",
+        "@dtype": "MARC21",
+        "subfield":         [
+                    {
+            "@code": "a",
+            "#text": "Benét, Stephen Vincent,"
+          },
+                    {
+            "@code": "d",
+            "#text": "1898-1943."
+          },
+                    {
+            "@code": "0",
+            "#text": "(viaf)100260717"
+          },
+                    {
+            "@code": "t",
+            "#text": "America"
+          },
+                    {
+            "@code": "l",
+            "#text": "Bulgarian"
+          },
+                    {
+            "@code": "f",
+            "#text": "9999"
+          }
+        ]
+      },
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP759860203"
+      },
+      "id": "XR|VIAFEXP759860203"
+    }
+  },
+  "fixed": {"gender": "u"},
+  "x400s": {"x400":   {
+    "datafield":     {
+      "@ind1": "1",
+      "@ind2": " ",
+      "@tag": "400",
+      "@dtype": "MARC21",
+      "subfield":       [
+                {
+          "@code": "a",
+          "#text": "Benét, Stephen Vincent,"
+        },
+                {
+          "@code": "d",
+          "#text": "1898-1943."
+        },
+                {
+          "@code": "t",
+          "#text": "Amerika"
+        },
+                {
+          "@code": "f",
+          "#text": "9999"
+        }
+      ],
+      "normalized": "benet stephen vincent 1898 1943 amerika 9999"
+    },
+    "sources":     {
+      "s": "XR",
+      "sid": "XR|VIAFEXP759860203"
+    }
+  }},
+  "birthDate": "0",
+  "deathDate": "0",
+  "dateType": "lived",
+  "languageOfEntity": {"data":   {
+    "text": "bul",
+    "sources": {"s": "XR"}
+  }},
+  "titles":   {
+    "author":     {
+      "@id": "VIAF|100260717",
+      "text": "Benét, Stephen Vincent"
+    },
+    "work":     {
+      "@id": "VIAF|307979935",
+      "title": "America"
+    }
+  },
+  "history": {"ht":   {
+    "@recid": "XR|VIAFEXP759860203",
+    "@time": "2015-06-15T20:42:24+00:00"
+  }},
+  "creationtime": "2017-08-13T09:02:37.856828+00:00"
+}
+            }}
+            ,
+            {"record":{
+            "recordSchema":"http://viaf.org/VIAFCluster",
+            "recordPacking":"json",
+            
+            "recordData":{
+  "@xmlns": "http://viaf.org/viaf/terms#",
+  "@xmlns:foaf": "http://xmlns.com/foaf/0.1/",
+  "@xmlns:owl": "http://www.w3.org/2002/07/owl#",
+  "@xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "@xmlns:void": "http://rdfs.org/ns/void#",
+  "viafID": "314936441",
+  "Document":   {
+    "@about": "http://viaf.org/viaf/314936441/",
+    "inDataset": {"@resource": "http://viaf.org/viaf/data"},
+    "primaryTopic": {"@resource": "http://viaf.org/viaf/314936441"}
+  },
+  "nameType": "UniformTitleExpression",
+  "sources": {"source":   {
+    "@nsid": "VIAFEXP17829827",
+    "#text": "XR|VIAFEXP17829827"
+  }},
+  "length": "12",
+  "mainHeadings":   {
+    "data":     {
+      "text": "Benét, Stephen Vincent, 1898-1943. | America | German 1944",
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP17829827"
+      }
+    },
+    "mainHeadingEl":     {
+      "datafield":       {
+        "@ind1": "1",
+        "@ind2": " ",
+        "@tag": "100",
+        "@dtype": "MARC21",
+        "subfield":         [
+                    {
+            "@code": "a",
+            "#text": "Benét, Stephen Vincent,"
+          },
+                    {
+            "@code": "d",
+            "#text": "1898-1943."
+          },
+                    {
+            "@code": "0",
+            "#text": "(viaf)100260717"
+          },
+                    {
+            "@code": "t",
+            "#text": "America"
+          },
+                    {
+            "@code": "l",
+            "#text": "German"
+          },
+                    {
+            "@code": "f",
+            "#text": "1944"
+          }
+        ]
+      },
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP17829827"
+      },
+      "id": "XR|VIAFEXP17829827"
+    }
+  },
+  "fixed": {"gender": "u"},
+  "x400s": {"x400":   [
+        {
+      "datafield":       {
+        "@ind1": "1",
+        "@ind2": " ",
+        "@tag": "400",
+        "@dtype": "MARC21",
+        "subfield":         [
+                    {
+            "@code": "a",
+            "#text": "Benét, Stephen Vincent,"
+          },
+                    {
+            "@code": "d",
+            "#text": "1898-1943."
+          },
+                    {
+            "@code": "t",
+            "#text": "Amerika : Geschichte der USA"
+          },
+                    {
+            "@code": "f",
+            "#text": "1944"
+          }
+        ],
+        "normalized": "benet stephen vincent 1898 1943 amerika geschichte der usa 1944"
+      },
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP17829827"
+      }
+    },
+        {
+      "datafield":       {
+        "@ind1": "1",
+        "@ind2": " ",
+        "@tag": "400",
+        "@dtype": "MARC21",
+        "subfield":         [
+                    {
+            "@code": "a",
+            "#text": "Benét, Stephen Vincent,"
+          },
+                    {
+            "@code": "d",
+            "#text": "1898-1943."
+          },
+                    {
+            "@code": "t",
+            "#text": "Amerika"
+          },
+                    {
+            "@code": "f",
+            "#text": "1944"
+          }
+        ],
+        "normalized": "benet stephen vincent 1898 1943 amerika 1944"
+      },
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP17829827"
+      }
+    }
+  ]},
+  "birthDate": "0",
+  "deathDate": "0",
+  "dateType": "lived",
+  "languageOfEntity": {"data":   {
+    "text": "ger",
+    "sources": {"s": "XR"}
+  }},
+  "titles":   {
+    "author":     {
+      "@id": "VIAF|100260717",
+      "text": "Benét, Stephen Vincent"
+    },
+    "work":     {
+      "@id": "VIAF|307979935",
+      "title": "America"
+    }
+  },
+  "history": {"ht":   {
+    "@recid": "XR|VIAFEXP17829827",
+    "@time": "2015-03-11T21:41:54+00:00"
+  }},
+  "creationtime": "2017-08-13T09:00:17.450400+00:00"
+}
+            }}
+            ,
+            {"record":{
+            "recordSchema":"http://viaf.org/VIAFCluster",
+            "recordPacking":"json",
+            
+            "recordData":{
+  "@xmlns": "http://viaf.org/viaf/terms#",
+  "@xmlns:foaf": "http://xmlns.com/foaf/0.1/",
+  "@xmlns:owl": "http://www.w3.org/2002/07/owl#",
+  "@xmlns:rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+  "@xmlns:void": "http://rdfs.org/ns/void#",
+  "viafID": "313666823",
+  "Document":   {
+    "@about": "http://viaf.org/viaf/313666823/",
+    "inDataset": {"@resource": "http://viaf.org/viaf/data"},
+    "primaryTopic": {"@resource": "http://viaf.org/viaf/313666823"}
+  },
+  "nameType": "UniformTitleExpression",
+  "sources": {"source":   {
+    "@nsid": "VIAFEXP9613053",
+    "#text": "XR|VIAFEXP9613053"
+  }},
+  "length": "11",
+  "mainHeadings":   {
+    "data":     {
+      "text": "Benét, Stephen Vincent, 1898-1943. | America | Spanish 1965",
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP9613053"
+      }
+    },
+    "mainHeadingEl":     {
+      "datafield":       {
+        "@ind1": "1",
+        "@ind2": " ",
+        "@tag": "100",
+        "@dtype": "MARC21",
+        "subfield":         [
+                    {
+            "@code": "a",
+            "#text": "Benét, Stephen Vincent,"
+          },
+                    {
+            "@code": "d",
+            "#text": "1898-1943."
+          },
+                    {
+            "@code": "0",
+            "#text": "(viaf)100260717"
+          },
+                    {
+            "@code": "t",
+            "#text": "America"
+          },
+                    {
+            "@code": "l",
+            "#text": "Spanish"
+          },
+                    {
+            "@code": "f",
+            "#text": "1965"
+          }
+        ]
+      },
+      "sources":       {
+        "s": "XR",
+        "sid": "XR|VIAFEXP9613053"
+      },
+      "id": "XR|VIAFEXP9613053"
+    }
+  },
+  "fixed": {"gender": "u"},
+  "x400s": {"x400":   {
+    "datafield":     {
+      "@ind1": "1",
+      "@ind2": " ",
+      "@tag": "400",
+      "@dtype": "MARC21",
+      "subfield":       [
+                {
+          "@code": "a",
+          "#text": "Benét, Stephen Vincent,"
+        },
+                {
+          "@code": "d",
+          "#text": "1898-1943."
+        },
+                {
+          "@code": "t",
+          "#text": "Historia sucinta de los Estados Unidos"
+        },
+                {
+          "@code": "f",
+          "#text": "1965"
+        }
+      ],
+      "normalized": "benet stephen vincent 1898 1943 historia sucinta de los estados unidos 1965"
+    },
+    "sources":     {
+      "s": "XR",
+      "sid": "XR|VIAFEXP9613053"
+    }
+  }},
+  "birthDate": "0",
+  "deathDate": "0",
+  "dateType": "lived",
+  "languageOfEntity": {"data":   {
+    "text": "spa",
+    "sources": {"s": "XR"}
+  }},
+  "titles":   {
+    "author":     {
+      "@id": "VIAF|100260717",
+      "text": "Benét, Stephen Vincent"
+    },
+    "work":     {
+      "@id": "VIAF|307979935",
+      "title": "America"
+    }
+  },
+  "history": {"ht":   {
+    "@recid": "XR|VIAFEXP9613053",
+    "@time": "2015-02-16T15:07:12+00:00"
+  }},
+  "creationtime": "2017-08-13T09:16:57.090001+00:00"
+}
+            }}
+            
+        ]
+     }
+}
+    

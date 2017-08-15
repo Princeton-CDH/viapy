@@ -1,10 +1,11 @@
+import json
 import os
 from unittest.mock import patch
 
 import requests
 import rdflib
 
-from viapy.api import ViafAPI, ViafEntity
+from viapy.api import ViafAPI, ViafEntity, SRUResult, SRUItem
 
 FIXTURES_PATH = os.path.join(os.path.dirname(__file__), 'fixtures')
 
@@ -46,6 +47,61 @@ class TestViafAPI(object):
         assert viaf.suggest('test') == []
 
 
+    @patch('viapy.api.requests')
+    def test_search(self, mockrequests):
+        viaf = ViafAPI()
+        mockrequests.codes = requests.codes
+
+        sru_fixture = os.path.join(FIXTURES_PATH, 'sru_search.json')
+        with open(sru_fixture) as srufile:
+            mock_result = json.load(srufile)
+        mockrequests.get.return_value.status_code = requests.codes.ok
+        mockrequests.get.return_value.json.return_value = mock_result
+        results = viaf.search('stephen benet')
+        assert isinstance(results, list)
+        assert isinstance(results[0], SRUItem)
+        mockrequests.get.assert_called_with(
+            'https://www.viaf.org/viaf/search',
+            # headers={'accept': 'application/json'},
+            params={'query': 'stephen benet', 'httpAccept': 'application/json',
+                    'maximumRecords': 50})
+
+        # sample empty result
+        mockrequests.get.return_value.json.return_value = {
+            'searchRetrieveResponse': {
+                'version': "1.1",
+                'numberOfRecords': "0",
+                'resultSetIdleTime': "1"
+            }
+        }
+        results = viaf.search('stephen benet')
+        assert not results
+
+    def test_find_person(self):
+        viaf = ViafAPI()
+        term = 'stephen benet'
+        with patch.object(viaf, 'search') as mocksearch:
+            viaf.find_person(term)
+
+        mocksearch.assert_called_with('local.personalNames all "%s"' % term)
+
+    def test_find_corporate(self):
+        viaf = ViafAPI()
+        term = 'library of congress'
+        with patch.object(viaf, 'search') as mocksearch:
+            viaf.find_corporate(term)
+
+        mocksearch.assert_called_with('local.corporateNames all "%s"' % term)
+
+    def test_find_place(self):
+        viaf = ViafAPI()
+        term = 'princeton'
+        with patch.object(viaf, 'search') as mocksearch:
+            viaf.find_place(term)
+
+        mocksearch.assert_called_with('local.geographicNames all "%s"' % term)
+
+
 class TestViafEntity(object):
 
     test_id = 102333412
@@ -78,12 +134,12 @@ class TestViafEntity(object):
     def test_properties(self):
         # use viaf id matching fixture rdf file
         ent = ViafEntity('89599270')
-
+        # load fixture
         test_rdf = rdflib.Graph()
         test_rdf.parse(self.rdf_fixture)
 
-        with patch('viapy.api.rdflib.Graph') as mockgraph:
-            mockgraph.return_value = test_rdf
+        # patch fixture in to ViafEntity rdf property
+        with patch.object(ViafEntity, 'rdf', new=test_rdf):
             assert str(ent.birthdate) == '69'
             assert str(ent.deathdate) == '140'
             assert ent.birthyear == 69
@@ -95,4 +151,31 @@ class TestViafEntity(object):
         assert ViafEntity.year_from_isodate('2004-03-05') == 2004
 
 
+def test_sru_result():
+    # test SRUResult class properties
+    sru_fixture = os.path.join(FIXTURES_PATH, 'sru_search.json')
+    with open(sru_fixture) as srufile:
+        sru_data = json.load(srufile)
+    sru_res = SRUResult(sru_data)
+    assert sru_res.total_results == 13
+    assert isinstance(sru_res.records, list)
+    assert isinstance(sru_res.records[0], SRUItem)
+    assert len(sru_res.records) == 5
 
+
+def test_sru_item():
+    # test SRUItem class
+    sru_fixture = os.path.join(FIXTURES_PATH, 'sru_search.json')
+    with open(sru_fixture) as srufile:
+        sru_data = json.load(srufile)
+    sru_item = SRUResult(sru_data).records[0]
+    assert sru_item.uri == "http://viaf.org/viaf/888145424579886830405/"
+    assert sru_item.viaf_id == "888145424579886830405"
+    assert sru_item.nametype == "UniformTitleExpression"
+    assert sru_item.label == "Benét, Stephen Vincent, 1898-1943. | John Brown's Body | Russian 1979"
+
+    # label when data is a list
+    sru_item.recordData.mainHeadings.data = [
+        sru_item.recordData.mainHeadings.data
+    ]
+    assert sru_item.label == "Benét, Stephen Vincent, 1898-1943. | John Brown's Body | Russian 1979"
