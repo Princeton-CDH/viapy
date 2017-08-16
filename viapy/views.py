@@ -50,6 +50,10 @@ class ViafSearch(autocomplete.Select2ListView):
         else:
             result = viaf.search(self.q)
 
+        # check for empty search result and return empty json response
+        if result is None:
+            return JsonResponse({'results': []})
+
         return JsonResponse({
             'results': [dict(
                 # id=viaf.uri_from_id(item.recordData.viafID),

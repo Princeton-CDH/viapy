@@ -124,3 +124,8 @@ class TestViews(TestCase):
         person_search_url = reverse('viaf:person-search')
         result = self.client.get(person_search_url, {'q': 'sylvia beach'})
         mockviafapi.return_value.find_person.assert_called_with('sylvia beach')
+
+        # test empty search result
+        mockviafapi.return_value.search.return_value = None
+        result = self.client.get(search_url, {'q': 'sylvia beach'})
+        assert result.status_code == 200
