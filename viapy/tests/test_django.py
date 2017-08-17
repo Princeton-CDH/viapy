@@ -29,11 +29,16 @@ class TestViafWidget(object):
             in rendered
         # test marked as "safe"?
 
-        # uri value set - should be included in generated link
+        # uri value set - should be included in generated link *and*
+        # set as an option
         uri = 'http://viaf.org/viaf/13103985/'
         rendered = widget.render('person', uri, {'id': 1234})
         assert '<a id="viaf_uri" target="_blank" href="%(uri)s">%(uri)s</a>' \
             % {'uri': uri} in rendered
+        # value should be set as an option to preserve existing
+        # value when the form is submitted
+        assert '<option value="%(uri)s" selected>%(uri)s</option' % \
+            {'uri': uri} in rendered
 
 
 @pytest.mark.skipif(django is None, reason='Requires Django')
