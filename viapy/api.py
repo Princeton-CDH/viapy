@@ -62,6 +62,9 @@ class ViafAPI(object):
             'query': query,
             'httpAccept': 'application/json',
             'maximumRecords': 50,   # TODO: configurable ?
+            # sort by number of holdings (default sort on web search)
+            # - so better known names show up first
+            'sortKeys': 'holdingscount'
         }
 
         response = requests.get(search_url, params=params)

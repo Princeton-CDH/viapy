@@ -64,7 +64,7 @@ class TestViafAPI(object):
             'https://www.viaf.org/viaf/search',
             # headers={'accept': 'application/json'},
             params={'query': 'stephen benet', 'httpAccept': 'application/json',
-                    'maximumRecords': 50})
+                    'maximumRecords': 50, 'sortKeys': 'holdingscount'})
 
         # sample empty result
         mockrequests.get.return_value.json.return_value = {
