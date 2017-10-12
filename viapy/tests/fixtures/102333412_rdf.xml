@@ -1,0 +1,1197 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:bgn="http://bibliograph.net/" xmlns:umbel="http://umbel.org/umbel#" xmlns:pto="http://www.productontology.org/id/" xmlns:schema="http://schema.org/" xmlns:genont="http://www.w3.org/2006/gen/ont#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:re="http://oclcsrw.google.code/redirect">
+  <rdf:Description rdf:about="http://viaf.org/viaf/89599270/">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+    <rdf:type rdf:resource="http://www.w3.org/2006/gen/ont#InformationResource"/>
+    <void:inDataset xmlns:void="http://rdfs.org/ns/void#" rdf:resource="http://viaf.org/viaf/data"/>
+    <foaf:primaryTopic xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/89599270">
+    <dcterms:identifier xmlns:dcterms="http://purl.org/dc/terms/">89599270</dcterms:identifier>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <rdf:type rdf:resource="http://schema.org/Person"/>
+    <schema:birthDate>69</schema:birthDate>
+    <schema:deathDate>140</schema:deathDate>
+    <schema:name xml:lang="ca-ES">Suetoni</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ca-ES">Suetoni</skos:prefLabel>
+    <schema:name xml:lang="ca-ES">Suetoni</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ca-ES">Suetoni</skos:prefLabel>
+    <schema:name xml:lang="es-ES">Cayo Suetonio Tranquilo</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="es-ES">Cayo Suetonio Tranquilo</skos:prefLabel>
+    <schema:name xml:lang="es-ES">Cayo Suetonio Tranquilo</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="es-ES">Cayo Suetonio Tranquilo</skos:prefLabel>
+    <schema:name xml:lang="ca-ES">Cayo Suetonio Tranquilo</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ca-ES">Cayo Suetonio Tranquilo</skos:prefLabel>
+    <schema:name xml:lang="ca-ES">Cayo Suetonio Tranquilo</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ca-ES">Cayo Suetonio Tranquilo</skos:prefLabel>
+    <schema:name xml:lang="en">Suetonius</schema:name>
+    <schema:name xml:lang="en">Suetonius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">BCP47 tag for 'NII' is undetermined. Name is 'C. Suetonius Tranquillus'.</rdfs:comment>
+    <schema:name>C. Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">BCP47 tag for 'NII|DA00897279' is undetermined. Name is 'C. Suetonius Tranquillus'.</rdfs:comment>
+    <schema:name>C. Suetonius Tranquillus</schema:name>
+    <schema:name xml:lang="fr-CH">Caius Suetonius Tranquillus</schema:name>
+    <schema:name xml:lang="fr-CH">Caius Suetonius Tranquillus</schema:name>
+    <schema:name xml:lang="pl-PL">Caius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="pl-PL">Caius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="pl-PL">Caius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="pl-PL">Caius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="nl-NL">Caius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="nl-NL">Caius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="nl-NL">Caius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="nl-NL">Caius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="it-VA">Caius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="it-VA">Caius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="it-VA">Caius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="it-VA">Caius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="ja-JP">Gaius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ja-JP">Gaius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="ja-JP">Gaius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="ja-JP">Gaius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="cs-CZ">Gaius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="cs-CZ">Gaius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="cs-CZ">Gaius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="cs-CZ">Gaius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="en">Suetonius</schema:name>
+    <schema:name xml:lang="en">Suetonius</schema:name>
+    <schema:name xml:lang="en-US">Suetonius</schema:name>
+    <schema:name xml:lang="en-US">Suetonius</schema:name>
+    <schema:name xml:lang="fr-BE">Suetonius, Gaius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="fr-BE">Suetonius, Gaius</skos:prefLabel>
+    <schema:name xml:lang="fr-BE">Suetonius, Gaius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="fr-BE">Suetonius, Gaius</skos:prefLabel>
+    <schema:name xml:lang="en-AU">Suetonius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en-AU">Suetonius</skos:prefLabel>
+    <schema:name xml:lang="en-AU">Suetonius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en-AU">Suetonius</skos:prefLabel>
+    <schema:name xml:lang="en-US">Suetonius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en-US">Suetonius</skos:prefLabel>
+    <schema:name xml:lang="en-US">Suetonius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en-US">Suetonius</skos:prefLabel>
+    <schema:name xml:lang="sv-SE">Suetonius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="sv-SE">Suetonius</skos:prefLabel>
+    <schema:name xml:lang="sv-SE">Suetonius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="sv-SE">Suetonius</skos:prefLabel>
+    <schema:name xml:lang="en-IL">Suetonius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en-IL">Suetonius</skos:prefLabel>
+    <schema:name xml:lang="en-IL">Suetonius</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="en-IL">Suetonius</skos:prefLabel>
+    <schema:name xml:lang="en-US">Suetonius</schema:name>
+    <schema:name xml:lang="en-US">Suetonius</schema:name>
+    <schema:name xml:lang="pt-PT">Suet&#xF3;nio</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="pt-PT">Suet&#xF3;nio</skos:prefLabel>
+    <schema:name xml:lang="pt-PT">Suet&#xF3;nio</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="pt-PT">Suet&#xF3;nio</skos:prefLabel>
+    <schema:name xml:lang="fr-FR">Su&#xE9;tone</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="fr-FR">Su&#xE9;tone</skos:prefLabel>
+    <schema:name xml:lang="fr-FR">Su&#xE9;tone</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="fr-FR">Su&#xE9;tone</skos:prefLabel>
+    <schema:name xml:lang="fr-FR">Su&#xE9;tone</schema:name>
+    <schema:name xml:lang="fr-FR">Su&#xE9;tone</schema:name>
+    <schema:name xml:lang="lv-LV">Svetonijs</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="lv-LV">Svetonijs</skos:prefLabel>
+    <schema:name xml:lang="lv-LV">Svetonijs</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="lv-LV">Svetonijs</skos:prefLabel>
+    <schema:name xml:lang="nl-NL">Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="nl-NL">Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="nl-NL">Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="nl-NL">Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="pt-PT">Gaius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="pt-PT">Gaius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="pt-PT">Gaius Suetonius Tranquillus</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="pt-PT">Gaius Suetonius Tranquillus</skos:prefLabel>
+    <schema:name xml:lang="he-IL">&#x5D2;&#x5D9;&#x5D5;&#x5E1; &#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1; &#x5D8;&#x5E8;&#x5E0;&#x5E7;&#x5D5;&#x5D9;&#x5DC;&#x5D5;&#x5E1;</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="he-IL">&#x5D2;&#x5D9;&#x5D5;&#x5E1; &#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1; &#x5D8;&#x5E8;&#x5E0;&#x5E7;&#x5D5;&#x5D9;&#x5DC;&#x5D5;&#x5E1;</skos:prefLabel>
+    <schema:name xml:lang="he-IL">&#x5D2;&#x5D9;&#x5D5;&#x5E1; &#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1; &#x5D8;&#x5E8;&#x5E0;&#x5E7;&#x5D5;&#x5D9;&#x5DC;&#x5D5;&#x5E1;</schema:name>
+    <rdfs:comment xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Warning: skos:prefLabels are not ensured against change!</rdfs:comment>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#" xml:lang="he-IL">&#x5D2;&#x5D9;&#x5D5;&#x5E1; &#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1; &#x5D8;&#x5E8;&#x5E0;&#x5E7;&#x5D5;&#x5D9;&#x5DC;&#x5D5;&#x5E1;</skos:prefLabel>
+    <schema:alternateName>C. Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>C. Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Cajus Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Cajus Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Gai Suetoni Tranquil</schema:alternateName>
+    <schema:alternateName>Gai Suetoni Tranquil</schema:alternateName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Gajus Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Gajus Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>K. Svetoni&#x12D; Trankvill</schema:alternateName>
+    <schema:alternateName>K. Svetoni&#x12D; Trankvill</schema:alternateName>
+    <schema:alternateName>K. Svetoni&#x12D; Trankvill; Trankvill</schema:alternateName>
+    <schema:alternateName>K. Svetoni&#x12D; Trankvill; Trankvill</schema:alternateName>
+    <schema:alternateName>K. Svetoni&#x12D; Trankvill</schema:alternateName>
+    <schema:alternateName>K. Svetoni&#x12D; Trankvill</schema:alternateName>
+    <schema:alternateName>Petronius</schema:alternateName>
+    <schema:alternateName>SUET</schema:alternateName>
+    <schema:alternateName>SUET</schema:alternateName>
+    <schema:alternateName>Suet</schema:alternateName>
+    <schema:alternateName>Suet</schema:alternateName>
+    <schema:alternateName>Suetoine</schema:alternateName>
+    <schema:alternateName>Suetoine</schema:alternateName>
+    <schema:alternateName>Suetoine</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Suetone Tranquile</schema:alternateName>
+    <schema:alternateName>Suetone Tranquile</schema:alternateName>
+    <schema:alternateName>Suetone Tranquile</schema:alternateName>
+    <schema:alternateName>Suetone Tranquile</schema:alternateName>
+    <schema:alternateName>Suetone Tranquile</schema:alternateName>
+    <schema:alternateName>Suetone Tranquile</schema:alternateName>
+    <schema:alternateName>Suetone, Tranquile</schema:alternateName>
+    <schema:alternateName>Suetone</schema:alternateName>
+    <schema:alternateName>Suetoni</schema:alternateName>
+    <schema:alternateName>Suetoni</schema:alternateName>
+    <schema:alternateName>Gai Suetoni Tranquil</schema:alternateName>
+    <schema:givenName>Gai</schema:givenName>
+    <schema:familyName>Suetoni Tranquil</schema:familyName>
+    <schema:alternateName>Gai Suetoni Tranquil</schema:alternateName>
+    <schema:givenName>Gai</schema:givenName>
+    <schema:familyName>Suetoni Tranquil</schema:familyName>
+    <schema:alternateName>Gai Suetoni Tranquil</schema:alternateName>
+    <schema:givenName>Gai</schema:givenName>
+    <schema:familyName>Suetoni Tranquil</schema:familyName>
+    <schema:alternateName>G. Suetoni Tranquil&#xB7;le</schema:alternateName>
+    <schema:givenName>G.</schema:givenName>
+    <schema:familyName>Suetoni Tranquil&#xB7;le</schema:familyName>
+    <schema:alternateName>G. Suetoni Tranquil&#xB7;le</schema:alternateName>
+    <schema:givenName>G.</schema:givenName>
+    <schema:familyName>Suetoni Tranquil&#xB7;le</schema:familyName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Gaio Suetonio Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Suetonio Tranquillo</schema:familyName>
+    <schema:alternateName>Gaio Suetonio Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Suetonio Tranquillo</schema:familyName>
+    <schema:alternateName>Gaio Suetonio Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Suetonio Tranquillo</schema:familyName>
+    <schema:alternateName>Suetonio Tranquillo</schema:alternateName>
+    <schema:alternateName>C. Suetonio Tranquilo</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Suetonio Tranquilo</schema:familyName>
+    <schema:alternateName>C. Suetonio Tranquilo</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Suetonio Tranquilo</schema:familyName>
+    <schema:alternateName>Caio Suetonio Tranquilo</schema:alternateName>
+    <schema:givenName>Caio</schema:givenName>
+    <schema:familyName>Suetonio Tranquilo</schema:familyName>
+    <schema:alternateName>Suetonio Tranquilo, Cayo</schema:alternateName>
+    <schema:alternateName>Cayo Suetonio Tranquilo</schema:alternateName>
+    <schema:givenName>Cayo</schema:givenName>
+    <schema:familyName>Suetonio Tranquilo</schema:familyName>
+    <schema:alternateName>Cayo Suetonio Tranquilo</schema:alternateName>
+    <schema:givenName>Cayo</schema:givenName>
+    <schema:familyName>Suetonio Tranquilo</schema:familyName>
+    <schema:alternateName>Cayo Suetonio Tranquilo</schema:alternateName>
+    <schema:givenName>Cayo</schema:givenName>
+    <schema:familyName>Suetonio Tranquilo</schema:familyName>
+    <schema:alternateName>Suetonio Tranquilo</schema:alternateName>
+    <schema:alternateName>Caio Tranquilo Suetonio</schema:alternateName>
+    <schema:givenName>Caio Tranquilo</schema:givenName>
+    <schema:familyName>Suetonio</schema:familyName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius Cajus Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Cajus Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Cajus</schema:alternateName>
+    <schema:alternateName>Suetonius Cajus</schema:alternateName>
+    <schema:alternateName>Gaius Suetonius Tranquilius</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquilius</schema:familyName>
+    <schema:alternateName>Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Tranquillus Caius</schema:alternateName>
+    <schema:alternateName>Suetonius Tranquillus, C</schema:alternateName>
+    <schema:alternateName>C Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>C Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>C. Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>C. Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>C. Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Suetonius Tranquillus, C.</schema:alternateName>
+    <schema:alternateName>C. Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>C. Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Caius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Caius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Caius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Caius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Caius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Caius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Caius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Caius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Caius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Caius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Cajus Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Cajus</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Cajus Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Cajus</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Cajus Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Cajus</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Cajus Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Cajus</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>C Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Suetonius Tranquillus, C</schema:alternateName>
+    <schema:alternateName>C Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Suetonius Tranquillus, Gaius</schema:alternateName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Suetonius Tranquillus, Gaius</schema:alternateName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gajus Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gajus</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Gajus Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gajus</schema:givenName>
+    <schema:familyName>Suetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>C. Suetonius</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>C. Tranquillus Suetonius</schema:alternateName>
+    <schema:givenName>C. Tranquillus</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>C. Suetonius</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Caius Tranquillus Suetonius</schema:alternateName>
+    <schema:givenName>Caius Tranquillus</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Cajus Tranquillus Suetonius</schema:alternateName>
+    <schema:givenName>Cajus Tranquillus</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Cajus Tranquillus Suetonius</schema:alternateName>
+    <schema:givenName>Cajus Tranquillus</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Gaius Suetonius</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Gaius Suetonius</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Gaius Suetonius</schema:alternateName>
+    <schema:givenName>Gaius</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Gajus Tranquillus Suetonius</schema:alternateName>
+    <schema:givenName>Gajus Tranquillus</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Gajus Tranquillus Suetonius</schema:alternateName>
+    <schema:givenName>Gajus Tranquillus</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Gajus Tranquillus Suetonius</schema:alternateName>
+    <schema:givenName>Gajus Tranquillus</schema:givenName>
+    <schema:familyName>Suetonius</schema:familyName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Suet&#xF3;nio</schema:alternateName>
+    <schema:alternateName>Suet&#xF3;nio</schema:alternateName>
+    <schema:alternateName>Suet&#xF4;nio</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Gaio Svetoni Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Svetoni Tranquillo</schema:familyName>
+    <schema:alternateName>Gaio Svetoni Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Svetoni Tranquillo</schema:familyName>
+    <schema:alternateName>Gaj Svetonij Trankvill</schema:alternateName>
+    <schema:givenName>Gaj</schema:givenName>
+    <schema:familyName>Svetonij Trankvill</schema:familyName>
+    <schema:alternateName>Svetonije</schema:alternateName>
+    <schema:alternateName>Gaj Svetonije Trankvil</schema:alternateName>
+    <schema:givenName>Gaj</schema:givenName>
+    <schema:familyName>Svetonije Trankvil</schema:familyName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Gaio Svetonio Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Svetonio Tranquillo</schema:familyName>
+    <schema:alternateName>Gaio Svetonio Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Svetonio Tranquillo</schema:familyName>
+    <schema:alternateName>Gaio Svetonio Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Svetonio Tranquillo</schema:familyName>
+    <schema:alternateName>Gaio Svetonio Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Svetonio Tranquillo</schema:familyName>
+    <schema:alternateName>Svetonio Tranquillo, Gaio</schema:alternateName>
+    <schema:alternateName>Gaio Svetonio Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Svetonio Tranquillo</schema:familyName>
+    <schema:alternateName>Svetonio Tranquillo, Gaio</schema:alternateName>
+    <schema:alternateName>Gaio Svetonio Tranquillo</schema:alternateName>
+    <schema:givenName>Gaio</schema:givenName>
+    <schema:familyName>Svetonio Tranquillo</schema:familyName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>Svetonio</schema:alternateName>
+    <schema:alternateName>C. Svetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C.</schema:givenName>
+    <schema:familyName>Svetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Caius Svetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Caius</schema:givenName>
+    <schema:familyName>Svetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Caius Svetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Caius</schema:givenName>
+    <schema:familyName>Svetonius Tranquillus</schema:familyName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Swetoniusz</schema:alternateName>
+    <schema:alternateName>Swetoniusz</schema:alternateName>
+    <schema:alternateName>Gajus Swetoniusz Trankwillus</schema:alternateName>
+    <schema:givenName>Gajus</schema:givenName>
+    <schema:familyName>Swetoniusz Trankwillus</schema:familyName>
+    <schema:alternateName>Swetoniusz Tranquill</schema:alternateName>
+    <schema:alternateName>K. T. Swetoniusz</schema:alternateName>
+    <schema:givenName>K. T.</schema:givenName>
+    <schema:familyName>Swetoniusz</schema:familyName>
+    <schema:alternateName>G. S. Trankvill</schema:alternateName>
+    <schema:givenName>G. S.</schema:givenName>
+    <schema:familyName>Trankvill</schema:familyName>
+    <schema:alternateName>C. Svetonius Tranquillus</schema:alternateName>
+    <schema:givenName>C. Svetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Caius Tranquillus</schema:alternateName>
+    <schema:givenName>Caius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Caius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Caius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Cajus Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Cajus Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Tranquillus, Gaius Suetonius</schema:alternateName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gaius Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gajus Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gajus Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>Gajus Suetonius Tranquillus</schema:alternateName>
+    <schema:givenName>Gajus Suetonius</schema:givenName>
+    <schema:familyName>Tranquillus</schema:familyName>
+    <schema:alternateName>C. Svetoni Tranqvilli</schema:alternateName>
+    <schema:givenName>C. Svetoni</schema:givenName>
+    <schema:familyName>Tranqvilli</schema:familyName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x413;. &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:alternateName>
+    <schema:givenName>&#x413;.</schema:givenName>
+    <schema:familyName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:familyName>
+    <schema:alternateName>&#x413;&#x430;&#x439; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:alternateName>
+    <schema:givenName>&#x413;&#x430;&#x439;</schema:givenName>
+    <schema:familyName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:familyName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x413;. &#x421;. &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:alternateName>
+    <schema:givenName>&#x413;. &#x421;.</schema:givenName>
+    <schema:familyName>&#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:familyName>
+    <schema:alternateName>&#x413;. &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:alternateName>
+    <schema:givenName>&#x413;. &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:givenName>
+    <schema:familyName>&#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:familyName>
+    <schema:alternateName>&#x413;&#x430;&#x439; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:alternateName>
+    <schema:givenName>&#x413;&#x430;&#x439; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:givenName>
+    <schema:familyName>&#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:familyName>
+    <schema:alternateName>&#x5E1;&#x5D5;&#x5D5;&#x5D9;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1; &#x5D8;&#x5E8;&#x5D0;&#x5E0;&#x5E7;&#x5D5;&#x5D5;&#x5D9;&#x5DC;&#x5D5;&#x5E1; &#x5D2;&#x5D0;&#x5D9;&#x5D5;&#x5E1;</schema:alternateName>
+    <schema:alternateName>&#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1;</schema:alternateName>
+    <schema:alternateName>&#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1;</schema:alternateName>
+    <schema:alternateName>&#xE0B;&#xE39;&#xE42;&#xE17;&#xE40;&#xE19;&#xE35;&#xE22;&#xE2A;</schema:alternateName>
+    <schema:alternateName>&#x30AC;&#x30A4;&#x30A6;&#x30B9;&#x30FB;&#x30B9;&#x30A8;&#x30C8;&#x30CB;&#x30A6;&#x30B9;&#x30FB;&#x30C8;&#x30E9;&#x30F3;&#x30AF;&#x30A3;&#x30C3;&#x30EB;&#x30B9;</schema:alternateName>
+    <schema:alternateName>&#x30B9;&#x30A6;&#x30A7;&#x30FC;&#x30C8;&#x30CB;&#x30A6;&#x30B9;</schema:alternateName>
+    <schema:alternateName>&#x30B9;&#x30A6;&#x30A7;&#x30FC;&#x30C8;&#x30CB;&#x30A6;&#x30B9;</schema:alternateName>
+    <schema:alternateName>&#x30B9;&#x30A6;&#x30A7;&#x30FC;&#x30C8;&#x30FC;&#x30CB;&#x30A6;&#x30B9;</schema:alternateName>
+    <schema:alternateName>&#x30B9;&#x30A6;&#x30A7;&#x30FC;&#x30C8;&#x30FC;&#x30CB;&#x30A6;&#x30B9;</schema:alternateName>
+    <schema:alternateName>&#x30AC;&#x30FC;&#x30E6;&#x30B9; &#x30B9;&#x30A7;&#x30FC;&#x30C8;=&#x30A6;&#x30B9;&#x30FB;&#x30C8;&#x30E9;&#x30F3;&#x30AF;&#x30A3;&#x30EB;&#x30B9;</schema:alternateName>
+    <schema:givenName>&#x30AC;&#x30FC;&#x30E6;&#x30B9;</schema:givenName>
+    <schema:familyName>&#x30B9;&#x30A7;&#x30FC;&#x30C8;=&#x30A6;&#x30B9;&#x30FB;&#x30C8;&#x30E9;&#x30F3;&#x30AF;&#x30A3;&#x30EB;&#x30B9;</schema:familyName>
+    <schema:alternateName>&#x30B9;&#x30A8;&#x30C8;&#x30CB;&#x30A6;&#x30B9;</schema:alternateName>
+    <schema:alternateName>&#x30B9;&#x30A8;&#x30C8;&#x30CB;&#x30A6;&#x30B9;</schema:alternateName>
+    <schema:alternateName>&#x82CF;&#x57C3;&#x6258;&#x5C3C;&#x4E4C;&#x65AF;</schema:alternateName>
+    <schema:alternateName>&#x82CF;&#x7EF4;&#x6258;&#x5C3C;&#x4E4C;</schema:alternateName>
+    <schema:alternateName>Caiu Svitoniu Tranquillu</schema:alternateName>
+    <schema:alternateName>Caius Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Caius Suetonius Tranquilus</schema:alternateName>
+    <schema:alternateName>Gai Sueston Trankuili</schema:alternateName>
+    <schema:alternateName>Gaio Svetonio Tranquillo</schema:alternateName>
+    <schema:alternateName>Gaius Suetonius Tranquillus</schema:alternateName>
+    <schema:alternateName>Gaj Trankvil Svetonij</schema:alternateName>
+    <schema:alternateName>Gajus Svetonijus Trankvilas</schema:alternateName>
+    <schema:alternateName>Suetoni</schema:alternateName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetonio</schema:alternateName>
+    <schema:alternateName>Suetoniu</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Suetonius</schema:alternateName>
+    <schema:alternateName>Sueton</schema:alternateName>
+    <schema:alternateName>Su&#xE9;tone</schema:alternateName>
+    <schema:alternateName>Svetonije</schema:alternateName>
+    <schema:alternateName>Svetonijs</schema:alternateName>
+    <schema:alternateName>Sveton</schema:alternateName>
+    <schema:alternateName>Swetoniusz</schema:alternateName>
+    <schema:alternateName>&#x3A3;&#x3BF;&#x3C5;&#x3B7;&#x3C4;&#x3CE;&#x3BD;&#x3B9;&#x3BF;&#x3C2;</schema:alternateName>
+    <schema:alternateName>&#x413;&#x430;&#x439; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</schema:alternateName>
+    <schema:alternateName>&#x413;&#x430;&#x439; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x456;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x456;&#x43B;</schema:alternateName>
+    <schema:alternateName>&#x413;&#x430;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x413;&#x430;&#x458; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x458;&#x435; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;</schema:alternateName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x458;</schema:alternateName>
+    <schema:alternateName>&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x456;&#x439;</schema:alternateName>
+    <schema:alternateName>&#x54D;&#x57E;&#x565;&#x57F;&#x578;&#x576;&#x56B;&#x578;&#x57D;</schema:alternateName>
+    <schema:alternateName>&#x5E1;&#x5D5;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1;</schema:alternateName>
+    <schema:alternateName>&#x633;&#x648;&#x626;&#x6CC;&#x62A;&#x648;&#x646;&#x6CC;&#x633;</schema:alternateName>
+    <schema:alternateName>&#x633;&#x648;&#x64A;&#x62A;&#x648;&#x646;&#x64A;&#x648;&#x633;</schema:alternateName>
+    <schema:alternateName>&#xE0B;&#xE38;&#xE40;&#xE2D;&#xE42;&#xE15;&#xE19;&#xE34;&#xE2D;&#xE38;&#xE2A;</schema:alternateName>
+    <schema:alternateName>&#x10D2;&#x10D0;&#x10D8;&#x10E3;&#x10E1; &#x10E1;&#x10D5;&#x10D4;&#x10E2;&#x10DD;&#x10DC;&#x10D8;&#x10E3;&#x10E1; &#x10E2;&#x10E0;&#x10D0;&#x10DC;&#x10D9;&#x10D5;&#x10D8;&#x10DA;&#x10E3;&#x10E1;&#x10D8;</schema:alternateName>
+    <schema:alternateName>&#x30AC;&#x30A4;&#x30A6;&#x30B9;&#x30FB;&#x30B9;&#x30A8;&#x30C8;&#x30CB;&#x30A6;&#x30B9;&#x30FB;&#x30C8;&#x30E9;&#x30F3;&#x30AF;&#x30A3;&#x30C3;&#x30EB;&#x30B9;</schema:alternateName>
+    <schema:alternateName>&#x82CF;&#x57C3;&#x6258;&#x5C3C;&#x4E4C;&#x65AF;</schema:alternateName>
+    <schema:alternateName>&#x82CF;&#x57C3;&#x6258;&#x5C3C;&#x4E4C;&#x65AF;</schema:alternateName>
+    <schema:alternateName>&#xC218;&#xC5D0;&#xD1A0;&#xB2C8;&#xC6B0;&#xC2A4;</schema:alternateName>
+    <schema:sameAs>
+      <rdf:Description rdf:about="http://www.idref.fr/027151387/id"/>
+    </schema:sameAs>
+    <schema:sameAs>
+      <rdf:Description rdf:about="http://www.wikidata.org/entity/Q10133"/>
+    </schema:sameAs>
+    <schema:sameAs>
+      <rdf:Description rdf:about="http://id.ndl.go.jp/auth/entity/00458032"/>
+    </schema:sameAs>
+    <schema:sameAs>
+      <rdf:Description rdf:about="http://isni.org/isni/0000000121029695"/>
+    </schema:sameAs>
+    <schema:sameAs>
+      <rdf:Description rdf:about="http://data.bnf.fr/ark:/12148/cb119257294#foaf:Person"/>
+    </schema:sameAs>
+    <schema:sameAs>
+      <rdf:Description rdf:about="http://id.loc.gov/authorities/names/n50053072"/>
+    </schema:sameAs>
+    <schema:sameAs>
+      <rdf:Description rdf:about="http://libris.kb.se/resource/auth/94808"/>
+    </schema:sameAs>
+    <schema:sameAs>
+      <rdf:Description rdf:about="http://alpha.bn.org.pl/record=a20060166"/>
+    </schema:sameAs>
+    <schema:sameAs rdf:resource="http://dbpedia.org/resource/Suetonius"/>
+    <schema:gender rdf:resource="http://www.wikidata.org/entity/Q6581097"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/BNC%7Ca1016070x#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/BNC"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni, ca. 69-140</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton, ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni Tranquil, Gai, ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni Tranquil&#xB7;le, G., ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, C., ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, Cayo, ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio, ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C, ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone, ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio, ca. 69-140</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/BNE%7CXX1148703#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/BNE"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, Cayo</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni Tranquil, Gai</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquillo, Gaio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquilius, Gaius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/BNCHL%7C10000000000000000035910#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/BNCHL"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, Cayo</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton, ca.69-ca.122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetone, Tranquile, ca.69-ca.122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C., ca.69-ca.122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, ca.69-ca.122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca.69-ca.122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone, ca.69-ca.122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton, ca.69-ca.122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio Tranquillo, Gaio, ca.69-ca.122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio, ca.69-ca.122</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/NII%7CDA00897279#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/NII"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C.</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus Caius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Trankvill, G. S. (Ga&#x12D; Svetoni&#x12D;)</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranqvilli, C. Svetoni</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;, &#x413;. &#x421;. (&#x413;&#x430;&#x439; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;)</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A6;&#x30A7;&#x30FC;&#x30C8;&#x30FC;&#x30CB;&#x30A6;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A8;&#x30C8;&#x30CB;&#x30A6;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x82CF;&#x7EF4;&#x6258;&#x5C3C;&#x4E4C;</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/RERO%7Cvtls000156631#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/RERO"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/NLP%7Ca20060166#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/NLP"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius (ca 70-ca 140)</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Cajus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, C. Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Caius Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gajus Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Swetoniusz</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Swetoniusz Trankwillus, Gajus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Swetoniusz, K. T.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Caius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Caius Suetonius</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/NTA%7C068504535#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/NTA"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius, ca. 69/70-ca. 140</skos:prefLabel>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Suetonius</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetone, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, C., ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio Tranquillo, Gaio, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio, ca. 69/70-ca. 140</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+    <schema:url>http://opc4.kb.nl/PPN?PPN=068504535</schema:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/BAV%7CADV12407102#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/BAV"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius, f. sec. I-II</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio, f. sec. I-II</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonius Tranquillus, Caius, f. sec. I-II</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius, f. sec. I-II</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/NDL%7C00458032#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/NDL"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, 69-</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A6;&#x30A7;&#x30FC;&#x30C8;&#x30CB;&#x30A6;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A6;&#x30A7;&#x30FC;&#x30C8;&#x30FC;&#x30CB;&#x30A6;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A7;&#x30FC;&#x30C8;=&#x30A6;&#x30B9;&#x30FB;&#x30C8;&#x30E9;&#x30F3;&#x30AF;&#x30A3;&#x30EB;&#x30B9;, &#x30AC;&#x30FC;&#x30E6;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A8;&#x30C8;&#x30CB;&#x30A6;&#x30B9;</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/NKC%7Cjn19990218099#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/NKC"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, asi 69-140</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gaius, asi 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone, asi 69-140</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/ISNI%7C0000000121029695#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/ISNI"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, approximately 69-approximately 122</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">C. Suetonius Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Caiu Svitoniu Tranquillu</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Caius Suetonius Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Caius Suetonius Tranquilus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Cajus Suetonius Tranquillus ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gai Sueston Trankuili</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gai Suetoni Tranquil</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gaio Svetonio Tranquillo scrittore romano d'et&#xE0; imperiale</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gaius Suetonius Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gaius Suetonius Tranquillus ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gaj Trankvil Svetonij</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gajus Suetonius Tranquillus ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gajus Svetonijus Trankvilas</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">K. Svetoni&#x12D; Trankvill; Trankvill ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">K. Svetoni&#x12D; Trankvill approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">K. Svetoni&#x12D; Trankvill ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">SUET</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suet</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoine 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetone Tranquile</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetone Tranquile approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetone Tranquile ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni Tranquil, Gai ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni Tranquil&#xB7;le, G. ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquillo, Gaio 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, C. ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, Caio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, Cayo</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, Cayo ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio, Caio Tranquilo</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio historiador y bi&#xF3;grafo romano</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoniu</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Cajus Tranquillus 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Cajus 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C. approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C. ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Cajus ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gajus ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, C.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, C. Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Caius Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Cajus Tranquillus ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gaius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gaius asi 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gajus Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gajus Tranquillus ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Grammaticus et Historicus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Roman historian</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius ca. 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius romersk historikar og skribent</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton r&#xF6;mischer Schriftsteller und Verwaltungsbeamter</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suet&#xF3;nio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone Polygraphe romain</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone asi 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetoni Tranquillo, Gaio ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonij Trankvill, Gaj</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonije</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonije Trankvil, Gaj</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonijs</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio Tranquillo, Gaio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio Tranquillo, Gaio approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio Tranquillo, Gaio ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio ca. 69-140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio f. sec. I-II</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonius Tranquillus, Caius f. sec. I-II</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton romersk historiker og skribent</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Swetoniusz</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Swetoniusz Trankwillus, Gajus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Swetoniusz Tranquill</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Swetoniusz, K. T.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Caius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Caius Suetonius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius f. sec. I-II</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gajus Suetonius ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x3A3;&#x3BF;&#x3C5;&#x3B7;&#x3C4;&#x3CE;&#x3BD;&#x3B9;&#x3BF;&#x3C2;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x413;&#x430;&#x439; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x413;&#x430;&#x439; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x456;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x456;&#x43B;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x413;&#x430;&#x458; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x458;&#x435; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; None</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x458; &#x440;&#x438;&#x43C;&#x441;&#x43A;&#x438; &#x438;&#x441;&#x442;&#x43E;&#x440;&#x438;&#x447;&#x430;&#x440;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x456;&#x439;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x54D;&#x57E;&#x565;&#x57F;&#x578;&#x576;&#x56B;&#x578;&#x57D;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x5E1;&#x5D5;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x633;&#x648;&#x626;&#x6CC;&#x62A;&#x648;&#x646;&#x6CC;&#x633; &#x646;&#x648;&#x6CC;&#x633;&#x646;&#x62F;&#x647; &#x648; &#x62A;&#x627;&#x631;&#x6CC;&#x62E;&#x200C;&#x646;&#x6AF;&#x627;&#x631; &#x62F;&#x631; &#x631;&#x648;&#x645; &#x628;&#x627;&#x633;&#x62A;&#x627;&#x646;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x633;&#x648;&#x64A;&#x62A;&#x648;&#x646;&#x64A;&#x648;&#x633;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#xE0B;&#xE39;&#xE42;&#xE17;&#xE40;&#xE19;&#xE35;&#xE22;&#xE2A;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x10D2;&#x10D0;&#x10D8;&#x10E3;&#x10E1; &#x10E1;&#x10D5;&#x10D4;&#x10E2;&#x10DD;&#x10DC;&#x10D8;&#x10E3;&#x10E1; &#x10E2;&#x10E0;&#x10D0;&#x10DC;&#x10D9;&#x10D5;&#x10D8;&#x10DA;&#x10E3;&#x10E1;&#x10D8;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30AC;&#x30A4;&#x30A6;&#x30B9;&#x30FB;&#x30B9;&#x30A8;&#x30C8;&#x30CB;&#x30A6;&#x30B9;&#x30FB;&#x30C8;&#x30E9;&#x30F3;&#x30AF;&#x30A3;&#x30C3;&#x30EB;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A6;&#x30A7;&#x30FC;&#x30C8;&#x30CB;&#x30A6;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A6;&#x30A7;&#x30FC;&#x30C8;&#x30FC;&#x30CB;&#x30A6;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A7;&#x30FC;&#x30C8;=&#x30A6;&#x30B9;&#x30FB;&#x30C8;&#x30E9;&#x30F3;&#x30AF;&#x30A3;&#x30EB;&#x30B9;, &#x30AC;&#x30FC;&#x30E6;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30B9;&#x30A8;&#x30C8;&#x30CB;&#x30A6;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x82CF;&#x57C3;&#x6258;&#x5C3C;&#x4E4C;&#x65AF;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x82CF;&#x57C3;&#x6258;&#x5C3C;&#x4E4C;&#x65AF; &#x7F57;&#x9A6C;&#x5E1D;&#x56FD;&#x65F6;&#x671F;&#x5386;&#x53F2;&#x5B66;&#x5BB6;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#xC218;&#xC5D0;&#xD1A0;&#xB2C8;&#xC6B0;&#xC2A4;</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/PERSEUS%7Curn:cite:perseus:author.1340.1#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/PERSEUS"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69-ca. 122</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">C. Suetonius Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gai Suetoni Tranquil</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gaius Suetonius Tranquillus ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">K. Svetoni&#x12D; Trankvill; Trankvill ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">SUET.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suet.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetone Tranquile ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoni</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, Cayo</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Grammaticus et Historicus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonije</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio Tranquillo, Gaio ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Swetoniusz</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; None</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x30AC;&#x30A4;&#x30A6;&#x30B9;&#x30FB;&#x30B9;&#x30A8;&#x30C8;&#x30CB;&#x30A6;&#x30B9;&#x30FB;&#x30C8;&#x30E9;&#x30F3;&#x30AF;&#x30A3;&#x30C3;&#x30EB;&#x30B9;</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x82CF;&#x57C3;&#x6258;&#x5C3C;&#x4E4C;&#x65AF;</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/VLACC%7C000002291#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/VLACC"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gaius</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/NLA%7C000036012686#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/NLA"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, approximately 69-approximately 122</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C., approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius, approximately 69-approximately 122</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/LC%7Cn++50053072#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/LC"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, approximately 69-approximately 122</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">K. Svetoni&#x12D; Trankvill, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetone Tranquile, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C., approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio Tranquillo, Gaio, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;, approximately 69-approximately 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1;</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/SELIBR%7C94808#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/SELIBR"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69-ca. 122</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Cajus Suetonius Tranquillus, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Gajus Suetonius Tranquillus, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Cajus, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gajus, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Cajus Tranquillus, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gajus Tranquillus, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetoni Tranquillo, Gaio, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius, ca 69-ca 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gajus Suetonius, ca 69-ca 122</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/NLI%7C000128177#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/NLI"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69-ca. 122</skos:prefLabel>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1; &#x5D8;&#x5E8;&#x5E0;&#x5E7;&#x5D5;&#x5D9;&#x5DC;&#x5D5;&#x5E1;, &#x5D2;&#x5D9;&#x5D5;&#x5E1;</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gaius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x5E1;&#x5D5;&#x5D5;&#x5D9;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1; &#x5D8;&#x5E8;&#x5D0;&#x5E0;&#x5E7;&#x5D5;&#x5D5;&#x5D9;&#x5DC;&#x5D5;&#x5E1; &#x5D2;&#x5D0;&#x5D9;&#x5D5;&#x5E1;</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/N6I%7Cvtls000269882#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/N6I"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69-ca. 122</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">K. Svetoni&#x12D; Trankvill, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetone Tranquile, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C.</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, C., ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio Tranquillo, Gaio, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1;</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/PTBNP%7C76424#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/PTBNP"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suet&#xF3;nio, fl. 69-141</skos:prefLabel>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius, 69-ca 141</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Petronius, Caio Suet&#xF3;nio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, Caio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio, Caio Tranquilo</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suet&#xF3;nio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suet&#xF4;nio</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/BNF%7C11925729#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/BNF"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone, 0069?-0126?</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoine 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquillo Gaio 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus Caius 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus Gaius 0069?-0126?</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/SUDOC%7C027151387#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/SUDOC"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone, 0069?-0126?</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetoine, 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton, 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquillo, Gaio, 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio, 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Cajus Tranquillus, 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Cajus, 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius, 0069?-0126?</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, 0069?-0126?</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/LNB%7CLNC10-000104443#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/LNB"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonijs, apm. 69-apm. 122</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton, apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Cajus, apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Su&#xE9;tone, apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonius Tranquillus, C., apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, C. Svetonius, apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Cajus Suetonius, apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;, &#x413;., apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439; &#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;, &#x413;&#x430;&#x439;, apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;, &#x413;. &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;, apm. 69-apm. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x422;&#x440;&#x430;&#x43D;&#x43A;&#x432;&#x438;&#x43B;&#x43B;, &#x413;&#x430;&#x439; &#x421;&#x432;&#x435;&#x442;&#x43E;&#x43D;&#x438;&#x439;, apm. 69-apm. 122</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/NTA%7C15245831X#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/NTA"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius, ca. 69/70-ca. 140</skos:prefLabel>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Suetonius</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetone, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, C., ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio Tranquillo, Gaio, ca. 69/70-ca. 140</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Svetonio, ca. 69/70-ca. 140</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+    <schema:url>http://opc4.kb.nl/PPN?PPN=15245831X</schema:url>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/PTBNP%7C1562528#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/PTBNP"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suet&#xF3;nio, fl. 69-141</skos:prefLabel>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Tranquillus, Gaius Suetonius, 69-ca 141</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Petronius, Caio Suet&#xF3;nio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio Tranquilo, Caio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonio, Caio Tranquilo</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Caius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suet&#xF3;nio</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suet&#xF4;nio</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://viaf.org/viaf/sourceID/NLI%7C000128177#skos:Concept">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+    <skos:inScheme xmlns:skos="http://www.w3.org/2004/02/skos/core#" rdf:resource="http://viaf.org/authorityScheme/NLI"/>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, ca. 69-ca. 122</skos:prefLabel>
+    <skos:prefLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x5E1;&#x5D5;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1; &#x5D8;&#x5E8;&#x5E0;&#x5E7;&#x5D5;&#x5D9;&#x5DC;&#x5D5;&#x5E1;, &#x5D2;&#x5D9;&#x5D5;&#x5E1;</skos:prefLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sueton</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius Tranquillus, Gaius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Suetonius, Gaius</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">Sveton, ca. 69-ca. 122</skos:altLabel>
+    <skos:altLabel xmlns:skos="http://www.w3.org/2004/02/skos/core#">&#x5E1;&#x5D5;&#x5D5;&#x5D9;&#x5D8;&#x5D5;&#x5E0;&#x5D9;&#x5D5;&#x5E1; &#x5D8;&#x5E8;&#x5D0;&#x5E0;&#x5E7;&#x5D5;&#x5D5;&#x5D9;&#x5DC;&#x5D5;&#x5E1; &#x5D2;&#x5D0;&#x5D9;&#x5D5;&#x5E1;</skos:altLabel>
+    <foaf:focus xmlns:foaf="http://xmlns.com/foaf/0.1/" rdf:resource="http://viaf.org/viaf/89599270"/>
+  </rdf:Description>
+</rdf:RDF>
