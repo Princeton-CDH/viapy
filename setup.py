@@ -30,17 +30,15 @@ setup(
     extras_require={
         'django': DJANGO_REQS,
         'test': TEST_REQUIREMENTS,
-        'test_all': TEST_REQUIREMENTS + DJANGO_REQS + DJANGO_TEST_REQS
+        'test_all': TEST_REQUIREMENTS + DJANGO_REQS + DJANGO_TEST_REQS,
+        'docs': ['sphinx']
     },
     author='CDH @ Princeton',
     author_email='digitalhumanities@princeton.edu',
     classifiers=[
-        'Environment :: Web Environment',  # maybe/probably?
-        # django TBD
-        # 'Framework :: Django',
-        # 'Framework :: Django :: 1.8',
-        # 'Framework :: Django :: 1.9',
-        # 'Framework :: Django :: 1.10',
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Framework :: Django :: 1.11',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',

@@ -1,6 +1,8 @@
 viapy
 =====
 
+.. sphinx-start-marker-do-not-remove
+
 *VIAF via Python*
 
 Python module for interacting with `VIAF`_ (the Virtual International
@@ -8,9 +10,28 @@ Authority File) data and APIs.
 
 .. _VIAF: http://viaf.org
 
-
 **viapy** provides optional Django integration; this currently includes a
 django-autocomplete-light lookup view and a VIAF url widget.
+
+Python 3.5 / Django 1.11
+
+.. image:: https://travis-ci.org/Princeton-CDH/viapy.svg?branch=master
+    :target: https://travis-ci.org/Princeton-CDH/viapy
+    :alt: Build status
+
+.. image:: https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/Princeton-CDH/viapy/branch/master
+    :alt: Code coverage
+
+.. image:: https://landscape.io/github/Princeton-CDH/viapy/master/landscape.svg?style=flat
+   :target: https://landscape.io/github/Princeton-CDH/viapy/master
+   :alt: Code Health
+
+.. image:: https://requires.io/github/Princeton-CDH/viapy/requirements.svg?branch=master
+     :target: https://requires.io/github/Princeton-CDH/viapy/requirements/?branch=master
+     :alt: Requirements Status
+
+
 
 Installation
 ------------
@@ -69,7 +90,7 @@ Initial setup and installation:
 Unit Testing
 ^^^^^^^^^^^^
 
-Unit tests are set up to be run with [py.test](http://doc.pytest.org/)
+Unit tests are set up to be run with `py.test <http://doc.pytest.org/>`_
 
 - Copy sample test settings and add a **SECRET_KEY**::
 
@@ -84,5 +105,22 @@ Unit tests are set up to be run with [py.test](http://doc.pytest.org/)
     pip install -e '.[test_all]'
     py.test
 
+
+Documentation
+^^^^^^^^^^^^^
+
+Documentation is generated using `sphinx <http://www.sphinx-doc.org/>`_.
+To generate documentation, first install development requirements::
+
+    pip install -e ".[docs]"
+
+Then build the documentation using the customized make file in the `docs`
+directory::
+
+    cd sphinx-docs
+    make html
+
+When building documentation for a production release, use `make docs` to
+update the published documentation on GitHub Pages.
 
 

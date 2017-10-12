@@ -1,0 +1,355 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>viapy Code Documentation &#8212; viapy 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="CHANGELOG" href="changelog.html" />
+    <link rel="prev" title="viapy documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="viapy-code-documentation">
+<h1>viapy Code Documentation<a class="headerlink" href="#viapy-code-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="module-viapy.api">
+<span id="api"></span><h2>API<a class="headerlink" href="#module-viapy.api" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="viapy.api.SRUItem">
+<em class="property">class </em><code class="descclassname">viapy.api.</code><code class="descname">SRUItem</code><span class="sig-paren">(</span><em>items=None</em>, <em>sequence_type=&lt;class 'tuple'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#SRUItem"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.SRUItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Single item returned by a SRU search, for use with
+<a class="reference internal" href="#viapy.api.ViafAPI.search" title="viapy.api.ViafAPI.search"><code class="xref py py-meth docutils literal"><span class="pre">ViafAPI.search()</span></code></a> and <a class="reference internal" href="#viapy.api.SRUResult" title="viapy.api.SRUResult"><code class="xref py py-class docutils literal"><span class="pre">SRUResult</span></code></a>.</p>
+<dl class="attribute">
+<dt id="viapy.api.SRUItem.label">
+<code class="descname">label</code><a class="headerlink" href="#viapy.api.SRUItem.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>first main heading for this item</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.SRUItem.nametype">
+<code class="descname">nametype</code><a class="headerlink" href="#viapy.api.SRUItem.nametype" title="Permalink to this definition">¶</a></dt>
+<dd><p>type of name (personal, corporate, title, etc)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.SRUItem.uri">
+<code class="descname">uri</code><a class="headerlink" href="#viapy.api.SRUItem.uri" title="Permalink to this definition">¶</a></dt>
+<dd><p>VIAF URI for this result</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.SRUItem.viaf_id">
+<code class="descname">viaf_id</code><a class="headerlink" href="#viapy.api.SRUItem.viaf_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>VIAF numeric identifier</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="viapy.api.SRUResult">
+<em class="property">class </em><code class="descclassname">viapy.api.</code><code class="descname">SRUResult</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#SRUResult"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.SRUResult" title="Permalink to this definition">¶</a></dt>
+<dd><p>SRU search result object, for use with <a class="reference internal" href="#viapy.api.ViafAPI.search" title="viapy.api.ViafAPI.search"><code class="xref py py-meth docutils literal"><span class="pre">ViafAPI.search()</span></code></a>.</p>
+<dl class="attribute">
+<dt id="viapy.api.SRUResult.records">
+<code class="descname">records</code><a class="headerlink" href="#viapy.api.SRUResult.records" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of results as <a class="reference internal" href="#viapy.api.SRUItem" title="viapy.api.SRUItem"><code class="xref py py-class docutils literal"><span class="pre">SRUItem</span></code></a>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.SRUResult.total_results">
+<code class="descname">total_results</code><a class="headerlink" href="#viapy.api.SRUResult.total_results" title="Permalink to this definition">¶</a></dt>
+<dd><p>number of records matching the query</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="viapy.api.ViafAPI">
+<em class="property">class </em><code class="descclassname">viapy.api.</code><code class="descname">ViafAPI</code><a class="reference internal" href="_modules/viapy/api.html#ViafAPI"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.ViafAPI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrapper for VIAF API.</p>
+<p><a class="reference external" href="https://platform.worldcat.org/api-explorer/apis/VIAF">https://platform.worldcat.org/api-explorer/apis/VIAF</a></p>
+<dl class="attribute">
+<dt id="viapy.api.ViafAPI.api_base">
+<code class="descname">api_base</code><em class="property"> = 'https://www.viaf.org/viaf'</em><a class="headerlink" href="#viapy.api.ViafAPI.api_base" title="Permalink to this definition">¶</a></dt>
+<dd><p>base url for VIAF API methods</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="viapy.api.ViafAPI.find_corporate">
+<code class="descname">find_corporate</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#ViafAPI.find_corporate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.ViafAPI.find_corporate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search VIAF for local.corporateNames</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="viapy.api.ViafAPI.find_person">
+<code class="descname">find_person</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#ViafAPI.find_person"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.ViafAPI.find_person" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search VIAF for local.personalNames</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="viapy.api.ViafAPI.find_place">
+<code class="descname">find_place</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#ViafAPI.find_place"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.ViafAPI.find_place" title="Permalink to this definition">¶</a></dt>
+<dd><p>Search VIAF for local.geographicNames</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="viapy.api.ViafAPI.search">
+<code class="descname">search</code><span class="sig-paren">(</span><em>query</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#ViafAPI.search"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.ViafAPI.search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query VIAF seach interface.  Returns a list of <a class="reference internal" href="#viapy.api.SRUItem" title="viapy.api.SRUItem"><code class="xref py py-class docutils literal"><span class="pre">SRUItem</span></code></a>
+:param query: CQL query in viaf syntax (e.g., <code class="docutils literal"><span class="pre">cql.any</span> <span class="pre">all</span> <span class="pre">&quot;term&quot;</span></code>)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="viapy.api.ViafAPI.suggest">
+<code class="descname">suggest</code><span class="sig-paren">(</span><em>term</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#ViafAPI.suggest"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.ViafAPI.suggest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query autosuggest API.  Returns a list of results, or an
+empty list if no suggestions are found or if something went wrong</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.ViafAPI.uri_base">
+<code class="descname">uri_base</code><em class="property"> = 'http://viaf.org/viaf'</em><a class="headerlink" href="#viapy.api.ViafAPI.uri_base" title="Permalink to this definition">¶</a></dt>
+<dd><p>base url for VIAF URIs</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="viapy.api.ViafAPI.uri_from_id">
+<em class="property">classmethod </em><code class="descname">uri_from_id</code><span class="sig-paren">(</span><em>viaf_id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#ViafAPI.uri_from_id"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.ViafAPI.uri_from_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a canonical VIAF URI for the specified id</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="viapy.api.ViafEntity">
+<em class="property">class </em><code class="descclassname">viapy.api.</code><code class="descname">ViafEntity</code><span class="sig-paren">(</span><em>viaf_id</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#ViafEntity"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.ViafEntity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Object for working with a single VIAF entity.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>viaf_id</strong> – viaf identifier (either integer or uri)</td>
+</tr>
+</tbody>
+</table>
+<dl class="attribute">
+<dt id="viapy.api.ViafEntity.birthdate">
+<code class="descname">birthdate</code><a class="headerlink" href="#viapy.api.ViafEntity.birthdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>schema birthdate as <code class="xref py py-class docutils literal"><span class="pre">rdflib.Literal</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.ViafEntity.birthyear">
+<code class="descname">birthyear</code><a class="headerlink" href="#viapy.api.ViafEntity.birthyear" title="Permalink to this definition">¶</a></dt>
+<dd><p>birth year</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.ViafEntity.deathdate">
+<code class="descname">deathdate</code><a class="headerlink" href="#viapy.api.ViafEntity.deathdate" title="Permalink to this definition">¶</a></dt>
+<dd><p>schema deathdate as <code class="xref py py-class docutils literal"><span class="pre">rdflib.Literal</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.ViafEntity.deathyear">
+<code class="descname">deathyear</code><a class="headerlink" href="#viapy.api.ViafEntity.deathyear" title="Permalink to this definition">¶</a></dt>
+<dd><p>death year</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.ViafEntity.rdf">
+<code class="descname">rdf</code><a class="headerlink" href="#viapy.api.ViafEntity.rdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>VIAF data for this entity as <code class="xref py py-class docutils literal"><span class="pre">rdflib.Graph</span></code></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="viapy.api.ViafEntity.uriref">
+<code class="descname">uriref</code><a class="headerlink" href="#viapy.api.ViafEntity.uriref" title="Permalink to this definition">¶</a></dt>
+<dd><p>VIAF URI reference as instance of <code class="xref py py-class docutils literal"><span class="pre">rdflib.URIRef</span></code></p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="viapy.api.ViafEntity.year_from_isodate">
+<em class="property">classmethod </em><code class="descname">year_from_isodate</code><span class="sig-paren">(</span><em>date</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/api.html#ViafEntity.year_from_isodate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.api.ViafEntity.year_from_isodate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return just the year portion of an ISO8601 date.  Expects
+a string, returns an integer</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-viapy.views">
+<span id="views"></span><h2>Views<a class="headerlink" href="#module-viapy.views" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="viapy.views.ViafLookup">
+<em class="property">class </em><code class="descclassname">viapy.views.</code><code class="descname">ViafLookup</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/views.html#ViafLookup"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.views.ViafLookup" title="Permalink to this definition">¶</a></dt>
+<dd><p>View to provide VIAF suggestions for autocomplete lookup.
+Based on <code class="xref py py-class docutils literal"><span class="pre">dal.autocompleteSelect2ListView</span></code>.  Expects search
+term as query string parameter <cite>q</cite>. Returns viaf URI as identifier
+and display form as text.</p>
+<dl class="method">
+<dt id="viapy.views.ViafLookup.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/views.html#ViafLookup.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.views.ViafLookup.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return JSON with suggested VIAF ids and display names.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="viapy.views.ViafSearch">
+<em class="property">class </em><code class="descclassname">viapy.views.</code><code class="descname">ViafSearch</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/views.html#ViafSearch"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.views.ViafSearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>View to provide VIAF suggestions for autocomplete lookup.
+Based on <code class="xref py py-class docutils literal"><span class="pre">dal.autocompleteSelect2ListView</span></code>.  Expects search
+term as query string parameter <cite>q</cite>. Returns viaf URI as identifier
+and display form as text.</p>
+<dl class="method">
+<dt id="viapy.views.ViafSearch.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>request</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/views.html#ViafSearch.get"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.views.ViafSearch.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return JSON with suggested VIAF ids and display names.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-viapy.widgets">
+<span id="widgets"></span><h2>Widgets<a class="headerlink" href="#module-viapy.widgets" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="viapy.widgets.ViafWidget">
+<em class="property">class </em><code class="descclassname">viapy.widgets.</code><code class="descname">ViafWidget</code><span class="sig-paren">(</span><em>url=None</em>, <em>forward=None</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/viapy/widgets.html#ViafWidget"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#viapy.widgets.ViafWidget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Custom autocomplete select widget that displays VIAF id as a link.
+Extends <code class="xref py py-class docutils literal"><span class="pre">dal.autocomplete.Select2</span></code>.</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">viapy</a></h1>
+
+
+
+<p class="blurb">VIAF via Python</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=Princeton-CDH&repo=viaf&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/Princeton-CDH/viaf">
+    <img
+        alt="https://secure.travis-ci.org/Princeton-CDH/viaf.svg?branch=master"
+        src="https://secure.travis-ci.org/Princeton-CDH/viaf.svg?branch=master"
+    />
+</a>
+</p>
+
+
+
+
+    
+
+<p>
+<a href="https://codecov.io/github/Princeton-CDH/viaf">
+    <img
+    alt="https://codecov.io/github/Princeton-CDH/viaf/coverage.svg?branch=master"
+    src="https://codecov.io/github/Princeton-CDH/viaf/coverage.svg?branch=master"
+    />
+</a>
+</p>
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">viapy Code Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-viapy.api">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-viapy.views">Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-viapy.widgets">Widgets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Change Log</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><div class="powered_by">
+<p>Powered by:</p>
+<a href="http://cdh.princeton.edu/">
+<img src="https://cdh.princeton.edu/static/img/CDH_logo.svg"
+    alt="Center for Digital Humanities @ Princeton" />
+</a>
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, CDH @ Princeton.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/codedocs.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
