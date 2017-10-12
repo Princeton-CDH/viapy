@@ -1,0 +1,336 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>viapy.api &#8212; viapy 0.1.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <h1>Source code for viapy.api</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="kn">from</span> <span class="nn">attrdict</span> <span class="k">import</span> <span class="n">AttrMap</span>
+<span class="kn">from</span> <span class="nn">cached_property</span> <span class="k">import</span> <span class="n">cached_property</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">rdflib</span>
+<span class="kn">from</span> <span class="nn">rdflib.namespace</span> <span class="k">import</span> <span class="n">Namespace</span>
+
+
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+
+
+<span class="n">SCHEMA_NS</span> <span class="o">=</span> <span class="n">Namespace</span><span class="p">(</span><span class="s1">&#39;http://schema.org/&#39;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="ViafAPI"><a class="viewcode-back" href="../../codedocs.html#viapy.api.ViafAPI">[docs]</a><span class="k">class</span> <span class="nc">ViafAPI</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Wrapper for VIAF API.</span>
+
+<span class="sd">    https://platform.worldcat.org/api-explorer/apis/VIAF</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># NOTE: API urls use www prefix, but VIAF URIs do not</span>
+
+    <span class="c1">#: base url for VIAF API methods</span>
+    <span class="n">api_base</span> <span class="o">=</span> <span class="s2">&quot;https://www.viaf.org/viaf&quot;</span>
+    <span class="c1">#: base url for VIAF URIs</span>
+    <span class="n">uri_base</span> <span class="o">=</span> <span class="s2">&quot;http://viaf.org/viaf&quot;</span>
+
+<div class="viewcode-block" id="ViafAPI.uri_from_id"><a class="viewcode-back" href="../../codedocs.html#viapy.api.ViafAPI.uri_from_id">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">uri_from_id</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">viaf_id</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Generate a canonical VIAF URI for the specified id&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">/</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">uri_base</span><span class="p">,</span> <span class="n">viaf_id</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ViafAPI.suggest"><a class="viewcode-back" href="../../codedocs.html#viapy.api.ViafAPI.suggest">[docs]</a>    <span class="k">def</span> <span class="nf">suggest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">term</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Query autosuggest API.  Returns a list of results, or an</span>
+<span class="sd">        empty list if no suggestions are found or if something went wrong&#39;&#39;&#39;</span>
+
+        <span class="c1">#  &#39;viaf/AutoSuggest?query=[searchTerms]&amp;callback[optionalCallbackName]</span>
+        <span class="n">autosuggest_url</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">/AutoSuggest&#39;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">api_base</span>
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">autosuggest_url</span><span class="p">,</span>
+                                <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="n">term</span><span class="p">},</span>
+                                <span class="n">headers</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;accept&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">})</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;autosuggest </span><span class="se">\&#39;</span><span class="si">%s</span><span class="se">\&#39;</span><span class="s1">: </span><span class="si">%s</span><span class="s1"> </span><span class="si">%s</span><span class="s1">, </span><span class="si">%0.2f</span><span class="s1">&#39;</span><span class="p">,</span>
+                     <span class="n">term</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="p">,</span>
+                     <span class="n">response</span><span class="o">.</span><span class="n">elapsed</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">())</span>
+
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;result&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">or</span> <span class="p">[]</span>
+
+        <span class="c1"># if there was an http error, raise it</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="p">[]</span></div>
+
+<div class="viewcode-block" id="ViafAPI.search"><a class="viewcode-back" href="../../codedocs.html#viapy.api.ViafAPI.search">[docs]</a>    <span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Query VIAF seach interface.  Returns a list of :class:`SRUItem`</span>
+<span class="sd">        :param query: CQL query in viaf syntax (e.g., ``cql.any all &quot;term&quot;``)</span>
+<span class="sd">        &#39;&#39;&#39;</span>
+        <span class="n">search_url</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">/search&#39;</span> <span class="o">%</span> <span class="bp">self</span><span class="o">.</span><span class="n">api_base</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">&#39;query&#39;</span><span class="p">:</span> <span class="n">query</span><span class="p">,</span>
+            <span class="s1">&#39;httpAccept&#39;</span><span class="p">:</span> <span class="s1">&#39;application/json&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;maximumRecords&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">,</span>   <span class="c1"># TODO: configurable ?</span>
+            <span class="c1"># sort by number of holdings (default sort on web search)</span>
+            <span class="c1"># - so better known names show up first</span>
+            <span class="s1">&#39;sortKeys&#39;</span><span class="p">:</span> <span class="s1">&#39;holdingscount&#39;</span>
+        <span class="p">}</span>
+
+        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">search_url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;search </span><span class="se">\&#39;</span><span class="si">%s</span><span class="se">\&#39;</span><span class="s1">: </span><span class="si">%s</span><span class="s1"> </span><span class="si">%s</span><span class="s1">, </span><span class="si">%0.2f</span><span class="s1">&#39;</span><span class="p">,</span>
+                     <span class="n">params</span><span class="p">[</span><span class="s1">&#39;query&#39;</span><span class="p">],</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">reason</span><span class="p">,</span>
+                     <span class="n">response</span><span class="o">.</span><span class="n">elapsed</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">())</span>
+        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="n">requests</span><span class="o">.</span><span class="n">codes</span><span class="o">.</span><span class="n">ok</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">SRUResult</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+            <span class="k">if</span> <span class="n">data</span><span class="o">.</span><span class="n">total_results</span><span class="p">:</span>
+                <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">records</span>
+
+        <span class="c1"># if response was not ok, raise the error</span>
+        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span></div>
+
+    <span class="k">def</span> <span class="nf">_find_type</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fltr</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> all &quot;</span><span class="si">%s</span><span class="s1">&quot;&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">fltr</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+
+<div class="viewcode-block" id="ViafAPI.find_person"><a class="viewcode-back" href="../../codedocs.html#viapy.api.ViafAPI.find_person">[docs]</a>    <span class="k">def</span> <span class="nf">find_person</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Search VIAF for local.personalNames&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_type</span><span class="p">(</span><span class="s1">&#39;local.personalNames&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ViafAPI.find_corporate"><a class="viewcode-back" href="../../codedocs.html#viapy.api.ViafAPI.find_corporate">[docs]</a>    <span class="k">def</span> <span class="nf">find_corporate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Search VIAF for local.corporateNames&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_type</span><span class="p">(</span><span class="s1">&#39;local.corporateNames&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="ViafAPI.find_place"><a class="viewcode-back" href="../../codedocs.html#viapy.api.ViafAPI.find_place">[docs]</a>    <span class="k">def</span> <span class="nf">find_place</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Search VIAF for local.geographicNames&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_find_type</span><span class="p">(</span><span class="s1">&#39;local.geographicNames&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span></div></div>
+
+
+<div class="viewcode-block" id="ViafEntity"><a class="viewcode-back" href="../../codedocs.html#viapy.api.ViafEntity">[docs]</a><span class="k">class</span> <span class="nc">ViafEntity</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Object for working with a single VIAF entity.</span>
+
+<span class="sd">    :param viaf_id: viaf identifier (either integer or uri)</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">viaf_id</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="nb">int</span><span class="p">(</span><span class="n">viaf_id</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">uri</span> <span class="o">=</span> <span class="n">ViafAPI</span><span class="o">.</span><span class="n">uri_from_id</span><span class="p">(</span><span class="n">viaf_id</span><span class="p">)</span>
+        <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
+            <span class="c1"># NOTE: do we need to canonicalize the URI in any way to</span>
+            <span class="c1"># ensure RDF queries work properly?</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">uri</span> <span class="o">=</span> <span class="n">viaf_id</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">uriref</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;VIAF URI reference as instance of :class:`rdflib.URIRef`&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="n">rdflib</span><span class="o">.</span><span class="n">URIRef</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">uri</span><span class="p">)</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">rdf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;VIAF data for this entity as :class:`rdflib.Graph`&#39;&#39;&#39;</span>
+        <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">graph</span> <span class="o">=</span> <span class="n">rdflib</span><span class="o">.</span><span class="n">Graph</span><span class="p">()</span>
+        <span class="n">graph</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">uri</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Loaded VIAF RDF </span><span class="si">%s</span><span class="s1">: </span><span class="si">%0.2f</span><span class="s1"> sec&#39;</span><span class="p">,</span>
+                     <span class="bp">self</span><span class="o">.</span><span class="n">uri</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">graph</span>
+
+    <span class="c1"># person-specific properties</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">birthdate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;schema birthdate as :class:`rdflib.Literal`&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">rdf</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">uriref</span><span class="p">,</span> <span class="n">SCHEMA_NS</span><span class="o">.</span><span class="n">birthDate</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">deathdate</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;schema deathdate as :class:`rdflib.Literal`&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">rdf</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">uriref</span><span class="p">,</span> <span class="n">SCHEMA_NS</span><span class="o">.</span><span class="n">deathDate</span><span class="p">)</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">birthyear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;birth year&#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">birthdate</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">year_from_isodate</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">birthdate</span><span class="p">))</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">deathyear</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;death year&#39;&#39;&#39;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">deathdate</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">year_from_isodate</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">deathdate</span><span class="p">))</span>
+
+    <span class="c1"># utility method for date parsing</span>
+<div class="viewcode-block" id="ViafEntity.year_from_isodate"><a class="viewcode-back" href="../../codedocs.html#viapy.api.ViafEntity.year_from_isodate">[docs]</a>    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">year_from_isodate</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">date</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;Return just the year portion of an ISO8601 date.  Expects</span>
+<span class="sd">        a string, returns an integer&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">date</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;-&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span></div></div>
+
+
+<div class="viewcode-block" id="SRUResult"><a class="viewcode-back" href="../../codedocs.html#viapy.api.SRUResult">[docs]</a><span class="k">class</span> <span class="nc">SRUResult</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;SRU search result object, for use with :meth:`ViafAPI.search`.&#39;&#39;&#39;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;searchRetrieveResponse&#39;</span><span class="p">,</span> <span class="p">{})</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">total_results</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;number of records matching the query&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;numberOfRecords&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+
+    <span class="nd">@cached_property</span>
+    <span class="k">def</span> <span class="nf">records</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;list of results as :class:`SRUItem`.&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">SRUItem</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;record&#39;</span><span class="p">])</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;records&#39;</span><span class="p">,</span> <span class="p">[])]</span></div>
+
+
+<div class="viewcode-block" id="SRUItem"><a class="viewcode-back" href="../../codedocs.html#viapy.api.SRUItem">[docs]</a><span class="k">class</span> <span class="nc">SRUItem</span><span class="p">(</span><span class="n">AttrMap</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;Single item returned by a SRU search, for use with</span>
+<span class="sd">    :meth:`ViafAPI.search` and :class:`SRUResult`.&#39;&#39;&#39;</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">uri</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;VIAF URI for this result&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">recordData</span><span class="o">.</span><span class="n">Document</span><span class="p">[</span><span class="s1">&#39;@about&#39;</span><span class="p">]</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">viaf_id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;VIAF numeric identifier&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">recordData</span><span class="o">.</span><span class="n">viafID</span>
+
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">nametype</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;type of name (personal, corporate, title, etc)&#39;&#39;&#39;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">recordData</span><span class="o">.</span><span class="n">nameType</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">label</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&#39;&#39;&#39;first main heading for this item&#39;&#39;&#39;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">recordData</span><span class="o">.</span><span class="n">mainHeadings</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">text</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">recordData</span><span class="o">.</span><span class="n">mainHeadings</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">text</span></div>
+
+
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">viapy</a></h1>
+
+
+
+<p class="blurb">VIAF via Python</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=Princeton-CDH&repo=viaf&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/Princeton-CDH/viaf">
+    <img
+        alt="https://secure.travis-ci.org/Princeton-CDH/viaf.svg?branch=master"
+        src="https://secure.travis-ci.org/Princeton-CDH/viaf.svg?branch=master"
+    />
+</a>
+</p>
+
+
+
+
+    
+
+<p>
+<a href="https://codecov.io/github/Princeton-CDH/viaf">
+    <img
+    alt="https://codecov.io/github/Princeton-CDH/viaf/coverage.svg?branch=master"
+    src="https://codecov.io/github/Princeton-CDH/viaf/coverage.svg?branch=master"
+    />
+</a>
+</p>
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../codedocs.html">viapy Code Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changelog.html">Change Log</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><div class="powered_by">
+<p>Powered by:</p>
+<a href="http://cdh.princeton.edu/">
+<img src="https://cdh.princeton.edu/static/img/CDH_logo.svg"
+    alt="Center for Digital Humanities @ Princeton" />
+</a>
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, CDH @ Princeton.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>

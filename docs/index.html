@@ -1,0 +1,259 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>viapy documentation &#8212; viapy 0.1.0 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="viapy Code Documentation" href="codedocs.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="viapy-documentation">
+<h1>viapy documentation<a class="headerlink" href="#viapy-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="codedocs.html">viapy Code Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="codedocs.html#module-viapy.api">API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="codedocs.html#module-viapy.views">Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="codedocs.html#module-viapy.widgets">Widgets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Change Log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="changelog.html#id2">0.1</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p><em>VIAF via Python</em></p>
+<p>Python module for interacting with <a class="reference external" href="http://viaf.org">VIAF</a> (the Virtual International
+Authority File) data and APIs.</p>
+<p><strong>viapy</strong> provides optional Django integration; this currently includes a
+django-autocomplete-light lookup view and a VIAF url widget.</p>
+<p>Python 3.5 / Django 1.11</p>
+<a class="reference external image-reference" href="https://travis-ci.org/Princeton-CDH/viapy"><img alt="Build status" src="https://travis-ci.org/Princeton-CDH/viapy.svg?branch=master" /></a>
+<a class="reference external image-reference" href="https://codecov.io/gh/Princeton-CDH/viapy/branch/master"><img alt="Code coverage" src="https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg" /></a>
+<a class="reference external image-reference" href="https://landscape.io/github/Princeton-CDH/viapy/master"><img alt="Code Health" src="https://landscape.io/github/Princeton-CDH/viapy/master/landscape.svg?style=flat" /></a>
+<a class="reference external image-reference" href="https://requires.io/github/Princeton-CDH/viapy/requirements/?branch=master"><img alt="Requirements Status" src="https://requires.io/github/Princeton-CDH/viapy/requirements.svg?branch=master" /></a>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>Use pip to install from GitHub.  Use a branch or tag name, e.g.
+<code class="docutils literal"><span class="pre">&#64;develop</span></code> or <code class="docutils literal"><span class="pre">&#64;1.0</span></code> if you want to install a specific tagged release or branch:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">Princeton</span><span class="o">-</span><span class="n">CDH</span><span class="o">/</span><span class="n">viapy</span><span class="o">.</span><span class="n">git</span><span class="nd">@develop</span><span class="c1">#egg=viapy</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="configuration-for-use-with-django">
+<h2>Configuration for use with Django<a class="headerlink" href="#configuration-for-use-with-django" title="Permalink to this headline">¶</a></h2>
+<p>Using <cite>viapy</cite> with Django requires additional configuration.  Add <cite>viapy</cite> to
+installed applications along with the needed django-autocomplete-light
+modules:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="o">...</span>
+    <span class="s1">&#39;dal&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;dal_select2&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;viapy&#39;</span><span class="p">,</span>
+    <span class="o">...</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Include the viapy urls at the desired base url with the namespace:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">...</span>
+    <span class="n">url</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;^viaf/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;viapy.urls&#39;</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="s1">&#39;viaf&#39;</span><span class="p">)),</span>
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="development-instructions">
+<h2>Development instructions<a class="headerlink" href="#development-instructions" title="Permalink to this headline">¶</a></h2>
+<p>This git repository uses <a class="reference external" href="https://github.com/nvie/gitflow">git flow</a> branching conventions.</p>
+<p>Initial setup and installation:</p>
+<ul>
+<li><p class="first">Recommended: create and activate a python 3.5 virtualenv:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">virtualenv</span> <span class="n">viapy</span> <span class="o">-</span><span class="n">p</span> <span class="n">python3</span><span class="o">.</span><span class="mi">5</span>
+<span class="n">source</span> <span class="n">viapy</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">pip install the package with its python dependencies:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span> <span class="o">.</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span> <span class="s2">&quot;.[django]&quot;&quot;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="section" id="unit-testing">
+<h3>Unit Testing<a class="headerlink" href="#unit-testing" title="Permalink to this headline">¶</a></h3>
+<p>Unit tests are set up to be run with <a class="reference external" href="http://doc.pytest.org/">py.test</a></p>
+<ul>
+<li><p class="first">Copy sample test settings and add a <strong>SECRET_KEY</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="n">ci</span><span class="o">/</span><span class="n">testsettings</span><span class="o">.</span><span class="n">py</span> <span class="n">testsettings</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">To run the tests, either use the configured setup.py test command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">test</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Or install test requirements and use py.test directly:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span> <span class="s1">&#39;.[test_all]&#39;</span>
+<span class="n">py</span><span class="o">.</span><span class="n">test</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="documentation">
+<h3>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h3>
+<p>Documentation is generated using <a class="reference external" href="http://www.sphinx-doc.org/">sphinx</a>.
+To generate documentation, first install development requirements:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span> <span class="s2">&quot;.[docs]&quot;</span>
+</pre></div>
+</div>
+<p>Then build the documentation using the customized make file in the <cite>docs</cite>
+directory:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">docs</span>
+<span class="n">make</span> <span class="n">html</span>
+</pre></div>
+</div>
+<p>When building documentation for a production release, use <cite>make docs</cite> to
+update the published documentation on GitHub Pages.</p>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">viapy</a></h1>
+
+
+
+<p class="blurb">VIAF via Python</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=Princeton-CDH&repo=viaf&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+    
+
+<p>
+<a href="https://travis-ci.org/Princeton-CDH/viaf">
+    <img
+        alt="https://secure.travis-ci.org/Princeton-CDH/viaf.svg?branch=master"
+        src="https://secure.travis-ci.org/Princeton-CDH/viaf.svg?branch=master"
+    />
+</a>
+</p>
+
+
+
+
+    
+
+<p>
+<a href="https://codecov.io/github/Princeton-CDH/viaf">
+    <img
+    alt="https://codecov.io/github/Princeton-CDH/viaf/coverage.svg?branch=master"
+    src="https://codecov.io/github/Princeton-CDH/viaf/coverage.svg?branch=master"
+    />
+</a>
+</p>
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="codedocs.html">viapy Code Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Change Log</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><div class="powered_by">
+<p>Powered by:</p>
+<a href="http://cdh.princeton.edu/">
+<img src="https://cdh.princeton.edu/static/img/CDH_logo.svg"
+    alt="Center for Digital Humanities @ Princeton" />
+</a>
+</div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, CDH @ Princeton.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
