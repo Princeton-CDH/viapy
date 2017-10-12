@@ -1,6 +1,8 @@
 viapy
 =====
 
+.. sphinx-start-marker-do-not-remove
+
 *VIAF via Python*
 
 Python module for interacting with `VIAF`_ (the Virtual International
@@ -88,7 +90,7 @@ Initial setup and installation:
 Unit Testing
 ^^^^^^^^^^^^
 
-Unit tests are set up to be run with [py.test](http://doc.pytest.org/)
+Unit tests are set up to be run with `py.test <http://doc.pytest.org/>`_
 
 - Copy sample test settings and add a **SECRET_KEY**::
 
@@ -103,5 +105,22 @@ Unit tests are set up to be run with [py.test](http://doc.pytest.org/)
     pip install -e '.[test_all]'
     py.test
 
+
+Documentation
+^^^^^^^^^^^^^
+
+Documentation is generated using `sphinx <http://www.sphinx-doc.org/>`_.
+To generate documentation, first install development requirements::
+
+    pip install -e ".[docs]"
+
+Then build the documentation using the customized make file in the `docs`
+directory::
+
+    cd sphinx-docs
+    make html
+
+When building documentation for a production release, use `make docs` to
+update the published documentation on GitHub Pages.
 
 

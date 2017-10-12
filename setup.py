@@ -30,7 +30,8 @@ setup(
     extras_require={
         'django': DJANGO_REQS,
         'test': TEST_REQUIREMENTS,
-        'test_all': TEST_REQUIREMENTS + DJANGO_REQS + DJANGO_TEST_REQS
+        'test_all': TEST_REQUIREMENTS + DJANGO_REQS + DJANGO_TEST_REQS,
+        'docs': ['sphinx']
     },
     author='CDH @ Princeton',
     author_email='digitalhumanities@princeton.edu',
