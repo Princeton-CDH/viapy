@@ -35,12 +35,9 @@ setup(
     author='CDH @ Princeton',
     author_email='digitalhumanities@princeton.edu',
     classifiers=[
-        'Environment :: Web Environment',  # maybe/probably?
-        # django TBD
-        # 'Framework :: Django',
-        # 'Framework :: Django :: 1.8',
-        # 'Framework :: Django :: 1.9',
-        # 'Framework :: Django :: 1.10',
+        'Environment :: Web Environment',
+        'Framework :: Django',
+        'Framework :: Django :: 1.11',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: OS Independent',
