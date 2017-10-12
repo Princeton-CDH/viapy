@@ -15,20 +15,20 @@ django-autocomplete-light lookup view and a VIAF url widget.
 
 Python 3.5 / Django 1.11
 
-.. image:: https://travis-ci.org/Princeton-CDH/viapy.svg?branch=master
+.. image:: https://travis-ci.org/Princeton-CDH/viapy.svg?branch=develop
     :target: https://travis-ci.org/Princeton-CDH/viapy
     :alt: Build status
 
-.. image:: https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/Princeton-CDH/viapy/branch/master
+.. image:: https://codecov.io/gh/Princeton-CDH/viapy/branch/develop/graph/badge.svg
+    :target: https://codecov.io/gh/Princeton-CDH/viapy/branch/develop
     :alt: Code coverage
 
-.. image:: https://landscape.io/github/Princeton-CDH/viapy/master/landscape.svg?style=flat
-   :target: https://landscape.io/github/Princeton-CDH/viapy/master
+.. image:: https://landscape.io/github/Princeton-CDH/viapy/develop/landscape.svg?style=flat
+   :target: https://landscape.io/github/Princeton-CDH/viapy/develop
    :alt: Code Health
 
-.. image:: https://requires.io/github/Princeton-CDH/viapy/requirements.svg?branch=master
-     :target: https://requires.io/github/Princeton-CDH/viapy/requirements/?branch=master
+.. image:: https://requires.io/github/Princeton-CDH/viapy/requirements.svg?branch=develop
+     :target: https://requires.io/github/Princeton-CDH/viapy/requirements/?branch=develop
      :alt: Requirements Status
 
 
