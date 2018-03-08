@@ -124,3 +124,13 @@ When building documentation for a production release, use `make docs` to
 update the published documentation on GitHub Pages.
 
 
+
+License
+-------
+
+**viapy** is distributed under the Apache 2.0 License.
+
+©2017 Trustees of Princeton University.  Permission granted via
+Princeton Docket #18-3449-1 for distribution online under a standard Open Source
+license.  Ownership rights transferred to Rebecca Koeser provided software
+is distributed online via open source.
