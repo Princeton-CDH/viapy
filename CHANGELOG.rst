@@ -4,6 +4,11 @@ CHANGELOG
 =========
 
 
+0.1.1
+-----
+
+* Document permissions.
+
 0.1
 ---
 
