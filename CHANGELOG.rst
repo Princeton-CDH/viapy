@@ -3,6 +3,11 @@
 CHANGELOG
 =========
 
+0.1.3
+-----
+
+* Fix GitHub repository name in sphinx documentation config file.
+
 0.1.2
 -----
 
