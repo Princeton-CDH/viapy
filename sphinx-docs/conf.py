@@ -110,7 +110,7 @@ html_theme = 'alabaster'
 html_theme_options = {
     'description': 'VIAF via Python',
     'github_user': 'Princeton-CDH',
-    'github_repo': 'viaf',
+    'github_repo': 'viapy',
     'travis_button': True,
     'codecov_button': True,
 }
