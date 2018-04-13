@@ -3,6 +3,11 @@
 CHANGELOG
 =========
 
+0.1.2
+-----
+
+* Update sphinx configuration to support building documentation on readthedocs.org
+
 
 0.1.1
 -----
