@@ -27,7 +27,7 @@ import django
 
 sys.path.insert(0, os.path.abspath('.'))
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'testsettings'
+os.environ['DJANGO_SETTINGS_MODULE'] = 'docsettings'
 django.setup()
 
 from viapy import __version__
