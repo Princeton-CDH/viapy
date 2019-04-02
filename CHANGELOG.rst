@@ -3,6 +3,11 @@
 CHANGELOG
 =========
 
+0.1.4
+-----
+
+* Fix Travis-CI build for building with and without Django.
+
 0.1.3
 -----
 
