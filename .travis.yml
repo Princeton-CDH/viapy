@@ -10,7 +10,7 @@ env:
 install:
   - pip install -e .
   - pip install -e '.[test]'
-  - pip install -q $DJANGO
+  - if [ ! -z $DJANGO ]; then pip install -q $DJANGO; fi
   - if [ $DJANGO != '' ]; then pip install django-autocomplete-light pytest-django; fi
   - pip install codecov
   - cp ci/testsettings.py testsettings.py
