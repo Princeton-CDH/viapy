@@ -3,6 +3,8 @@ from django.conf.urls import url
 from viapy.views import ViafLookup, ViafSearch
 
 
+app_name = 'viapy'
+
 urlpatterns = [
     url(r'^suggest/$', ViafLookup.as_view(), name='suggest'),
     url(r'^suggest/person/$', ViafLookup.as_view(),

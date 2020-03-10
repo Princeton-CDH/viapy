@@ -1,11 +1,13 @@
 language: python
 
 python:
-  - "3.5"
+  - 3.5
+  - 3.6
 
 env:
   - DJANGO=""   # no django
-  - DJANGO="Django>=1.11,<1.12"
+  - DJANGO=1.11
+  - DJANGO=2.0
 
 install:
   - pip install -e .

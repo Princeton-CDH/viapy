@@ -1,6 +1,6 @@
 import os
-import sys
 from setuptools import find_packages, setup
+
 from viapy import __version__
 
 with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
@@ -11,7 +11,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 REQUIREMENTS = ['requests', 'rdflib', 'cached_property', 'attrdict']
 TEST_REQUIREMENTS = ['pytest', 'pytest-cov']
-DJANGO_REQS = ['django>=1.11', 'django-autocomplete-light']
+DJANGO_REQS = ['django>=1.11,<2.1', 'django-autocomplete-light']
 DJANGO_TEST_REQS = ['pytest-django']
 
 
