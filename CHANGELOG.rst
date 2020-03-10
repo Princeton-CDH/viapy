@@ -3,6 +3,12 @@
 CHANGELOG
 =========
 
+0.2
+---
+
+* Now supports Django versions 1.11 through 3.0.
+
+
 0.1.4
 -----
 

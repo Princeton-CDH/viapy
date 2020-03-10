@@ -13,7 +13,7 @@ Authority File) data and APIs.
 **viapy** provides optional Django integration; this currently includes a
 django-autocomplete-light lookup view and a VIAF url widget.
 
-Python 3.5 / Django 1.11
+Python 3.5, 3.6 / Django 1.11, 2.0, 2.1, 2.2, 3.0
 
 .. image:: https://travis-ci.org/Princeton-CDH/viapy.svg?branch=develop
     :target: https://travis-ci.org/Princeton-CDH/viapy
