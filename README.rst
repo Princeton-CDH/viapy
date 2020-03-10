@@ -13,8 +13,6 @@ Authority File) data and APIs.
 **viapy** provides optional Django integration; this currently includes a
 django-autocomplete-light lookup view and a VIAF url widget.
 
-Python 3.5, 3.6 / Django 1.11, 2.0, 2.1, 2.2, 3.0
-
 .. image:: https://travis-ci.org/Princeton-CDH/viapy.svg?branch=develop
     :target: https://travis-ci.org/Princeton-CDH/viapy
     :alt: Build status
@@ -23,14 +21,21 @@ Python 3.5, 3.6 / Django 1.11, 2.0, 2.1, 2.2, 3.0
     :target: https://codecov.io/gh/Princeton-CDH/viapy/branch/develop
     :alt: Code coverage
 
-.. image:: https://landscape.io/github/Princeton-CDH/viapy/develop/landscape.svg?style=flat
-   :target: https://landscape.io/github/Princeton-CDH/viapy/develop
-   :alt: Code Health
+.. image:: https://www.codefactor.io/repository/github/princeton-cdh/viapy/badge
+   :target: https://www.codefactor.io/repository/github/princeton-cdh/viapy
+   :alt: CodeFactor
 
 .. image:: https://requires.io/github/Princeton-CDH/viapy/requirements.svg?branch=develop
      :target: https://requires.io/github/Princeton-CDH/viapy/requirements/?branch=develop
      :alt: Requirements Status
 
+
+
+.. image:: https://img.shields.io/pypi/pyversions/viapy
+   :alt: PyPI - Python Version
+
+.. image:: https://img.shields.io/pypi/djversions/viapy
+   :alt: PyPI - Django Version
 
 
 Installation
