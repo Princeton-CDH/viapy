@@ -13,27 +13,25 @@ Authority File) data and APIs.
 **viapy** provides optional Django integration; this currently includes a
 django-autocomplete-light lookup view and a VIAF url widget.
 
-.. image:: https://travis-ci.org/Princeton-CDH/viapy.svg?branch=develop
+.. image:: https://travis-ci.org/Princeton-CDH/viapy.svg
     :target: https://travis-ci.org/Princeton-CDH/viapy
     :alt: Build status
 
-.. image:: https://codecov.io/gh/Princeton-CDH/viapy/branch/develop/graph/badge.svg
-    :target: https://codecov.io/gh/Princeton-CDH/viapy/branch/develop
+.. image:: https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/Princeton-CDH/viapy/branch/master
     :alt: Code coverage
+
+.. image:: https://requires.io/github/Princeton-CDH/viapy/requirements.svg
+     :target: https://requires.io/github/Princeton-CDH/viapy/requirements/
+     :alt: Requirements Status     
 
 .. image:: https://www.codefactor.io/repository/github/princeton-cdh/viapy/badge
    :target: https://www.codefactor.io/repository/github/princeton-cdh/viapy
    :alt: CodeFactor
 
-.. image:: https://requires.io/github/Princeton-CDH/viapy/requirements.svg?branch=develop
-     :target: https://requires.io/github/Princeton-CDH/viapy/requirements/?branch=develop
-     :alt: Requirements Status
-
-
-
 .. image:: https://img.shields.io/pypi/pyversions/viapy
    :alt: PyPI - Python Version
-
+   
 .. image:: https://img.shields.io/pypi/djversions/viapy
    :alt: PyPI - Django Version
 
