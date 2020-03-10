@@ -1,25 +1,24 @@
 language: python
-
 python:
-  - 3.5
-  - 3.6
-
+- 3.5
+- 3.6
 env:
-  - DJANGO=""   # no django
-  - DJANGO=1.11
-  - DJANGO=2.0
-
+- DJANGO=""
+- DJANGO=1.11
+- DJANGO=2.0
 install:
-  - pip install -e .
-  - pip install -e '.[test]'
-  - if [ ! -z $DJANGO ]; then pip install -q $DJANGO; fi
-  - if [ $DJANGO != '' ]; then pip install django-autocomplete-light pytest-django; fi
-  - pip install codecov
-  - cp ci/testsettings.py testsettings.py
-  - python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
-
+- pip install -e .
+- pip install -e '.[test]'
+- if [ ! -z $DJANGO ]; then pip install -q $DJANGO; fi
+- if [ $DJANGO != '' ]; then pip install django-autocomplete-light pytest-django;
+  fi
+- pip install codecov
+- cp ci/testsettings.py testsettings.py
+- python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
 script:
-  - py.test --cov=viapy
-
+- py.test --cov=viapy
 after_success:
-  - codecov
+- codecov
+notifications:
+  slack:
+    secure: fGFC9zMgsSTUlFFtS4mmUyFq/eZLABF2Q9VmfIWOdZjHBLu9pXrX7x4trrmG6+ZMDf0tLIyyO6Wa8W+zz6xkhpW+bhdMVnDJomLmLfc/ZbavdkY1LGM+Dj6CDMtPIU26z1y8PmxhpWd/uO0JT6QtYqkfmMy6OaK7BU4NCXse3HYD434UBvce30x2w2Q9JQHDSWvSMqP17vdJMLmpmQl4Nl5gjduR8sqe/itxwlvShxwBJjjQjZSAcCUNqjSSQNjdaLM7hdu6byQhVCbuEi7IQMXvSSPTkyQpIvTAoXJQ/SoYOxmI6fA5vHNO8sSO3yTJPpZCm+KzjE8wJEun8lPkd7vExrw7iwVXPtCeL6PE/9k8ax1lTn68Sc+FdGlDgiHqZ/2b5/btuuhsjY3DibPDmbJy7C42cO0YvvCkUaY2NlbWn59p92NBcttyVUJ8fSE/iJZmIOqHsfREVzB4liOwpQYiNe9LB4WxmbCFssxMvIqR5+86n0bdV4dDu+u+9IibwQhfOVliGaoDnt8sEc/ESrBwvPcev55nJcuag1gnjQAk3azCKbYrMUe3+c6DquiwQpQmY/uIaQhuILeEyEZSlcCjB9wrs7hbdnH5ZVNsmGe7ZrgR+0ySwdZrQl0FxYgCXMIQyTSkMJnlZy7U544HBlYFXvX2UcVIMLCH268yorM=
