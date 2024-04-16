@@ -13,8 +13,8 @@ Authority File) data and APIs.
 **viapy** provides optional Django integration; this currently includes a
 django-autocomplete-light lookup view and a VIAF url widget.
 
-.. image:: https://travis-ci.org/Princeton-CDH/viapy.svg
-    :target: https://travis-ci.org/Princeton-CDH/viapy
+.. image:: https://github.com/Princeton-CDH/viapy/actions/workflows/unit_tests.yml/badge.svg
+    :target: https://github.com/Princeton-CDH/viapy/actions/workflows/unit_tests.yml
     :alt: Build status
 
 .. image:: https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg
