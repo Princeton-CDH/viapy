@@ -3,6 +3,11 @@
 CHANGELOG
 =========
 
+0.3
+---
+
+* Handle negative years when parsing birth and death dates
+
 0.2
 ---
 
