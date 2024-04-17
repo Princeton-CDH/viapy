@@ -53,3 +53,6 @@ django = ["django>=3.2,<4.0", "django-autocomplete-light"]
 django_test = ["pytest-django", "viapy[django]"]
 test_all = ["viapy[test]", "viapy[django_test]"]
 dev = ["pre-commit", "viapy[django]", "viapy[test_all]"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "testsettings"
