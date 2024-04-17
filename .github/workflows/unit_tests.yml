@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         python: ["3.9", "3.10", "3.11", "3.12"]
-        django: [0, "3.2", "4.0", "4.1", "4.2", 5.0"]
+        django: [0, "3.2", "4.0", "4.1", "4.2", "5.0"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -36,7 +36,7 @@ jobs:
 
       - name: Install package with dependencies
         run: |
-          if [ "${{ matrix.django }}" -gt "0"]; then pip install -q Django==${{ matrix.django }} .[django] .[django_test]; fi
+          if [ "${{ matrix.django }}" -gt "0"]; then pip install -q Django==${{ matrix.django }} '.[django_test]'; fi
           pip install .
           pip install '.[test]'
           pip install codecov
