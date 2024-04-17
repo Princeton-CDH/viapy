@@ -49,10 +49,11 @@ test = [
   "pytest",
   "pytest-cov"
 ]
-django = ["django>=3.2,<4.0", "django-autocomplete-light"]
+django = ["django>=3.2", "django-autocomplete-light"]
 django_test = ["pytest-django", "viapy[django]"]
+docs = ["sphinx"]
 test_all = ["viapy[test]", "viapy[django_test]"]
-dev = ["pre-commit", "viapy[django]", "viapy[test_all]"]
+dev = ["pre-commit", "viapy[django]", "viapy[test_all]", "viapy[docs]"]
 
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "testsettings"
