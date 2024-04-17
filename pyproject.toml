@@ -26,7 +26,7 @@ classifiers = [
 ]
 dynamic = ["version"]
 dependencies = [
-  "requests", "rdflib", "cached_property", "attrdict"
+  "requests", "rdflib", "cached_property", "attrdict3"
 ]
 
 [project.urls]
