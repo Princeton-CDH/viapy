@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "viapy"
+description = "Python module for interacting with VIAF data & APIs"
+authors = [
+  {name = "Center for Digital Humanities at Princeton", email = "cdh@princeton.edu"},
+]
+requires-python = ">=3.9"
+readme = "README.rst"
+license = {text = "Apache-2"}
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 3.2",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.1",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dynamic = ["version"]
+dependencies = [
+  "requests", "rdflib", "cached_property", "attrdict3"
+]
+
+[project.urls]
+#Documentation = "https://readthedocs.org"
+Repository = "https://github.com/Princeton-CDH/viapy"
+Changelog = "https://github.com/Princeton-CDH/viapy/blob/main/CHANGELOG.rst"
+
+[tool.hatch.version]
+path = "viapy/__init__.py"
+
+[project.optional-dependencies]
+test = [
+  "pytest",
+  "pytest-cov"
+]
+django = ["django>=3.2", "django-autocomplete-light"]
+django_test = ["pytest-django", "viapy[django]"]
+docs = ["sphinx"]
+test_all = ["viapy[test]", "viapy[django_test]"]
+dev = ["pre-commit", "viapy[django]", "viapy[test_all]", "viapy[docs]"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "testsettings"

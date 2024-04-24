@@ -1,0 +1,55 @@
+name: unit tests
+
+on:
+  push: # run on every push or PR to any branch
+  pull_request:
+  schedule: # run automatically on main branch each Tuesday at 11am
+    - cron: "0 16 * * 2"
+
+jobs:
+  python-unit:
+    name: Python unit tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.9", "3.10", "3.11", "3.12"]
+        django: [0, "3.2", "4.0", "4.1", "4.2", "5.0"]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python }}
+
+      # Base python cache on the hash of pyproject.toml with requirements
+      # if the file changes, the cache is invalidated.
+      - name: Cache pip
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ hashFiles('pyproject.toml') }}
+          restore-keys: |
+            pip-${{ hashFiles('pyproject.toml') }}
+            pip-
+
+      - name: Install package with dependencies
+        run: |
+          if [ "${{ matrix.django }}" -gt "0"]; then pip install -q Django==${{ matrix.django }} '.[django_test]'; fi
+          pip install .
+          pip install '.[test]'
+          pip install codecov
+
+      - name: Setup test settings
+        run: |
+          cp ci/testsettings.py testsettings.py
+          python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
+
+      - name: Run pytest
+        env:
+          SOLR_VERSION: "${{ matrix.solr }}"
+        run: py.test --cov=viapy --cov-report=xml
+
+      - name: Upload test coverage to Codecov
+        uses: codecov/codecov-action@v3

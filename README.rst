@@ -13,8 +13,8 @@ Authority File) data and APIs.
 **viapy** provides optional Django integration; this currently includes a
 django-autocomplete-light lookup view and a VIAF url widget.
 
-.. image:: https://travis-ci.org/Princeton-CDH/viapy.svg
-    :target: https://travis-ci.org/Princeton-CDH/viapy
+.. image:: https://github.com/Princeton-CDH/viapy/actions/workflows/unit_tests.yml/badge.svg
+    :target: https://github.com/Princeton-CDH/viapy/actions/workflows/unit_tests.yml
     :alt: Build status
 
 .. image:: https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg
@@ -65,7 +65,7 @@ Include the viapy urls at the desired base url with the namespace::
 
     urlpatterns = [
         ...
-        url(r'^viaf/', include('viapy.urls', namespace='viaf')),
+        path(r'viaf/', include('viapy.urls', namespace='viaf')),
         ...
     ]
 
@@ -79,15 +79,14 @@ This git repository uses `git flow`_ branching conventions.
 
 Initial setup and installation:
 
-- Recommended: create and activate a python 3.5 virtualenv::
+- Recommended: create and activate a python 3.11 virtualenv::
 
-    virtualenv viapy -p python3.5
+    python3 -m venv viapy
     source viapy/bin/activate
 
-- pip install the package with its python dependencies::
+- pip install the package with all development and test dependencies::
 
-    pip install -e .
-    pip install -e ".[django]""
+    pip install -e ".[dev]""
 
 
 Unit Testing
@@ -115,7 +114,7 @@ Documentation
 Documentation is generated using `sphinx <http://www.sphinx-doc.org/>`_.
 To generate documentation, first install development requirements::
 
-    pip install -e ".[docs]"
+    pip install -e ".[dev]"
 
 Then build the documentation using the customized make file in the `docs`
 directory::
@@ -133,7 +132,7 @@ License
 
 **viapy** is distributed under the Apache 2.0 License.
 
-©2017 Trustees of Princeton University.  Permission granted via
+©2024 Trustees of Princeton University.  Permission granted via
 Princeton Docket #18-3449-1 for distribution online under a standard Open Source
 license.  Ownership rights transferred to Rebecca Koeser provided software
 is distributed online via open source.
