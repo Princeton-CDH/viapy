@@ -62,8 +62,8 @@ class ViafSearch(autocomplete.Select2ListView):
                 text=item.label,
                 nametype=item.nametype,
                 # possibly useful to include, since we have them (for people)
-                birth=item.recordData.birthDate,
-                death=item.recordData.deathDate,
+                birth=item.recordData.VIAFCluster.birthDate,
+                death=item.recordData.VIAFCluster.deathDate,
             # exclude any names that are not personal
             ) for item in result]
         })

@@ -1,4 +1,5 @@
 import logging
+import re
 import time
 
 from attrdict import AttrMap
@@ -66,14 +67,13 @@ class ViafAPI(object):
         search_url = "%s/search" % self.api_base
         params = {
             "query": query,
-            "httpAccept": "application/json",
-            "maximumRecords": 50,  # TODO: configurable ?
+            "maximumRecords": 10,  # TODO: configurable ?
             # sort by number of holdings (default sort on web search)
             # - so better known names show up first
-            "sortKeys": "holdingscount",
+            "sortKey": "holdingscount",
         }
 
-        response = requests.get(search_url, params=params)
+        response = requests.get(search_url, params=params, headers={"Accept": "application/json"})
         logger.debug(
             "search '%s': %s %s, %0.2f",
             params["query"],
@@ -183,13 +183,31 @@ class SRUResult(object):
     @cached_property
     def total_results(self):
         """number of records matching the query"""
-        return int(self._data.get("numberOfRecords", 0))
+        return int(self._data.get("numberOfRecords", {}).get("content", 0))
 
     @cached_property
     def records(self):
-        """list of results as :class:`SRUItem`."""
-        return [SRUItem(d["record"]) for d in self._data.get("records", [])]
+        """List of results as :class:`SRUItem`."""
+        record_or_records = self._data.get("records", {}).get("record")
+        if isinstance(record_or_records, dict):
+            return [SRUItem(self.normalize_record(record_or_records))]
+        elif isinstance(record_or_records, list):
+            return [SRUItem(self.normalize_record(d)) for d in record_or_records]
+        return []
 
+    def normalize_record(self, data):
+        """Records from VIAF now have namespaced keys that increase per result,
+        ns1, ns2, ns3, and so on, which apply to most subkeys (ns2:VIAFCluster,
+        ns2:Document, etc). This method strips all nsX: prefixes recursively"""
+        if isinstance(data, dict):
+            return {
+                re.sub(r"^ns\d+:", "", key): self.normalize_record(value)
+                for key, value in data.items()
+            }
+        elif isinstance(data, list):
+            return [self.normalize_record(item) for item in data]
+        else:
+            return data
 
 class SRUItem(AttrMap):
     """Single item returned by a SRU search, for use with
@@ -198,22 +216,22 @@ class SRUItem(AttrMap):
     @property
     def uri(self):
         """VIAF URI for this result"""
-        return self.recordData.Document["@about"]
+        return self.recordData.VIAFCluster.Document["about"]
 
     @property
     def viaf_id(self):
         """VIAF numeric identifier"""
-        return self.recordData.viafID
+        return self.recordData.VIAFCluster.viafID
 
     @property
     def nametype(self):
         """type of name (personal, corporate, title, etc)"""
-        return self.recordData.nameType
+        return self.recordData.VIAFCluster.nameType
 
     @property
     def label(self):
         """first main heading for this item"""
         try:
-            return self.recordData.mainHeadings.data[0].text
-        except KeyError:
-            return self.recordData.mainHeadings.data.text
+            return self.recordData.VIAFCluster.mainHeadings.data[0].text
+        except (KeyError, IndexError):
+            return self.recordData.VIAFCluster.mainHeadings.data.text
