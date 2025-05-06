@@ -130,7 +130,11 @@ class ViafEntity(object):
         """VIAF data for this entity as :class:`rdflib.Graph`"""
         start = time.time()
         graph = rdflib.Graph()
-        graph.parse(self.uri)
+        # 2025 update: Accept header now required, so use requests.get to retrieve RDF
+        response = requests.get(self.uri, headers={"Accept": "application/rdf+xml"})
+        if response.status_code == requests.codes.ok:
+            graph.parse(data=response.text, format="xml")
+        response.raise_for_status()
         logger.debug("Loaded VIAF RDF %s: %0.2f sec", self.uri, time.time() - start)
         return graph
 

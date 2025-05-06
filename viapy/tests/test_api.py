@@ -1,6 +1,6 @@
 import json
 import os
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 import requests
 import rdflib
@@ -123,13 +123,23 @@ class TestViafEntity(object):
         ent = ViafEntity(self.test_uri)
         assert ent.uriref == rdflib.URIRef(self.test_uri)
 
+    @patch("viapy.api.requests")
     @patch("viapy.api.rdflib")
-    def test_rdf(self, mockrdflib):
+    def test_rdf(self, mockrdflib, mockrequests):
+        mock_codes = Mock()
+        mock_codes.ok = 200
+        mockrequests.codes = mock_codes
+        mock_response = Mock()
+        mock_response.status_code = mock_codes.ok
+        mock_response.text = "data"
+        mockrequests.get.return_value = mock_response
         ent = ViafEntity(self.test_uri)
+        # should call requests.get on the uri, initialize a graph and parse data
         assert ent.rdf == mockrdflib.Graph.return_value
-        # should initialize a graph and parse uri data
         mockrdflib.Graph.assert_called_with()
-        mockrdflib.Graph.return_value.parse.assert_called_with(self.test_uri)
+        mockrequests.get.assert_called_with(self.test_uri, headers={"Accept": "application/rdf+xml"})
+        mockrdflib.Graph.return_value.parse.assert_called_with(data=mock_response.text, format="xml")
+        mockrequests.raise_for_status.assert_called_once
 
     def test_properties(self):
         # use viaf id matching fixture rdf file
