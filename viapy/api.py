@@ -196,8 +196,9 @@ class SRUResult(object):
         return []
 
     def normalize_record(self, data):
-        """Records from VIAF now have namespaced keys that increase per result,
-        ns1, ns2, ns3, and so on, which apply to most subkeys (ns2:VIAFCluster,
+        """Added in May 2025 to match updates to the /search API records, where
+        the JSON response now uses namespaced keys that increase per result:
+        ns2, ns3, ns4, and so on, applying to most subkeys (ns2:VIAFCluster,
         ns2:Document, etc). This method strips all nsX: prefixes recursively"""
         if isinstance(data, dict):
             return {
@@ -211,7 +212,10 @@ class SRUResult(object):
 
 class SRUItem(AttrMap):
     """Single item returned by a SRU search, for use with
-    :meth:`ViafAPI.search` and :class:`SRUResult`."""
+    :meth:`ViafAPI.search` and :class:`SRUResult`.
+    
+    The `VIAFCluster` attribute was added to each property lookup in 2025 to
+    match updates to the /search API's JSON response."""
 
     @property
     def uri(self):
