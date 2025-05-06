@@ -1,7 +1,8 @@
 # NOTE: these tests will only be run when django is installed
 import json
-from unittest.mock import patch, Mock
+from unittest.mock import patch
 
+from attrdict import AttrDict
 import pytest
 
 try:
@@ -104,12 +105,13 @@ class TestViews(TestCase):
         assert not data['results']
 
         viaf_id = '35247539'
-        mockresult = Mock(viaf_id=viaf_id,
-            uri='http://viaf.org/viaf/%s' % viaf_id,
-            label='Beach, Sylvia, 1887-1962',
-            nametype='personal')
-        mockresult.recordData.birthDate = 1887
-        mockresult.recordData.deathDate = 1962
+        mockresult = AttrDict({
+            'viaf_id': viaf_id,
+            'uri': 'http://viaf.org/viaf/%s' % viaf_id,
+            'label': 'Beach, Sylvia, 1887-1962',
+            'nametype': 'personal',
+            'recordData': {'VIAFCluster': {'birthDate': 1887, 'deathDate': 1962}},
+        })
 
         mockviafapi.return_value.search.return_value = [mockresult]
         result = self.client.get(search_url, {'q': 'sylvia beach'})
@@ -122,8 +124,8 @@ class TestViews(TestCase):
         assert item['id_number'] == mockresult.viaf_id
         assert item['text'] == mockresult.label
         assert item['nametype'] == mockresult.nametype
-        assert item['birth'] == mockresult.recordData.birthDate
-        assert item['death'] == mockresult.recordData.deathDate
+        assert item['birth'] == mockresult.recordData.VIAFCluster.birthDate
+        assert item['death'] == mockresult.recordData.VIAFCluster.deathDate
 
         # test search person
         person_search_url = reverse('viaf:person-search')

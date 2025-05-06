@@ -1,6 +1,6 @@
 import json
 import os
-from unittest.mock import patch
+from unittest.mock import Mock, patch
 
 import requests
 import rdflib
@@ -64,18 +64,16 @@ class TestViafAPI(object):
             # headers={'accept': 'application/json'},
             params={
                 "query": "stephen benet",
-                "httpAccept": "application/json",
-                "maximumRecords": 50,
-                "sortKeys": "holdingscount",
+                "maximumRecords": 10,
+                "sortKey": "holdingscount",
             },
+            headers={"Accept": "application/json"},
         )
 
         # sample empty result
         mockrequests.get.return_value.json.return_value = {
             "searchRetrieveResponse": {
-                "version": "1.1",
-                "numberOfRecords": "0",
-                "resultSetIdleTime": "1",
+                "numberOfRecords": {"content": "0"},
             }
         }
         results = viaf.search("stephen benet")
@@ -125,13 +123,23 @@ class TestViafEntity(object):
         ent = ViafEntity(self.test_uri)
         assert ent.uriref == rdflib.URIRef(self.test_uri)
 
+    @patch("viapy.api.requests")
     @patch("viapy.api.rdflib")
-    def test_rdf(self, mockrdflib):
+    def test_rdf(self, mockrdflib, mockrequests):
+        mock_codes = Mock()
+        mock_codes.ok = 200
+        mockrequests.codes = mock_codes
+        mock_response = Mock()
+        mock_response.status_code = mock_codes.ok
+        mock_response.text = "data"
+        mockrequests.get.return_value = mock_response
         ent = ViafEntity(self.test_uri)
+        # should call requests.get on the uri, initialize a graph and parse data
         assert ent.rdf == mockrdflib.Graph.return_value
-        # should initialize a graph and parse uri data
         mockrdflib.Graph.assert_called_with()
-        mockrdflib.Graph.return_value.parse.assert_called_with(self.test_uri)
+        mockrequests.get.assert_called_with(self.test_uri, headers={"Accept": "application/rdf+xml"})
+        mockrdflib.Graph.return_value.parse.assert_called_with(data=mock_response.text, format="xml")
+        mockrequests.raise_for_status.assert_called_once
 
     def test_properties(self):
         # use viaf id matching fixture rdf file
@@ -161,10 +169,10 @@ def test_sru_result():
     with open(sru_fixture) as srufile:
         sru_data = json.load(srufile)
     sru_res = SRUResult(sru_data)
-    assert sru_res.total_results == 13
+    assert sru_res.total_results == 8
     assert isinstance(sru_res.records, list)
     assert isinstance(sru_res.records[0], SRUItem)
-    assert len(sru_res.records) == 5
+    assert len(sru_res.records) == 8
 
 
 def test_sru_item():
@@ -173,17 +181,15 @@ def test_sru_item():
     with open(sru_fixture) as srufile:
         sru_data = json.load(srufile)
     sru_item = SRUResult(sru_data).records[0]
-    assert sru_item.uri == "http://viaf.org/viaf/888145424579886830405/"
-    assert sru_item.viaf_id == "888145424579886830405"
-    assert sru_item.nametype == "UniformTitleExpression"
-    assert (
-        sru_item.label
-        == "Benét, Stephen Vincent, 1898-1943. | John Brown's Body | Russian 1979"
-    )
+    assert sru_item.uri == "http://viaf.org/viaf/100260717/"
+    assert sru_item.viaf_id == 100260717
+    assert sru_item.nametype == "Personal"
 
     # label when data is a list
-    sru_item.recordData.mainHeadings.data = [sru_item.recordData.mainHeadings.data]
-    assert (
-        sru_item.label
-        == "Benét, Stephen Vincent, 1898-1943. | John Brown's Body | Russian 1979"
-    )
+    assert sru_item.label == "Bénet, Stephen Vincent, 1898-1943"
+
+    # label when data is a dict
+    sru_item.recordData.VIAFCluster.mainHeadings.data = {
+        "text": sru_item.recordData.VIAFCluster.mainHeadings.data[0].text
+    }
+    assert sru_item.label == "Bénet, Stephen Vincent, 1898-1943"
