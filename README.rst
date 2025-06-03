@@ -19,11 +19,7 @@ django-autocomplete-light lookup view and a VIAF url widget.
 
 .. image:: https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/Princeton-CDH/viapy/branch/master
-    :alt: Code coverage
-
-.. image:: https://requires.io/github/Princeton-CDH/viapy/requirements.svg
-     :target: https://requires.io/github/Princeton-CDH/viapy/requirements/
-     :alt: Requirements Status     
+    :alt: Code coverage  
 
 .. image:: https://www.codefactor.io/repository/github/princeton-cdh/viapy/badge
    :target: https://www.codefactor.io/repository/github/princeton-cdh/viapy
