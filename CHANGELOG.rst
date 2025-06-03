@@ -3,6 +3,12 @@
 CHANGELOG
 =========
 
+0.4
+---
+
+* Updates for new VIAF /search API endpoint response
+* bugfix: VIAF entity request needs Accept header
+
 0.3
 ---
 
