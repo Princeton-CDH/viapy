@@ -77,3 +77,6 @@ exclude_lines = [
     # skip command-line configuration for main method on scripts
     "if __name__ == .__main__.:"
 ]
+
+[tool.coverage.html]
+directory = "coverage_html_report"
