@@ -33,7 +33,10 @@ classifiers = [
 ]
 dynamic = ["version"]
 dependencies = [
-  "requests", "rdflib", "cached_property", "attrdict3"
+  "requests",
+  "rdflib",
+  "cached_property",
+  "attrdict3",
 ]
 
 [project.urls]
@@ -42,7 +45,7 @@ Repository = "https://github.com/Princeton-CDH/viapy"
 Changelog = "https://github.com/Princeton-CDH/viapy/blob/main/CHANGELOG.rst"
 
 [tool.hatch.version]
-path = "viapy/__init__.py"
+path = "src/viapy/__init__.py"
 
 [project.optional-dependencies]
 test = [
@@ -55,5 +58,10 @@ docs = ["sphinx"]
 test_all = ["viapy[test]", "viapy[django_test]"]
 dev = ["pre-commit", "viapy[django]", "viapy[test_all]", "viapy[docs]"]
 
-[tool.pytest.ini_options]
+[dependency-groups]
+dev = ["viapy[dev]"]
+
+[tool.pytest]
+testpaths = ["tests"]
+pythonpath = ["."]
 DJANGO_SETTINGS_MODULE = "testsettings"

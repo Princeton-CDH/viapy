@@ -73,16 +73,26 @@ This git repository uses `git flow`_ branching conventions.
 
 .. _git flow: https://github.com/nvie/gitflow
 
+For development, we assume the usage of `uv <https://docs.astral.sh/uv/>`_.
+``uv`` is compatible with the use of ``pip`` for python package management
+and a tool of your choice for creating python virtual environments
+(e.g., ``mamba``, ``venv``).
+
 Initial setup and installation:
 
-- Recommended: create and activate a python 3.11 virtualenv::
+* Install ``uv`` if it's not installed. 
+  It can be installed via PyPi, Homebrew, or a standalone installer.
+  See uv's `installation documentation <https://docs.astral.sh/uv/getting-started/installation>`_
+  for more details.
 
-    python3 -m venv viapy
-    source viapy/bin/activate
+* To explicitly sync the project's dependencies, including optional dependencies
+  for development and testing, to your local environment run::
 
-- pip install the package with all development and test dependencies::
+  uv sync
 
-    pip install -e ".[dev]""
+* Note that ``uv`` performs syncing and locking automatically (e.g., any time
+  ``uv run`` is invoked). By default, syncing will remove any packages not
+  specifically specified in the ``pyproject.toml``.
 
 
 Unit Testing
