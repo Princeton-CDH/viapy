@@ -98,7 +98,7 @@ Initial setup and installation:
 Unit Testing
 ^^^^^^^^^^^^
 
-Unit tests are set up to be run with `py.test <http://doc.pytest.org/>`_
+Unit tests are set up to be run with `pytest <http://doc.pytest.org/>`_
 
 - Copy sample test settings and add a **SECRET_KEY**::
 
@@ -106,27 +106,19 @@ Unit tests are set up to be run with `py.test <http://doc.pytest.org/>`_
 
 - To run the tests, either use the configured setup.py test command::
 
-    python setup.py test
-
-- Or install test requirements and use py.test directly::
-
-    pip install -e '.[test_all]'
-    py.test
+    uv run pytest
 
 
 Documentation
 ^^^^^^^^^^^^^
 
 Documentation is generated using `sphinx <http://www.sphinx-doc.org/>`_.
-To generate documentation, first install development requirements::
-
-    pip install -e ".[dev]"
 
 Then build the documentation using the customized make file in the `docs`
 directory::
 
     cd sphinx-docs
-    make html
+    uv run make html
 
 When building documentation for a production release, use `make docs` to
 update the published documentation on GitHub Pages.
