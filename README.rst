@@ -98,7 +98,7 @@ Initial setup and installation:
 Unit Testing
 ^^^^^^^^^^^^
 
-Unit tests are set up to be run with `pytest <http://doc.pytest.org/>`_
+Unit tests are set up to be run with `pytest <https://docs.pytest.org/>`_
 
 - Copy sample test settings and add a **SECRET_KEY**::
 
