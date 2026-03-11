@@ -104,7 +104,7 @@ Unit tests are set up to be run with `pytest <https://docs.pytest.org/>`_
 
     cp ci/testsettings.py testsettings.py
 
-- To run the tests, either use the configured setup.py test command::
+- To run the tests, run::
 
     uv run pytest
 
