@@ -1,7 +1,7 @@
 name: unit tests
 
 on:
-  push: # run on every push or PR to any branch
+  push: # run on all branches
   pull_request:
     - branches: [develop, main]
   schedule: # run automatically on main branch each Tuesday at 11am
