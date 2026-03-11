@@ -88,7 +88,7 @@ Initial setup and installation:
 * To explicitly sync the project's dependencies, including optional dependencies
   for development and testing, to your local environment run::
 
-  uv sync
+    uv sync
 
 * Note that ``uv`` performs syncing and locking automatically (e.g., any time
   ``uv run`` is invoked). By default, syncing will remove any packages not
