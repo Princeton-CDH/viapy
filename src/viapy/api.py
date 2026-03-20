@@ -2,12 +2,11 @@ import logging
 import re
 import time
 
+import rdflib
+import requests
 from attrdict import AttrMap
 from cached_property import cached_property
-import requests
-import rdflib
 from rdflib.namespace import Namespace
-
 
 logger = logging.getLogger(__name__)
 
@@ -15,7 +14,7 @@ logger = logging.getLogger(__name__)
 SCHEMA_NS = Namespace("http://schema.org/")
 
 
-class ViafAPI(object):
+class ViafAPI:
     """Wrapper for VIAF API.
 
     https://platform.worldcat.org/api-explorer/apis/VIAF
@@ -31,14 +30,14 @@ class ViafAPI(object):
     @classmethod
     def uri_from_id(cls, viaf_id):
         """Generate a canonical VIAF URI for the specified id"""
-        return "%s/%s" % (cls.uri_base, viaf_id)
+        return f"{cls.uri_base}/{viaf_id}"
 
     def suggest(self, term):
         """Query autosuggest API.  Returns a list of results, or an
         empty list if no suggestions are found or if something went wrong"""
 
         #  'viaf/AutoSuggest?query=[searchTerms]&callback[optionalCallbackName]
-        autosuggest_url = "%s/AutoSuggest" % self.api_base
+        autosuggest_url = f"{self.api_base}/AutoSuggest"
         response = requests.get(
             autosuggest_url,
             params={"query": term},
@@ -64,7 +63,7 @@ class ViafAPI(object):
         """Query VIAF seach interface.  Returns a list of :class:`SRUItem`
         :param query: CQL query in viaf syntax (e.g., ``cql.any all "term"``)
         """
-        search_url = "%s/search" % self.api_base
+        search_url = f"{self.api_base}/search"
         params = {
             "query": query,
             "maximumRecords": 10,  # TODO: configurable ?
@@ -73,7 +72,9 @@ class ViafAPI(object):
             "sortKey": "holdingscount",
         }
 
-        response = requests.get(search_url, params=params, headers={"Accept": "application/json"})
+        response = requests.get(
+            search_url, params=params, headers={"Accept": "application/json"}
+        )
         logger.debug(
             "search '%s': %s %s, %0.2f",
             params["query"],
@@ -90,7 +91,7 @@ class ViafAPI(object):
         response.raise_for_status()
 
     def _find_type(self, fltr, value):
-        return self.search('%s all "%s"' % (fltr, value))
+        return self.search(f'{fltr} all "{value}"')
 
     def find_person(self, name):
         """Search VIAF for local.personalNames"""
@@ -105,7 +106,7 @@ class ViafAPI(object):
         return self._find_type("local.geographicNames", name)
 
 
-class ViafEntity(object):
+class ViafEntity:
     """Object for working with a single VIAF entity.
 
     :param viaf_id: viaf identifier (either integer or uri)
@@ -177,7 +178,7 @@ class ViafEntity(object):
         return value
 
 
-class SRUResult(object):
+class SRUResult:
     """SRU search result object, for use with :meth:`ViafAPI.search`."""
 
     def __init__(self, data):
@@ -213,10 +214,11 @@ class SRUResult(object):
         else:
             return data
 
+
 class SRUItem(AttrMap):
     """Single item returned by a SRU search, for use with
     :meth:`ViafAPI.search` and :class:`SRUResult`.
-    
+
     The `VIAFCluster` attribute was added to each property lookup in 2025 to
     match updates to the /search API's JSON response."""
 

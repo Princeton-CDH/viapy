@@ -2,7 +2,6 @@ from django.urls import path
 
 from viapy.views import ViafLookup, ViafSearch
 
-
 app_name = "viapy"
 
 urlpatterns = [

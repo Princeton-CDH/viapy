@@ -1,0 +1,14 @@
+# This config file specifies which pre-commit hooks to run.
+#
+# To set up, run `pre-commit install`
+# To run all hooks manually, run `pre-commit run --all-files`
+repos:
+  # Ruff Python linter and formatter (ruff configs in pyproject.toml)
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.12.7
+    hooks:
+      # Run the linter
+      - id: ruff-check
+        args: [--fix, --show-fixes] # enable lint fixes
+      # Run the formatter
+      - id: ruff-format

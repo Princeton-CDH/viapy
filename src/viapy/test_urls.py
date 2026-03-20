@@ -1,7 +1,7 @@
-"""Test URL configuration for viapy
-"""
+"""Test URL configuration for viapy"""
+
 try:
-    from django.urls import path, include
+    from django.urls import include, path
 
     from viapy import urls as viapy_urls
 

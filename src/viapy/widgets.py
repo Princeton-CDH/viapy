@@ -11,8 +11,7 @@ class ViafWidget(autocomplete.Select2):
         # so when a value is set, add it to the list of choices
         if value:
             self.choices = [(value, value)]
-        widget = super(ViafWidget, self).render(name, value, attrs)
+        widget = super().render(name, value, attrs)
         return mark_safe(
-            '%s<p><br /><a id="viaf_uri" target="_blank" href="%s">%s</a></p>'
-            % (widget, value or "", value or "")
+            f'{widget}<p><br /><a id="viaf_uri" target="_blank" href="{value or ""}">{value or ""}</a></p>'
         )
