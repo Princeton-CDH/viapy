@@ -12,3 +12,8 @@ repos:
         args: [--fix, --show-fixes] # enable lint fixes
       # Run the formatter
       - id: ruff-format
+  # yamlfmt for formatting YAML files
+  - repo: https://github.com/google/yamlfmt
+    rev: v0.17.2
+    hooks:
+      - id: yamlfmt
