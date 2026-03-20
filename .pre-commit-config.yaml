@@ -25,3 +25,20 @@ repos:
         additional_dependencies:
           - tomli
         exclude_types: ["css", "html", "javascript", "json"]
+  # Some out-of-the-box file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      # Check for files with merge conflict strings
+      - id: check-merge-conflict
+      # Verify syntax of TOML files
+      - id: check-toml
+      # Verify syntax of YAML files
+      - id: check-yaml
+        args: [--unsafe]
+      # Verifies that test files begin with test_
+      - id: name-tests-test
+        args: [--pytest-test-first]
+      # Removes trailing whitespace from all files
+      - id: trailing-whitespace
+        exclude: "docs/"
