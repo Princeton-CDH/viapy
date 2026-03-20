@@ -60,7 +60,7 @@ class ViafAPI:
         return []
 
     def search(self, query):
-        """Query VIAF seach interface.  Returns a list of :class:`SRUItem`
+        """Query VIAF search interface.  Returns a list of :class:`SRUItem`
         :param query: CQL query in viaf syntax (e.g., ``cql.any all "term"``)
         """
         search_url = f"{self.api_base}/search"

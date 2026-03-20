@@ -15,7 +15,7 @@ CHANGELOG
 * Handle negative years when parsing birth and death dates
 * Now tested on python 3.9 through 3.12
 * Now tested against Django 3.2 through 5.0
-* Migrate continous integration to GitHub Actions
+* Migrate continuous integration to GitHub Actions
 
 0.2
 ---

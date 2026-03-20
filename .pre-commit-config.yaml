@@ -3,7 +3,7 @@
 # To set up, run `pre-commit install`
 # To run all hooks manually, run `pre-commit run --all-files`
 repos:
-  # Ruff Python linter and formatter (ruff configs in pyproject.toml)
+  # Ruff Python linter and formatter (configs in pyproject.toml)
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.12.7
     hooks:
@@ -17,3 +17,11 @@ repos:
     rev: v0.17.2
     hooks:
       - id: yamlfmt
+  # Codespell for spell checking
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.1
+    hooks:
+      - id: codespell
+        additional_dependencies:
+          - tomli
+        exclude_types: ["css", "html", "javascript", "json"]
