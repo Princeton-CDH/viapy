@@ -42,3 +42,14 @@ repos:
       # Removes trailing whitespace from all files
       - id: trailing-whitespace
         exclude: "docs/"
+  # Check uv.lock file is up to date
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    # uv version.
+    rev: 0.8.6
+    hooks:
+      - id: uv-lock
+  # Validate GitHub Actions workflow files
+  - repo: https://github.com/mpalmer/action-validator
+    rev: v0.8.0
+    hooks:
+      - id: action-validator

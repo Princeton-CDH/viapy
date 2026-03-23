@@ -3,7 +3,7 @@ name: unit tests
 on:
   push: # run on all branches
   pull_request:
-    - branches: [develop, main]
+    branches: [develop, main]
   schedule: # run automatically on main branch each Tuesday at 11am
     - cron: "0 16 * * 2"
 
