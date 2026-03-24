@@ -26,14 +26,12 @@ jobs:
 
       - name: Install package dependencies
         run: |
-          {
-            if [ "${{ matrix.django }}" -gt "0" ]
-            then
-              uv add django==${{ matrix.django }}
-              uv sync --extra test --extra django_test
-            else
-              uv sync --extra test
-          }
+          if [ "${{ matrix.django }}" -gt "0" ]
+          then
+            uv add django=="${{ matrix.django }}"
+            uv sync --extra test --extra django_test
+          else
+            uv sync --extra test
 
       - name: Setup test settings
         run: |
@@ -46,6 +44,6 @@ jobs:
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v5
         with:
-          token: "${{ secrets.CODECOV_TOKEN }}"
+          token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage.xml
           fail_ci_if_error: false
