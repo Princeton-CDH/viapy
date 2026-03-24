@@ -36,7 +36,7 @@ jobs:
       - name: Setup test settings
         run: |
           cp ci/testsettings.py testsettings.py
-          python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
+          uv run python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
 
       - name: Run pytest
         run: uv run pytest --cov=viapy --cov=tests --cov-report=xml --cov-report=term
