@@ -68,7 +68,8 @@ dev = [
 [dependency-groups]
 dev = ["viapy[dev]"]
 
-[tool.pytest]
+[tool.pytest.ini_options]
+# Need to use ini_options for Python 3.9
 testpaths = ["tests"]
 pythonpath = ["."]
 DJANGO_SETTINGS_MODULE = "testsettings"
