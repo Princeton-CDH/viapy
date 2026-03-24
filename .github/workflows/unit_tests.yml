@@ -25,13 +25,13 @@ jobs:
           python-version: ${{ matrix.python }}
 
       - name: Install package dependencies
-        run: |
-          if [ "${{ matrix.django }}" -gt "0" ]
-          then
-            uv add django=="${{ matrix.django }}"
-            uv sync --extra test --extra django_test
+        run: >-
+          if [ "${{ matrix.django }}" -gt "0" ]; then
+            uv add django=="${{ matrix.django }}";
+            uv sync --extra test --extra django_test;
           else
-            uv sync --extra test
+            uv sync --extra test;
+          fi
 
       - name: Setup test settings
         run: |
