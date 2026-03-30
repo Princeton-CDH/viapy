@@ -3,7 +3,7 @@ name: unit tests
 on:
   push: # run on all branches
   pull_request:
-    - branches: [develop, main]
+    branches: [develop, main]
   schedule: # run automatically on main branch each Tuesday at 11am
     - cron: "0 16 * * 2"
 
@@ -20,25 +20,23 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Install uv and Python version
-        uses: astral-sh/setup@v7
+        uses: astral-sh/setup-uv@v7
         with:
           python-version: ${{ matrix.python }}
 
       - name: Install package dependencies
-        run: |
-          {
-            if [ "${{ matrix.django }}" -gt "0" ]
-            then
-              uv add django==${{ matrix.django }}
-              uv sync --extra test --extra django_test
-            else
-              uv sync --extra test
-          }
+        run: >-
+          if [ "${{ matrix.django }}" -gt "0" ]; then
+            uv add django=="${{ matrix.django }}";
+            uv sync --extra test --extra django_test;
+          else
+            uv sync --extra test;
+          fi
 
       - name: Setup test settings
         run: |
           cp ci/testsettings.py testsettings.py
-          python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
+          uv run python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
 
       - name: Run pytest
         run: uv run pytest --cov=viapy --cov=tests --cov-report=xml --cov-report=term

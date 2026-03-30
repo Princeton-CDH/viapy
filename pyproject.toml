@@ -57,12 +57,19 @@ django = ["django>=3.2", "django-autocomplete-light"]
 django_test = ["pytest-django", "viapy[django]"]
 docs = ["sphinx"]
 test_all = ["viapy[test]", "viapy[django_test]"]
-dev = ["pre-commit", "viapy[django]", "viapy[test_all]", "viapy[docs]"]
+dev = [
+  "ruff",
+  "pre-commit",
+  "viapy[django]",
+  "viapy[test_all]",
+  "viapy[docs]"
+]
 
 [dependency-groups]
 dev = ["viapy[dev]"]
 
-[tool.pytest]
+[tool.pytest.ini_options]
+# Need to use ini_options for Python 3.9
 testpaths = ["tests"]
 pythonpath = ["."]
 DJANGO_SETTINGS_MODULE = "testsettings"
@@ -80,3 +87,19 @@ exclude_lines = [
 
 [tool.coverage.html]
 directory = "coverage_html_report"
+
+[tool.ruff.lint]
+# Include these rules in addition to ruff's defaults
+extend-select = [
+  "B",    # flake8-bugbear
+  "C4",   # flake8-comprehensions
+  "I",    #isort
+  "NPY",  # numpy-specific rules
+  "PERF", # perflint
+  "PTH",  # flake8-use-pathlib
+  "RUF",  # ruff-specific rules
+  "SIM",  # flake8-simplify
+  "UP",   # pyupgrade
+]
+# Can use to ignore specific rules within above selection
+ignore = []

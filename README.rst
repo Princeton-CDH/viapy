@@ -19,7 +19,7 @@ django-autocomplete-light lookup view and a VIAF url widget.
 
 .. image:: https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg
     :target: https://codecov.io/gh/Princeton-CDH/viapy/branch/master
-    :alt: Code coverage  
+    :alt: Code coverage
 
 .. image:: https://www.codefactor.io/repository/github/princeton-cdh/viapy/badge
    :target: https://www.codefactor.io/repository/github/princeton-cdh/viapy
@@ -27,7 +27,7 @@ django-autocomplete-light lookup view and a VIAF url widget.
 
 .. image:: https://img.shields.io/pypi/pyversions/viapy
    :alt: PyPI - Python Version
-   
+
 .. image:: https://img.shields.io/pypi/djversions/viapy
    :alt: PyPI - Django Version
 
@@ -80,7 +80,7 @@ and a tool of your choice for creating python virtual environments
 
 Initial setup and installation:
 
-* Install ``uv`` if it's not installed. 
+* Install ``uv`` if it's not installed.
   It can be installed via PyPi, Homebrew, or a standalone installer.
   See uv's `installation documentation <https://docs.astral.sh/uv/getting-started/installation>`_
   for more details.

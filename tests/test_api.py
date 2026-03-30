@@ -1,16 +1,16 @@
 import json
-import os
+import pathlib
 from unittest.mock import Mock, patch
 
-import requests
 import rdflib
+import requests
 
-from viapy.api import ViafAPI, ViafEntity, SRUResult, SRUItem
+from viapy.api import SRUItem, SRUResult, ViafAPI, ViafEntity
 
-FIXTURES_PATH = os.path.join(os.path.dirname(__file__), "fixtures")
+FIXTURES_PATH = pathlib.Path(__file__).parent / "fixtures"
 
 
-class TestViafAPI(object):
+class TestViafAPI:
     def test_get_uri(self):
         assert ViafAPI.uri_from_id("1234") == "http://viaf.org/viaf/1234"
         # numeric id should also work
@@ -51,8 +51,8 @@ class TestViafAPI(object):
         viaf = ViafAPI()
         mockrequests.codes = requests.codes
 
-        sru_fixture = os.path.join(FIXTURES_PATH, "sru_search.json")
-        with open(sru_fixture) as srufile:
+        sru_fixture = FIXTURES_PATH / "sru_search.json"
+        with sru_fixture.open() as srufile:
             mock_result = json.load(srufile)
         mockrequests.get.return_value.status_code = requests.codes.ok
         mockrequests.get.return_value.json.return_value = mock_result
@@ -85,7 +85,7 @@ class TestViafAPI(object):
         with patch.object(viaf, "search") as mocksearch:
             viaf.find_person(term)
 
-        mocksearch.assert_called_with('local.personalNames all "%s"' % term)
+        mocksearch.assert_called_with(f'local.personalNames all "{term}"')
 
     def test_find_corporate(self):
         viaf = ViafAPI()
@@ -93,7 +93,7 @@ class TestViafAPI(object):
         with patch.object(viaf, "search") as mocksearch:
             viaf.find_corporate(term)
 
-        mocksearch.assert_called_with('local.corporateNames all "%s"' % term)
+        mocksearch.assert_called_with(f'local.corporateNames all "{term}"')
 
     def test_find_place(self):
         viaf = ViafAPI()
@@ -101,13 +101,13 @@ class TestViafAPI(object):
         with patch.object(viaf, "search") as mocksearch:
             viaf.find_place(term)
 
-        mocksearch.assert_called_with('local.geographicNames all "%s"' % term)
+        mocksearch.assert_called_with(f'local.geographicNames all "{term}"')
 
 
-class TestViafEntity(object):
+class TestViafEntity:
     test_id = 102333412
     test_uri = "http://viaf.org/viaf/102333412"
-    rdf_fixture = os.path.join(FIXTURES_PATH, "102333412_rdf.xml")
+    rdf_fixture = FIXTURES_PATH / "102333412_rdf.xml"
 
     def test_init(self):
         # numeric id (either int or string should work)
@@ -137,9 +137,13 @@ class TestViafEntity(object):
         # should call requests.get on the uri, initialize a graph and parse data
         assert ent.rdf == mockrdflib.Graph.return_value
         mockrdflib.Graph.assert_called_with()
-        mockrequests.get.assert_called_with(self.test_uri, headers={"Accept": "application/rdf+xml"})
-        mockrdflib.Graph.return_value.parse.assert_called_with(data=mock_response.text, format="xml")
-        mockrequests.raise_for_status.assert_called_once
+        mockrequests.get.assert_called_with(
+            self.test_uri, headers={"Accept": "application/rdf+xml"}
+        )
+        mockrdflib.Graph.return_value.parse.assert_called_with(
+            data=mock_response.text, format="xml"
+        )
+        mock_response.raise_for_status.assert_called_once()
 
     def test_properties(self):
         # use viaf id matching fixture rdf file
@@ -165,8 +169,8 @@ class TestViafEntity(object):
 
 def test_sru_result():
     # test SRUResult class properties
-    sru_fixture = os.path.join(FIXTURES_PATH, "sru_search.json")
-    with open(sru_fixture) as srufile:
+    sru_fixture = FIXTURES_PATH / "sru_search.json"
+    with sru_fixture.open() as srufile:
         sru_data = json.load(srufile)
     sru_res = SRUResult(sru_data)
     assert sru_res.total_results == 8
@@ -177,8 +181,8 @@ def test_sru_result():
 
 def test_sru_item():
     # test SRUItem class
-    sru_fixture = os.path.join(FIXTURES_PATH, "sru_search.json")
-    with open(sru_fixture) as srufile:
+    sru_fixture = FIXTURES_PATH / "sru_search.json"
+    with sru_fixture.open() as srufile:
         sru_data = json.load(srufile)
     sru_item = SRUResult(sru_data).records[0]
     assert sru_item.uri == "http://viaf.org/viaf/100260717/"
