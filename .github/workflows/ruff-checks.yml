@@ -15,6 +15,6 @@ jobs:
         with:
           args: "check --output-format=github"
       - name: Run Ruff formatter
-        uses: astral-sh/ruff-action@v3
-        with:
-          args: "format --check --diff"
+        run: ruff format --check --diff
+        # Check formatting even if the previous step failed
+        if: ${{ !cancelled }}

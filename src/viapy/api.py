@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 SCHEMA_NS = Namespace("http://schema.org/")
 
 
-class ViafAPI:
+class ViafAPI(object):
     """Wrapper for VIAF API.
 
     https://platform.worldcat.org/api-explorer/apis/VIAF
@@ -23,7 +23,7 @@ class ViafAPI:
     # NOTE: API urls use www prefix, but VIAF URIs do not
 
     #: base url for VIAF API methods
-    api_base = 'https://www.viaf.org/viaf'  
+    api_base = "https://www.viaf.org/viaf"  
     #: base url for VIAF URIs
     uri_base = "http://viaf.org/viaf"
 
