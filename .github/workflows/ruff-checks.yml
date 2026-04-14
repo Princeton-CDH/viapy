@@ -17,4 +17,4 @@ jobs:
       - name: Run Ruff formatter
         run: ruff format --check --diff
         # Check formatting even if the previous step failed
-        if: ${{ !cancelled }}
+        if: always()
