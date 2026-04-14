@@ -2,8 +2,8 @@ import logging
 import re
 import time
 
-import requests
 import rdflib
+import requests
 from attrdict import AttrMap
 from cached_property import cached_property
 from rdflib.namespace import Namespace
@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 SCHEMA_NS = Namespace("http://schema.org/")
 
 
-class ViafAPI(object):
+class ViafAPI:
     """Wrapper for VIAF API.
 
     https://platform.worldcat.org/api-explorer/apis/VIAF
