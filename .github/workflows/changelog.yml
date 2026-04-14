@@ -16,9 +16,6 @@ jobs:
     steps:
       - name: Debugging
         run: echo '${{ toJSON(github) }}'
-      - name: Event type
-        run: echo "${{ github.event.action }}"
-        run: echo "${{ github.event.pull_request.action }}"
       - name: Check changelog
         uses: tarides/changelog-check-action@v3
         with:
