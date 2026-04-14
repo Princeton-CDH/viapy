@@ -15,6 +15,7 @@ jobs:
         with:
           args: "check --output-format=github"
       - name: Run Ruff formatter
-        run: ruff format --check --diff
+        # Use preview for github format support
+        run: ruff format --check --diff --preview
         # Check formatting even if the previous step failed
         if: always()
