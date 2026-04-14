@@ -11,8 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     # for labeled/unlabeled actions, only run if it involves the "no changelog" label
     if: >
-      (contains(github.event.pull_request.action, "label") && github.event.label.name == "no changelog")
-      || ! contains(github.event.pull_request.action, "label")
+      (contains(github.event.pull_request.action, 'label') && github.event.label.name == 'no changelog')
+      || ! contains(github.event.pull_request.action, 'label')
     steps:
       - name: Check changelog
         uses: tarides/changelog-check-action@v3
