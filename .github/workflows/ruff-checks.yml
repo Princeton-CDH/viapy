@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      # Install ruff once
+      - uses: astral-sh/ruff-action@v3
       - name: Run Ruff linter
-        uses: astral-sh/ruff-action@v3
-        with:
-          args: "check --output-format=github"
+        run: ruff check --output-format=github
       - name: Run Ruff formatter
         # NOTE: ruff format does not currently support github output format
         run: ruff format --check --diff
