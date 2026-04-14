@@ -15,7 +15,8 @@ jobs:
       || ! contains(github.event.pull_request.action, 'label')
     steps:
       - name: Debugging
-        run: echo ${{ github.event.pull_request.action }}
+        shell: bash
+        run: echo ${{ github.event.pull_request.action}}
       - name: Check changelog
         uses: tarides/changelog-check-action@v3
         with:
