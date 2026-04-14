@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Debugging
         shell: bash
-        run: echo ${{ github.event.pull_request.action}}
+        run: echo "$GITHUB_CONTEXT"
       - name: Check changelog
         uses: tarides/changelog-check-action@v3
         with:
