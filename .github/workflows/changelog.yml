@@ -17,4 +17,4 @@ jobs:
       - name: Check changelog
         uses: tarides/changelog-check-action@v3
         with:
-          changelog: CHANGELOG.md
+          changelog: CHANGELOG.rst
