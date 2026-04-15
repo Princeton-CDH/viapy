@@ -12,6 +12,8 @@ on:
   # normal behavior: run when a new release is created
   release:
     types: [published]
+  # allow manually running on main (restriction within job)
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -25,7 +27,7 @@ jobs:
       url: https://pypi.org/project/viapy/
     permissions:
       id-token: write # IMPORTANT: this permission is mandatory for trusted publishing
-
+    if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && github.ref == 'main')
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python
