@@ -3,7 +3,7 @@
 CHANGELOG
 =========
 
-0.4.1
+0.5
 ---
 
 * Now supports Python 3.10 through 3.14
