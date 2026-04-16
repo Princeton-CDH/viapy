@@ -6,7 +6,7 @@ CHANGELOG
 0.5
 ---
 
-* Now supports Python 3.10 through 3.14
+* Now supports Python 3.10 through 3.14; drops support for Python 3.9
 * Adopt a new set of ruff linter rules
 * Add GitHub Action for ruff lint and format checks
 * Add GitHub Action to check for changelog updates
