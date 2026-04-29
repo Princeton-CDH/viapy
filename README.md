@@ -22,7 +22,7 @@ django-autocomplete-light lookup view and a VIAF url widget.
 Use pip to install from GitHub. Use a branch or tag name, e.g.
 `@develop` or `@1.0` if you want to install a specific tagged release or branch:
 
-```
+```sh
 pip install git+https://github.com/Princeton-CDH/viapy.git@develop#egg=viapy
 ```
 
@@ -32,7 +32,7 @@ Using `viapy` with Django requires additional configuration. Add `viapy` to
 installed applications along with the needed django-autocomplete-light
 modules:
 
-```
+```python
 INSTALLED_APPS = (
     ...
     'dal',
@@ -44,7 +44,7 @@ INSTALLED_APPS = (
 
 Include the viapy urls at the desired base url with the namespace:
 
-```
+```python
 urlpatterns = [
     ...
     path(r'viaf/', include('viapy.urls', namespace='viaf')),
@@ -71,7 +71,7 @@ Initial setup and installation:
 - To explicitly sync the project's dependencies, including optional dependencies
   for development and testing, to your local environment run:
 
-  ```
+  ```sh
   uv sync
   ```
 
@@ -81,17 +81,17 @@ Initial setup and installation:
 
 ### Unit Testing
 
-Unit tests are set up to be run with [pytest](https://docs.pytest.org/)
+Unit tests are set up to be run with [pytest](https://docs.pytest.org/).
 
 - Copy sample test settings and add a **SECRET_KEY**:
 
-  ```
+  ```sh
   cp ci/testsettings.py testsettings.py
   ```
 
 - To run the tests, run:
 
-  ```
+  ```sh
   uv run pytest
   ```
 
@@ -102,13 +102,24 @@ Documentation is generated using [sphinx](https://www.sphinx-doc.org/).
 Then build the documentation using the customized make file in the `docs`
 directory:
 
-```
+```sh
 cd sphinx-docs
 uv run make html
 ```
 
 When building documentation for a production release, use `make docs` to
 update the published documentation on GitHub Pages.
+
+To check documentation coverage, run:
+
+```sh
+uv make html -b coverage
+```
+
+This will create a file under `_build/coverage/python.txt` listing any Python classes or methods
+that are not documented. Note that sphinx can only report on code coverage for files that are
+included in the documentation. If a new Python file is created but not included in the sphinx
+documentation, it will be omitted.
 
 ## License
 
