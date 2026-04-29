@@ -1,10 +1,10 @@
 name: unit tests
 
 on:
-  push: # run on all branches
+  push:  # run on all branches
   pull_request:
     branches: [develop, main]
-  schedule: # run automatically on main branch each Tuesday at 11am
+  schedule:  # run automatically on main branch each Tuesday at 11am
     - cron: "0 16 * * 2"
 
 jobs:
@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         python: ["3.10", "3.11", "3.12", "3.13", "3.14"]
-        django: [0, "3.2", "4.0", "4.1", "4.2", "5.0"]
+        django: [0, "5.2", "6.0"]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
