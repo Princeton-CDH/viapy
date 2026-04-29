@@ -26,7 +26,7 @@ jobs:
         run: uv sync --extra docs
 
       - name: Build Sphinx docs
-        run: cd sphinx-docs && uv make -b coverage html
+        run: cd sphinx-docs && uv run make -b coverage html
 
       # For pull requests, exit with error if documentation coverage is incomplete
       - name: Report on documentation coverage
