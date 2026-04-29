@@ -31,10 +31,10 @@ jobs:
       # For pull requests, exit with error if documentation coverage is incomplete
       - name: Report on documentation coverage
         if: github.event_name == 'pull_request'
-        run: >-
-          cd sphinx-docs/_build/coverage
+        run: |
+          cd sphinx-docs/_build/coverage &&
           if [[ $((`grep corppa python.txt | grep -v 100 | wc -l`)) -eq 0 ]]; then
-            echo "Documentation coverage complete";
+            echo "Documentation coverage complete"
           else
-            cat python.txt;
+            cat python.txt
           fi
