@@ -10,28 +10,11 @@ Authority File) data and APIs.
 **viapy** provides optional Django integration; this currently includes a
 django-autocomplete-light lookup view and a VIAF url widget.
 
-```{image} https://github.com/Princeton-CDH/viapy/actions/workflows/unit_tests.yml/badge.svg
-:alt: Build status
-:target: https://github.com/Princeton-CDH/viapy/actions/workflows/unit_tests.yml
-```
-
-```{image} https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg
-:alt: Code coverage
-:target: https://codecov.io/gh/Princeton-CDH/viapy/branch/master
-```
-
-```{image} https://www.codefactor.io/repository/github/princeton-cdh/viapy/badge
-:alt: CodeFactor
-:target: https://www.codefactor.io/repository/github/princeton-cdh/viapy
-```
-
-```{image} https://img.shields.io/pypi/pyversions/viapy
-:alt: PyPI - Python Version
-```
-
-```{image} https://img.shields.io/pypi/djversions/viapy
-:alt: PyPI - Django Version
-```
+[![unit tests](https://github.com/Princeton-CDH/viapy/actions/workflows/unit_tests.yml/badge.svg)](https://github.com/Princeton-CDH/viapy/actions/workflows/unit_tests.yml)
+[![codecov](https://codecov.io/gh/Princeton-CDH/viapy/branch/master/graph/badge.svg)](https://codecov.io/gh/Princeton-CDH/viapy/branch/master)
+[![CodeFactor](https://www.codefactor.io/repository/github/princeton-cdh/viapy/badge)](https://www.codefactor.io/repository/github/princeton-cdh/viapy)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/viapy)](https://pypi.org/project/viapy/)
+[![PyPI - Django Version](https://img.shields.io/pypi/djversions/viapy)](https://pypi.org/project/viapy/)
 
 ## Installation
 
