@@ -1,6 +1,7 @@
 # viapy
 
-% sphinx-start-marker-do-not-remove
+<!-- % sphinx-start-marker-do-not-remove
+% -->
 
 *VIAF via Python*
 
