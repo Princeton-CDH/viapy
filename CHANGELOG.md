@@ -3,9 +3,11 @@
 ## 0.5
 
 - Now supports Python 3.10 through 3.14; drops support for Python 3.9
+- Now supports Django 5.2 and 6.0; drops support for Django 3.2 through 5.0
 - Adopt a new set of ruff linter rules
 - Add GitHub Action for ruff lint and format checks
 - Add GitHub Action to check for changelog updates
+- Add GitHub Action for publishing documentation to GitHub Pages
 - Add pre-commit hooks for development
 - Switch to using uv for package development
 - Switch project organization to src layout
