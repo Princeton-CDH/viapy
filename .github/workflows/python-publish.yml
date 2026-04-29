@@ -18,6 +18,11 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  # Cancel existing job(s) for workflow when a new one is queued
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   pypi-publish:
     name: Upload release to PyPI
@@ -26,7 +31,7 @@ jobs:
       name: pypi
       url: https://pypi.org/project/viapy/
     permissions:
-      id-token: write # IMPORTANT: this permission is mandatory for trusted publishing
+      id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing
     if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && github.ref == 'main')
     steps:
       - uses: actions/checkout@v4

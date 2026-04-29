@@ -5,6 +5,11 @@ on:
   pull_request:
     branches: [develop, main]
 
+concurrency:
+  # Cancel existing job(s) for workflow when a new one is queued
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 env:
   # Python version used to build sphinx docs
   DOCS_PYTHON_VERSION: "3.12"
