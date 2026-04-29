@@ -7,7 +7,7 @@
 - Adopt a new set of ruff linter rules
 - Add GitHub Action for ruff lint and format checks
 - Add GitHub Action to check for changelog updates
-- Add GitHub Action for publishing documentation to GitHub Pages
+- Add GitHub Action for checking documentation coverage
 - Add pre-commit hooks for development
 - Switch to using uv for package development
 - Switch project organization to src layout
