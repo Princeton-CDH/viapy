@@ -1,7 +1,9 @@
 name: sphinx docs coverage
 
 on:
+  push:  # run on all branches
   pull_request:
+    branches: [develop, main]
 
 env:
   # Python version used to build sphinx docs
