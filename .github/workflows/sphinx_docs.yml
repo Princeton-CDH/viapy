@@ -24,7 +24,7 @@ jobs:
           python-version: ${{ env.DOCS_PYTHON_VERSION }}
 
       - name: Install package dependencies
-        run: uv sync --extra doc
+        run: uv sync --extra docs
 
       - name: Build Sphinx docs
         run: cd docs && make -b coverage html
