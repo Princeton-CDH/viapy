@@ -1,5 +1,3 @@
-(changelog)=
-
 # CHANGELOG
 
 ## 0.5
