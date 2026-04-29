@@ -1,9 +1,6 @@
-name: sphinx docs
+name: sphinx docs coverage
 
 on:
-  push:  # run on push to main and PR
-    branches:
-      - main
   pull_request:
 
 env:
@@ -27,23 +24,15 @@ jobs:
         run: uv sync --extra docs
 
       - name: Build Sphinx docs
-        run: cd docs && make -b coverage html
+        run: cd sphinx-docs && uv make -b coverage html
 
       # For pull requests, exit with error if documentation coverage is incomplete
       - name: Report on documentation coverage
         if: github.event_name == 'pull_request'
         run: >-
-          cd docs/build/coverage
+          cd sphinx-docs/_build/coverage
           if [[ $((`grep corppa python.txt | grep -v 100 | wc -l`)) -eq 0 ]]; then
             echo "Documentation coverage complete";
           else
             cat python.txt;
           fi
-
-      # When building on push to main, publish the built docs
-      - name: Deploy built docs to github pages
-        if: github.event_name == 'push'
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/build/html
