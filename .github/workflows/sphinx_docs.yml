@@ -1,0 +1,49 @@
+name: sphinx docs
+
+on:
+  push:  # run on push to main and PR
+    branches:
+      - main
+  pull_request:
+
+env:
+  # Python version used to build sphinx docs
+  DOCS_PYTHON_VERSION: "3.12"
+
+jobs:
+  docs:
+    name: Sphinx documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install uv and Python version
+        uses: astral-sh/setup-uv@v7
+        with:
+          python-version: ${{ env.DOCS_PYTHON_VERSION }}
+
+      - name: Install package dependencies
+        run: uv sync --extra doc
+
+      - name: Build Sphinx docs
+        run: cd docs && make -b coverage html
+
+      # For pull requests, exit with error if documentation coverage is incomplete
+      - name: Report on documentation coverage
+        if: github.event_name == 'pull_request'
+        run: >-
+          cd docs/build/coverage
+          if [[ $((`grep corppa python.txt | grep -v 100 | wc -l`)) -eq 0 ]]; then
+            echo "Documentation coverage complete";
+          else
+            cat python.txt;
+          fi
+
+      # When building on push to main, publish the built docs
+      - name: Deploy built docs to github pages
+        if: github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs/build/html
