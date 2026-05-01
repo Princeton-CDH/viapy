@@ -125,7 +125,7 @@ documentation, it will be omitted.
 
 **viapy** is distributed under the Apache 2.0 License.
 
-©2024 Trustees of Princeton University. Permission granted via
+©2024-2026 Trustees of Princeton University. Permission granted via
 Princeton Docket #18-3449-1 for distribution online under a standard Open Source
 license. Ownership rights transferred to Rebecca Koeser provided software
 is distributed online via open source.
