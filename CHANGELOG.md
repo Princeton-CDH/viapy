@@ -14,6 +14,8 @@
 - Add GitHub Action for Ruff lint and format checks
 - Add GitHub Action to check for changelog updates
 - Add GitHub Action for checking documentation coverage
+- Add GitHub Action to check that pull requests align with git-flow workflow
+- Add custom GitHub issue template for software releases
 - Switch from os.path to pathlib
 - Switch from rst to md for documentation format
 - Add custom config for codecov to create separate checks for the core package and tests
