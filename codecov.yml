@@ -1,0 +1,12 @@
+coverage:
+  status:
+    project:
+      default: false  # disable the default status that measures entire project
+      core:  # custom target for core package
+        target: 90%
+        paths:
+          - "src/viapy/"
+      tests:  # 100% coverage for test files
+        target: 100%
+        paths:
+          - "tests/"  # only include coverage in tests folder
