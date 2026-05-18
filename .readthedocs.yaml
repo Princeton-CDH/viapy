@@ -10,10 +10,8 @@ build:
     python: "3.12"
   jobs:
     pre_build:
-      # Workaround
-      - cp docs/docsettings.py
       # Check for broken links
-      - python -m sphinx -b linkcheck -D linkcheck_timeout=1 docs/ $READTHEDOCS_OUTPUT/linkcheck
+      - python -m sphinx -b linkcheck docs $READTHEDOCS_OUTPUT/linkcheck
 
 sphinx:
   configuration: docs/conf.py

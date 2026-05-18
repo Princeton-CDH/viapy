@@ -8,7 +8,7 @@ import django
 
 from viapy import __version__
 
-sys.path.insert(0, pathlib.Path().resolve())
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 os.environ["DJANGO_SETTINGS_MODULE"] = "docsettings"
 django.setup()
@@ -192,3 +192,5 @@ intersphinx_mapping = {
 linkcheck_ignore = [
     "https://viaf.org",  # avoid 403 error
 ]
+linkcheck_timeout = 5
+linkcheck_retries = 3
