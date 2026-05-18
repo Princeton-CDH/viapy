@@ -163,9 +163,6 @@ cd sphinx-docs
 uv run make html
 ```
 
-When building documentation for a production release, use `make docs` to
-update the published documentation on GitHub Pages.
-
 To check documentation coverage, run:
 
 ```sh
