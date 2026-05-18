@@ -187,3 +187,8 @@ intersphinx_mapping = {
         "http://docs.djangoproject.com/en/dev/_objects/",
     ),
 }
+
+# -- Options for linkcheck builder ----------------------------------------
+linkcheck_ignore = [
+    "https://viaf.org",  # avoid 403 error
+]
