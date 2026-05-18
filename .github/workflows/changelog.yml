@@ -1,11 +1,12 @@
 name: Check Changelog
-
 on:
   pull_request:
     # opened/synchronize/reopened: Check changelog when PR is created or updated
     # labeled/unlabeled: Re-run check when "no changelog" label is added/removed
     types: [opened, synchronize, reopened, labeled, unlabeled]
     branches: [develop, main]
+
+permissions: {}
 
 concurrency:
   # Cancel existing job(s) for workflow when a new one is queued
@@ -24,4 +25,4 @@ jobs:
       - name: Check changelog
         uses: tarides/changelog-check-action@v3
         with:
-          changelog: CHANGELOG.rst
+          changelog: CHANGELOG.md
