@@ -9,10 +9,9 @@ build:
   tools:
     python: "3.12"
   jobs:
-    post_install:
-      # Workaround
-      - cp docs/docsettings.py .
     pre_build:
+      # Workaround
+      - cp docs/docsettings.py:
       # Check for broken links
       - python -m sphinx -b linkcheck -D linkcheck_timeout=1 docs/ $READTHEDOCS_OUTPUT/linkcheck
 
