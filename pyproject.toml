@@ -67,9 +67,15 @@ dev = [
 dev = ["viapy[dev]"]
 
 [tool.pytest]
+minversion = "9"
+strict = true
+addopts = ["-ra"]
 testpaths = ["tests"]
+log_level = "INFO"
 pythonpath = ["."]
 DJANGO_SETTINGS_MODULE = "testsettings"
+# Print the first occurrence of matching warnings for each location
+filterwarnings = ["default"]
 
 [tool.coverage.run]
 branch = true

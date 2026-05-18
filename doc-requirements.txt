@@ -1,7 +1,0 @@
-# requirements for building sphinx docs on readthedocs
-requests
-rdflib
-cached_property
-attrdict
-django>=1.11
-django-autocomplete-light
