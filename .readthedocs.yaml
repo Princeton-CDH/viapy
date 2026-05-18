@@ -11,7 +11,7 @@ build:
   jobs:
     pre_build:
       # Workaround
-      - cp docs/docsettings.py:
+      - cp docs/docsettings.py
       # Check for broken links
       - python -m sphinx -b linkcheck -D linkcheck_timeout=1 docs/ $READTHEDOCS_OUTPUT/linkcheck
 
