@@ -8,7 +8,7 @@ set -e
 git flow feature start post-release-update
 
 # Prompt next steps
-echo "\n"
+echo
 echo "***********************"
 echo "* Post-Release Update *"
 echo "***********************"
