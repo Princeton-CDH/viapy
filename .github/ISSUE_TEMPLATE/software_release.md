@@ -1,7 +1,7 @@
 ---
 name: viapy release checklist
 about: Checklist for releasing new versions of viapy
-title: viapy release checklist
+title: Release v
 labels: chore
 assignees: ''
 ---
