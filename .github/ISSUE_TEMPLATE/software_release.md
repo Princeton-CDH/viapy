@@ -1,7 +1,7 @@
 ---
 name: viapy release checklist
 about: Checklist for releasing new versions of viapy
-title: piffle release checklist
+title: viapy release checklist
 labels: chore
 assignees: ''
 ---
@@ -16,6 +16,7 @@ assignees: ''
 - [ ] Make sure local settings are documented and that sample local settings file includes any new configurations.
 - [ ] Confirm that all checks for the PR pass (e.g., unit tests, code coverage checks).
 - [ ] Review code documentation to make sure it is up to date.
+- [ ] Review the commit logs to make sure all logs are meaningful and sufficient. To revise and squash commit messages, use `git rebase -i`.
 - [ ] Request a review for the PR.
 - [ ] Once approved, use git-flow to finish the release (`git flow release finish`).
   *Make sure to use the `-M`, `--merge-message` flag to customize the commit message for the merge and
@@ -23,7 +24,7 @@ assignees: ''
 
 ## after release
 
-- With `post-release-update` feature branch (automatically created for you by git flow):
+- With `post-release-update` feature branch (automatically created for you by git-flow hook):
   - [ ] Increase the develop branch version so it is set to the next expected release (i.e., if you just released 0.5.0 then develop will probably be 0.6.0.dev0 unless you are working on a major update, in which case it will be 1.0.0.dev0).
   - [ ] Update the changelog to include a section for the next expected release version.
   - [ ] Create a PR and request a review once all checks are passing.

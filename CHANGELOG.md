@@ -4,20 +4,26 @@
 
 - Now supports Python 3.10 through 3.14; drops support for Python 3.9
 - Now supports Django 5.2 and 6.0; drops support for Django 3.2 through 5.0
-- Switch to using uv for package development
 - Switch project organization to src layout
+- Update package to use pathlib instead of os.path
+
+### Documentation
+
 - Update readthedocs support and related documentation
+- Switch from rst to md for documentation format
+- Add GitHub Action for checking documentation coverage
+
+### Development
+
+- Switch to using uv for package development
 - Adopt git-flow-next for git-flow branching conventions
 - Add pre-commit hooks for development
 - Adopt a new set of ruff linter rules
 - Adopt Dependabot version updates for GitHub Actions and pre-commit
 - Add GitHub Action for Ruff lint and format checks
 - Add GitHub Action to check for changelog updates
-- Add GitHub Action for checking documentation coverage
 - Add GitHub Action to check that pull requests align with git-flow workflow
 - Add custom GitHub issue template for software releases
-- Switch from os.path to pathlib
-- Switch from rst to md for documentation format
 - Add custom config for codecov to create separate checks for the core package and tests
 
 ## 0.4.0
