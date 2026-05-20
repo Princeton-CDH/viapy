@@ -8,52 +8,107 @@ description = "Python module for interacting with VIAF data & APIs"
 authors = [
   {name = "Center for Digital Humanities at Princeton", email = "cdh@princeton.edu"},
 ]
-requires-python = ">=3.9"
-readme = "README.rst"
+requires-python = ">=3.10"
+readme = "README.md"
 license = {text = "Apache-2"}
 classifiers = [
     "Environment :: Web Environment",
     "Framework :: Django",
-    "Framework :: Django :: 3.2",
-    "Framework :: Django :: 4.0",
-    "Framework :: Django :: 4.1",
-    "Framework :: Django :: 4.2",
-    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.2",
+    "Framework :: Django :: 6.0",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Internet :: WWW/HTTP",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 dynamic = ["version"]
 dependencies = [
-  "requests", "rdflib", "cached_property", "attrdict3"
+  "requests",
+  "rdflib",
+  "cached_property",
+  "attrdict3",
 ]
 
 [project.urls]
 #Documentation = "https://readthedocs.org"
 Repository = "https://github.com/Princeton-CDH/viapy"
-Changelog = "https://github.com/Princeton-CDH/viapy/blob/main/CHANGELOG.rst"
+Changelog = "https://github.com/Princeton-CDH/viapy/blob/main/CHANGELOG.md"
 
 [tool.hatch.version]
-path = "viapy/__init__.py"
+path = "src/viapy/__init__.py"
 
 [project.optional-dependencies]
 test = [
   "pytest",
-  "pytest-cov"
+  "pytest-cov",
+  "coverage[toml]", # Enables coverage to read config from pyproject.toml
 ]
 django = ["django>=3.2", "django-autocomplete-light"]
 django_test = ["pytest-django", "viapy[django]"]
-docs = ["sphinx"]
+docs = ["sphinx", "myst-parser"]
 test_all = ["viapy[test]", "viapy[django_test]"]
-dev = ["pre-commit", "viapy[django]", "viapy[test_all]", "viapy[docs]"]
+dev = [
+  "ruff",
+  "pre-commit",
+  "viapy[django]",
+  "viapy[test_all]",
+  "viapy[docs]"
+]
 
-[tool.pytest.ini_options]
+[dependency-groups]
+dev = ["viapy[dev]"]
+
+[tool.pytest]
+minversion = "9"
+strict = false
+addopts = ["-ra"]
+testpaths = ["tests"]
+log_level = "INFO"
+pythonpath = ["."]
+# Comment out line if django is not installed
 DJANGO_SETTINGS_MODULE = "testsettings"
+# Print the first occurrence of matching warnings for each location
+filterwarnings = ["default"]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+show_missing = true   # Helpful for debugging
+exclude_lines = [
+    "# pragma: no cover",
+    # skip command-line configuration for main method on scripts
+    "if __name__ == .__main__.:"
+]
+
+[tool.coverage.html]
+directory = "coverage_html_report"
+
+[tool.ruff.lint]
+# Include these rules in addition to ruff's defaults
+extend-select = [
+  "B",    # flake8-bugbear
+  "C4",   # flake8-comprehensions
+  "I",    #isort
+  "NPY",  # numpy-specific rules
+  "PERF", # perflint
+  "PTH",  # flake8-use-pathlib
+  "RUF",  # ruff-specific rules
+  "SIM",  # flake8-simplify
+  "UP",   # pyupgrade
+]
+# Can use to ignore specific rules within above selection
+ignore = []
+
+[tool.mdformat]
+number = true
+wrap = "keep"
+end_of_line = "lf"

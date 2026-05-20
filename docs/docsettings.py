@@ -1,4 +1,4 @@
-# minimal django settings required to run django-dependent tests
+# minimal django settings required to build documentation
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
@@ -17,5 +17,4 @@ ROOT_URLCONF = "viapy.test_urls"
 
 LANGUAGE_CODE = "en-us"
 
-# must be added
-# SECRET_KEY = ''
+SECRET_KEY = "f$J4FB3B=}1bFtJ$}b9s28Vsf?&otV}o0*V)g;#OD5%20uksel"

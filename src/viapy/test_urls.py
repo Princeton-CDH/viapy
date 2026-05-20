@@ -1,0 +1,13 @@
+"""Test URL configuration for viapy"""
+
+try:
+    from django.urls import include, path
+
+    from viapy import urls as viapy_urls
+
+    urlpatterns = [
+        path(r"viaf/", include(viapy_urls, namespace="viaf")),
+    ]
+
+except ImportError:
+    pass

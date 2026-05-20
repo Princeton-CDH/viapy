@@ -1,0 +1,48 @@
+name: sphinx docs coverage
+
+on:
+  push:  # run on all branches
+  pull_request:
+    branches: [develop, main]
+
+permissions:
+  contents: read
+
+concurrency:
+  # Cancel existing job(s) for workflow when a new one is queued
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Python version used to build sphinx docs
+  DOCS_PYTHON_VERSION: "3.12"
+
+jobs:
+  docs:
+    name: Sphinx documentation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install uv and Python version
+        uses: astral-sh/setup-uv@v7
+        with:
+          python-version: ${{ env.DOCS_PYTHON_VERSION }}
+
+      - name: Install package dependencies
+        run: uv sync --extra docs
+
+      - name: Build Sphinx docs
+        run: cd docs && uv run make -b coverage html
+
+      # For pull requests, exit with error if documentation coverage is incomplete
+      - name: Report on documentation coverage
+        if: github.event_name == 'pull_request'
+        run: |
+          cd docs/_build/coverage &&
+          if [[ $((`grep corppa python.txt | grep -v 100 | wc -l`)) -eq 0 ]]; then
+            echo "Documentation coverage complete"
+          else
+            cat python.txt
+          fi

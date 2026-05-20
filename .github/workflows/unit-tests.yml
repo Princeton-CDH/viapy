@@ -1,0 +1,75 @@
+name: unit tests
+
+on:
+  push:  # run on all branches
+  pull_request:
+    branches: [develop, main]
+  schedule:  # run automatically on main branch each Tuesday at 11am
+    - cron: "0 16 * * 2"
+
+permissions:
+  contents: read
+
+concurrency:
+  # Cancel existing job(s) for workflow when a new one is queued
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Prevent uv from including develop dependencies by default
+  UV_NO_DEV: 1
+  # Prevent uv run from syncing by default
+  UV_NO_SYNC: 1
+
+jobs:
+  python-unit:
+    name: Python unit tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10", "3.11", "3.12", "3.13", "3.14"]
+        django: [0, "5.2", "6.0"]
+        exclude:
+          # django 6.0 only supports python >= 3.12
+          - python: "3.10"
+            django: "6.0"
+          - python: "3.11"
+            django: "6.0"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install uv and Python version
+        uses: astral-sh/setup-uv@v7
+        with:
+          python-version: ${{ matrix.python }}
+
+      - name: Install package dependencies with django
+        if: matrix.django > 0
+        run: |
+          uv sync --extra test --extra django_test
+          uv pip install django==${{ matrix.django }}
+
+      - name: Install package dependencies without django
+        if: matrix.django == 0
+        run: |
+          uv sync --extra test
+
+      - name: Setup test settings if django is installed
+        if: matrix.django > 0
+        run: |
+          cp ci/testsettings.py testsettings.py
+          uv run python -c "import uuid; print('SECRET_KEY = \'%s\'' % uuid.uuid4())" >> testsettings.py
+
+      - name: Run pytest
+        run: uv run pytest --cov=viapy --cov=tests --cov-report=xml --cov-report=term
+
+      # Only upload test coverage for Python 3.12 (3 reports total)
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v5
+        if: matrix.python == '3.12'
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          files: ./coverage.xml
+          fail_ci_if_error: false
