@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## 0.6.0
+
 ## 0.5.0
 
 - Now supports Python 3.10 through 3.14; drops support for Python 3.9
