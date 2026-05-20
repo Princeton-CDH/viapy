@@ -67,7 +67,7 @@ jobs:
 
       # Only upload test coverage for Python 3.12 (3 reports total)
       - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v6
         if: matrix.python == '3.12'
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
