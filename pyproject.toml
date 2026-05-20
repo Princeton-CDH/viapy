@@ -67,9 +67,16 @@ dev = [
 dev = ["viapy[dev]"]
 
 [tool.pytest]
+minversion = "9"
+strict = false
+addopts = ["-ra"]
 testpaths = ["tests"]
+log_level = "INFO"
 pythonpath = ["."]
+# Comment out line if django is not installed
 DJANGO_SETTINGS_MODULE = "testsettings"
+# Print the first occurrence of matching warnings for each location
+filterwarnings = ["default"]
 
 [tool.coverage.run]
 branch = true

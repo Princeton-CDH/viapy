@@ -5,18 +5,14 @@ from unittest.mock import patch
 import pytest
 from attrdict import AttrDict
 
-try:
-    import django
-    from django.http import JsonResponse
-    from django.test import TestCase
-    from django.urls import reverse
+pytest.importorskip("django", reason="django not installed")
+import django
+from django.http import JsonResponse
+from django.test import TestCase
+from django.urls import reverse
 
-    from viapy.api import ViafAPI
-    from viapy.widgets import ViafWidget
-
-except ImportError:
-    django = None
-    from unittest import TestCase
+from viapy.api import ViafAPI
+from viapy.widgets import ViafWidget
 
 
 @pytest.mark.skipif(django is None, reason="Requires Django")

@@ -1,32 +1,44 @@
 # CHANGELOG
 
-## 0.5
+## 0.5.0
 
 - Now supports Python 3.10 through 3.14; drops support for Python 3.9
 - Now supports Django 5.2 and 6.0; drops support for Django 3.2 through 5.0
-- Adopt a new set of ruff linter rules
-- Add GitHub Action for ruff lint and format checks
-- Add GitHub Action to check for changelog updates
-- Add GitHub Action for checking documentation coverage
-- Add pre-commit hooks for development
-- Switch to using uv for package development
 - Switch project organization to src layout
-- Switch from os.path to pathlib
-- Switch from rst to md for documentation format
+- Update package to use pathlib instead of os.path
 
-## 0.4
+### Documentation
+
+- Update readthedocs support and related documentation
+- Switch from rst to md for documentation format
+- Add GitHub Action for checking documentation coverage
+
+### Development
+
+- Switch to using uv for package development
+- Adopt git-flow-next for git-flow branching conventions
+- Add pre-commit hooks for development
+- Adopt a new set of ruff linter rules
+- Adopt Dependabot version updates for GitHub Actions and pre-commit
+- Add GitHub Action for Ruff lint and format checks
+- Add GitHub Action to check for changelog updates
+- Add GitHub Action to check that pull requests align with git-flow workflow
+- Add custom GitHub issue template for software releases
+- Add custom config for codecov to create separate checks for the core package and tests
+
+## 0.4.0
 
 - Updates for new VIAF /search API endpoint response
 - bugfix: VIAF entity request needs Accept header
 
-## 0.3
+## 0.3.0
 
 - Handle negative years when parsing birth and death dates
 - Now tested on python 3.9 through 3.12
 - Now tested against Django 3.2 through 5.0
 - Migrate continuous integration to GitHub Actions
 
-## 0.2
+## 0.2.0
 
 - Now supports Django versions 1.11 through 3.0.
 
@@ -46,7 +58,7 @@
 
 - Document permissions.
 
-## 0.1
+## 0.1.0
 
 Initial release.
 
