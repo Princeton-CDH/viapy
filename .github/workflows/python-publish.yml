@@ -9,14 +9,16 @@
 name: Upload Python Package
 
 on:
-  # normal behavior: run when a new release is created
+  # normal behavior: run when a new release is published
   release:
     types: [published]
-  # allow manually running on main (restriction within job)
+  # allow running manually on main (restriction within job)
   workflow_dispatch:
 
-permissions:
-  contents: read
+concurrency:
+  # Cancel existing job(s) for workflow when a new one is queued
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   pypi-publish:
@@ -28,11 +30,17 @@ jobs:
       url: https://pypi.org/project/viapy/
     permissions:
       id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing
+      contents: read
     if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && github.ref == 'main')
     steps:
-      - uses: actions/checkout@v6
+      - name: Checkout repository
+        uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10  # v6.0.3
+        with:
+          persist-credentials: false
       - name: Install uv
-        uses: astral-sh/setup-uv@v8.1.0
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b  # v.8.2.0
+        with:
+          enable-cache: false
       - name: Install Python 3.12
         run: uv python install 3.12
       - name: Build package
