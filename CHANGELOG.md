@@ -2,6 +2,25 @@
 
 ## 0.6.0
 
+### Development
+
+- Pin python version for development to 3.12 with `.python-version` file
+- Add 7-day cooldown for uv
+- Fix GitHub Action for publishing package to PyPi
+- Remove a third-party dependency from GitHub Action for checking for changelog updates
+
+#### Security
+
+- Add pre-commit hook for zizmor a security-focused static analysis tool for GitHub Actions
+- Pin GitHub repository references to full commit hashes for pre-commit and GitHub Actions
+- Update permissionsfor GitHub Actions
+
+#### Dependabot
+
+- Add Dependabot version updates for uv
+- Reduce Dependabot version updates to monthly and add 7-day cooldowns
+- Configure Dependabot so all version updates will be grouped into one PR that targets the develop branch
+
 ## 0.5.0
 
 - Now supports Python 3.10 through 3.14; drops support for Python 3.9
