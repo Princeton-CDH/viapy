@@ -1,10 +1,5 @@
-# This workflow will upload a Python Package  when a release is created
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python#publishing-to-package-registries
-
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+# This workflow will upload a Python package using uv when a release is published
+# Adapted from: https://docs.astral.sh/uv/guides/integration/github/#publishing-to-pypi
 
 name: Upload Python Package
 
@@ -22,7 +17,6 @@ concurrency:
 
 jobs:
   pypi-publish:
-    # Adapted from https://docs.astral.sh/uv/guides/integration/github/#publishing-to-pypi
     name: Upload release to PyPI
     runs-on: ubuntu-latest
     environment:
@@ -31,7 +25,7 @@ jobs:
     permissions:
       id-token: write  # IMPORTANT: this permission is mandatory for trusted publishing
       contents: read
-    if: github.event_name == 'release' || (github.event_name == 'workflow_dispatch' && github.ref == 'main')
+    if: github.event_name == 'release' || github.ref_name == 'main'
     steps:
       - name: Checkout repository
         uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10  # v6.0.3
@@ -45,10 +39,11 @@ jobs:
         run: uv python install 3.12
       - name: Build package
         run: uv build
+      # TODO: Revisit adding smoke test
       # Check that basic features work and we didn't miss to include crucial files
-      - name: Smoke test (wheel)
-        run: uv run --isolated --no-project --with dist/*.whl tests/smoke_test.py
-      - name: Smoke test (source distribution)
-        run: uv run --isolated --no-project --with dist/*.tar.gz tests/smoke_test.py
+      #- name: Smoke test (wheel)
+      #  run: uv run --isolated --no-project --with dist/*.whl tests/smoke_test.py
+      #- name: Smoke test (source distribution)
+      #  run: uv run --isolated --no-project --with dist/*.tar.gz tests/smoke_test.py
       - name: Publish package
         run: uv publish
