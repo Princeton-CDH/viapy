@@ -4,10 +4,10 @@
 
 ### Development
 
-- Fix GitHub Action for publishing package to PyPi
 - Pin python version for development to 3.12 with `.python-version` file
 - Add 7-day cooldown for uv
 - Fix GitHub Action for publishing package to PyPi
+- Remove a third-party dependency from GitHub Action for checking for changelog updates
 
 #### Security
 
