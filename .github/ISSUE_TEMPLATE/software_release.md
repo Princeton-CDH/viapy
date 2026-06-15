@@ -35,4 +35,4 @@ assignees: ''
 - [ ] Create release on GitHub.
 - [ ] Merge `post-release-update` to develop.
   *This will fail if the feature's PR has not been approved or has failing checks.*
-- [ ] Clean up any release branches on GitHub
+- [ ] Clean up any relevant branches on GitHub
