@@ -19,8 +19,9 @@ assignees: ''
 - [ ] Review the commit logs to make sure all logs are meaningful and sufficient. To revise and squash commit messages, use `git rebase -i`.
 - [ ] Request a review for the PR.
 - [ ] Once approved, use git-flow to finish the release (`git flow release finish`).
-  *Make sure to use the `-M`, `--merge-message` flag to customize the commit message for the merge and
-  the `--message` flag to specify the tag message.*
+  *Make sure to use the `-M`, `--merge-message` flag to customize the commit message for the merge,
+  the `--message` flag to specify the tag message, and --keepremote to prevent the release's PR from being closed
+  due to the deletion of the remote branch.*
 
 ## after release
 
@@ -34,3 +35,4 @@ assignees: ''
 - [ ] Create release on GitHub.
 - [ ] Merge `post-release-update` to develop.
   *This will fail if the feature's PR has not been approved or has failing checks.*
+- [ ] Clean up any release branches on GitHub
