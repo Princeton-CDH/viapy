@@ -16,3 +16,9 @@ git config gitflow.bugfix.start.fetch true
 # Use custom message for develop auto-updates
 git config gitflow.hotfix.finish.updatemessage "chore: sync %b from %p"
 git config gitflow.release.finish.updatemessage "chore: sync %b from %p"
+
+# Keep topic branches after finishing to avoid closing PRs prematurely
+git config gitflow.release.finish.keep true
+git config gitflow.feature.finish.keep true
+git config gitflow.hotfix.finish.keep true
+git config gitflow.bugfix.finish.keep true
