@@ -5,7 +5,7 @@
 repos:
   # Ruff Python linter and formatter (configs in pyproject.toml)
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: 22f0422809455ec89ffdcf5a00170ba816e42ddb  # frozen: v0.15.16
+    rev: cb8c523fd4835aba42af70f4cad5568db4df0b6c  # frozen: v0.16.0
     hooks:
       # Run the linter
       - id: ruff-check
@@ -28,7 +28,7 @@ repos:
       - id: yamlfmt
   # Codespell for spell checking
   - repo: https://github.com/codespell-project/codespell
-    rev: 2ccb47ff45ad361a21071a7eedda4c37e6ae8c5a  # frozen: v2.4.2
+    rev: 57b21406f092110c18776e39b0bda50d37c945c8  # frozen: v2.4.3
     hooks:
       - id: codespell
         additional_dependencies:
@@ -54,7 +54,7 @@ repos:
   # Check uv.lock file is up to date
   - repo: https://github.com/astral-sh/uv-pre-commit
     # uv version
-    rev: c665864e22f27255a10d82e14f8ccea6843fd65e  # frozen: 0.11.19
+    rev: e3e6ef7d9bda544b2e795782dbd7d2a4fbd7eb6d  # frozen: 0.11.32
     hooks:
       - id: uv-lock
   # Validate GitHub Actions workflow files
@@ -64,7 +64,7 @@ repos:
       - id: action-validator
   # Security-focused GitHub Actions static analysis tool
   - repo: https://github.com/zizmorcore/zizmor-pre-commit
-    rev: 9257c6050c0261b8c57e712f632dc4a8010109a9  # frozen: v1.25.2
+    rev: 067260dc5fe6ea86b7551bfd6f8b3ba4e6c93129  # frozen: v1.28.0
     hooks:
       - id: zizmor
         args: [--fix=safe]  # enable safe fixes
